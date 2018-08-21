@@ -6304,3 +6304,406 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 2224ms (Views: 2221.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:39:30 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (6.2ms)
+  Rendered pages/home.html.haml within layouts/application (9.5ms)
+  Rendered shared/_navbar.html.haml (5.2ms)
+  Rendered shared/_banner.html.haml (1.4ms)
+Completed 200 OK in 2279ms (Views: 2278.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-21 13:45:24 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (1.4ms)
+  Rendered shared/_navbar.html.haml (4.9ms)
+Completed 200 OK in 37ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:45:28 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (9.0ms)
+  Rendered pages/home.html.haml within layouts/application (18.3ms)
+  Rendered shared/_navbar.html.haml (5.4ms)
+  Rendered shared/_banner.html.haml (1.4ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-21 13:45:51 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.haml (5.7ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:46:05 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (10.4ms)
+  Rendered pages/home.html.haml within layouts/application (20.3ms)
+  Rendered shared/_navbar.html.haml (7.1ms)
+  Rendered shared/_banner.html.haml (1.9ms)
+Completed 200 OK in 69ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 14:45:03 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (9.0ms)
+  Rendered pages/home.html.haml within layouts/application (14.6ms)
+  Rendered shared/_navbar.html.haml (5.5ms)
+  Rendered shared/_banner.html.haml (1.6ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-21 14:50:47 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.haml (5.1ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 14:51:47 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (10.7ms)
+  Rendered pages/home.html.haml within layouts/application (20.7ms)
+  Rendered shared/_navbar.html.haml (7.8ms)
+  Rendered shared/_banner.html.haml (2.1ms)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-21 14:51:49 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (1.5ms)
+  Rendered shared/_navbar.html.haml (6.2ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 14:51:50 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (12.7ms)
+  Rendered pages/home.html.haml within layouts/application (25.5ms)
+  Rendered shared/_navbar.html.haml (7.5ms)
+  Rendered shared/_banner.html.haml (1.8ms)
+Completed 200 OK in 72ms (Views: 70.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 14:53:49 -0300
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-21 14:53:49 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/sessions/new.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 6.8ms)
+
+
+  
+SyntaxError (/home/dancondo/code/dancondo/tigairo/app/views/devise/sessions/new.html.haml:4: syntax error, unexpected '=', expecting ')'
+l: { autocomplete: "email" } = f.input :password,           
+                              ^):
+  
+app/views/devise/sessions/new.html.haml:4: syntax error, unexpected '=', expecting ')'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-21 14:54:14 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/sessions/new.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 3.2ms)
+
+
+  
+SyntaxError (/home/dancondo/code/dancondo/tigairo/app/views/devise/sessions/new.html.haml:4: syntax error, unexpected '=', expecting ')'
+l: { autocomplete: "email" } = f.input :password,           
+                              ^):
+  
+app/views/devise/sessions/new.html.haml:4: syntax error, unexpected '=', expecting ')'
+Started GET "/posts" for 127.0.0.1 at 2018-08-21 14:54:18 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-21 14:54:18 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/sessions/new.html.haml within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/dancondo/code/dancondo/tigairo/app/views/devise/sessions/new.html.haml:4: syntax error, unexpected '=', expecting ')'
+l: { autocomplete: "email" } = f.input :password,           
+                              ^):
+  
+app/views/devise/sessions/new.html.haml:4: syntax error, unexpected '=', expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-08-21 14:54:19 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (9.6ms)
+  Rendered pages/home.html.haml within layouts/application (18.2ms)
+  Rendered shared/_navbar.html.haml (7.8ms)
+  Rendered shared/_banner.html.haml (1.9ms)
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 14:54:20 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (11.4ms)
+  Rendered pages/home.html.haml within layouts/application (22.5ms)
+  Rendered shared/_navbar.html.haml (7.2ms)
+  Rendered shared/_banner.html.haml (2.2ms)
+Completed 200 OK in 71ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-21 14:54:23 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-21 14:54:23 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/sessions/new.html.haml within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/dancondo/code/dancondo/tigairo/app/views/devise/sessions/new.html.haml:4: syntax error, unexpected '=', expecting ')'
+l: { autocomplete: "email" } = f.input :password,           
+                              ^):
+  
+app/views/devise/sessions/new.html.haml:4: syntax error, unexpected '=', expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-08-21 14:54:25 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (10.5ms)
+  Rendered pages/home.html.haml within layouts/application (19.0ms)
+  Rendered shared/_navbar.html.haml (8.8ms)
+  Rendered shared/_banner.html.haml (2.0ms)
+Completed 200 OK in 71ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 14:56:14 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (16.6ms)
+  Rendered pages/home.html.haml within layouts/application (27.1ms)
+  Rendered shared/_navbar.html.haml (6.7ms)
+  Rendered shared/_banner.html.haml (2.1ms)
+Completed 200 OK in 84ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-21 14:56:15 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-21 14:56:15 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (41.9ms)
+  Rendered shared/_navbar.html.haml (6.4ms)
+Completed 200 OK in 86ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 14:56:19 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (8.5ms)
+  Rendered pages/home.html.haml within layouts/application (14.4ms)
+  Rendered shared/_navbar.html.haml (6.2ms)
+  Rendered shared/_banner.html.haml (2.4ms)
+Completed 200 OK in 62ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-21 14:56:28 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-21 14:56:28 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.5ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (12.5ms)
+  Rendered shared/_navbar.html.haml (5.9ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 14:56:43 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (21.7ms)
+  Rendered pages/home.html.haml within layouts/application (34.1ms)
+  Rendered shared/_navbar.html.haml (7.8ms)
+  Rendered shared/_banner.html.haml (1.9ms)
+Completed 200 OK in 83ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 14:58:41 -0300
+  
+ArgumentError (Before process_action callback :authenticate_user! has not been defined):
+  
+app/controllers/pages_controller.rb:2:in `<class:PagesController>'
+app/controllers/pages_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-08-21 14:58:48 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (5.8ms)
+  Rendered pages/home.html.haml within layouts/application (9.7ms)
+  Rendered shared/_navbar.html.haml (6.3ms)
+  Rendered shared/_banner.html.haml (2.2ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-21 14:58:50 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/index.html.haml within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.haml (7.3ms)
+Completed 200 OK in 62ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8318156253109745280)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddTitleToPosts (20180821180345)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mALTER TABLE "posts" ADD "title" character varying[0m
+  ↳ db/migrate/20180821180345_add_title_to_posts.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180821180345"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8318156253109745280)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Create (1.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "ごはん"], ["created_at", "2018-08-21 18:07:36.231616"], ["updated_at", "2018-08-21 18:07:36.231616"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "友達との接し方"], ["created_at", "2018-08-21 18:07:36.235469"], ["updated_at", "2018-08-21 18:07:36.235469"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "お店の人"], ["created_at", "2018-08-21 18:07:36.237685"], ["updated_at", "2018-08-21 18:07:36.237685"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "ファッション"], ["created_at", "2018-08-21 18:07:36.239837"], ["updated_at", "2018-08-21 18:07:36.239837"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "お祝い"], ["created_at", "2018-08-21 18:07:36.242019"], ["updated_at", "2018-08-21 18:07:36.242019"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "時間"], ["created_at", "2018-08-21 18:07:36.244127"], ["updated_at", "2018-08-21 18:07:36.244127"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "街"], ["created_at", "2018-08-21 18:07:36.246169"], ["updated_at", "2018-08-21 18:07:36.246169"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "仕事"], ["created_at", "2018-08-21 18:07:36.248240"], ["updated_at", "2018-08-21 18:07:36.248240"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "恋愛"], ["created_at", "2018-08-21 18:07:36.250290"], ["updated_at", "2018-08-21 18:07:36.250290"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Create (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "その他"], ["created_at", "2018-08-21 18:07:36.252485"], ["updated_at", "2018-08-21 18:07:36.252485"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+Started GET "/posts" for 127.0.0.1 at 2018-08-21 15:10:02 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:3
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:3
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:3
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:3
+  Rendered posts/_new.html.haml (194.6ms)
+  Rendered posts/index.html.haml within layouts/application (196.7ms)
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 6.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `simple_for_for' for #<#<Class:0x00007fc9e4f8d148>:0x00007fc9e4f85f38>
+Did you mean?  simple_form_for
+               simple_format):
+    1: = simple_for_for @post do |f|
+    2:   = f.input :title, label: '', placeholder: 'タイトル'
+  
+app/views/posts/_new.html.haml:1:in `_app_views_posts__new_html_haml___3146595371527143647_70252553146200'
+app/views/posts/index.html.haml:3:in `_app_views_posts_index_html_haml__4209434859805823674_70252553334720'
+Started GET "/posts" for 127.0.0.1 at 2018-08-21 15:10:21 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/_new.html.haml (12.1ms)
+  Rendered posts/index.html.haml within layouts/application (18.0ms)
+  Rendered shared/_navbar.html.haml (14.4ms)
+Completed 200 OK in 89ms (Views: 86.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-21 15:10:46 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  Rendered posts/_new.html.haml (10.3ms)
+  Rendered posts/index.html.haml within layouts/application (15.0ms)
+  Rendered shared/_navbar.html.haml (13.7ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
