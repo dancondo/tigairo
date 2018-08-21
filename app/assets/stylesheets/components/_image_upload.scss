@@ -1,0 +1,16 @@
+.image-upload-box {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  padding: 40px 0;
+  color: $text-super-lighter;
+  img {
+    height: 64px;
+    width: 64px;
+  }
+}
+.upload-block-box {
+  display: inline-block;
+
+}

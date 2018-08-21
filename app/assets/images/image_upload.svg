@@ -1,0 +1,27 @@
+<svg id="photo_image" data-name="photo image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 92">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        opacity: 0.2;
+      }
+
+      .cls-3 {
+        fill: #1a161e;
+      }
+    </style>
+  </defs>
+  <g id="Bounding_Boxes">
+    <path id="パス_73" data-name="パス 73" class="cls-1" d="M0,0H92V92H0Z"/>
+  </g>
+  <g id="Outline_1_" class="cls-2" transform="translate(7.667 3.833)">
+    <g id="グループ化_290" data-name="グループ化 290">
+      <path id="パス_74" data-name="パス 74" class="cls-3" d="M63.333,65.333H9.667V11.667h34.5V4H9.667A7.689,7.689,0,0,0,2,11.667V65.333A7.689,7.689,0,0,0,9.667,73H63.333A7.689,7.689,0,0,0,71,65.333v-34.5H63.333Z" transform="translate(-2 7.5)"/>
+      <path id="パス_75" data-name="パス 75" class="cls-3" d="M23.555,26.86l-7.513-9.047L5.5,31.345H47.667L34.1,13.29Z" transform="translate(7.917 33.822)"/>
+      <path id="パス_76" data-name="パス 76" class="cls-3" d="M34.167,12.5V1H26.5V12.5H15c.038.038,0,7.667,0,7.667H26.5V31.628c.038.038,7.667,0,7.667,0V20.167h11.5V12.5Z" transform="translate(34.833 -1)"/>
+    </g>
+  </g>
+</svg>

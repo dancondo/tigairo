@@ -1,2 +1,12 @@
 = simple_form_for @post do |f|
   = f.input :title, label: false, placeholder: 'タイトル'
+  = f.input :photo, label: false do
+    .image-upload-box
+      .upload-block-box
+        = image_tag 'image_upload.svg'
+      .upload-block-box
+        %h3 Add Image
+      .upload-block-box
+        %p （なくてもOK）
+  = f.input :content, label: false, placeholder: '本文を入力　（３００文字まで）', input_html: { rows: 10 }
+  = f.submit :submit, class: 'bttn bttn-action'
