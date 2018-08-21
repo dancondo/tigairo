@@ -1,0 +1,15 @@
+.form-block {
+  display: flex;
+  align-items: start;
+  select {
+    font-size: 12px;
+  }
+}
+.form-block-inputs {
+  text-align: center;
+  margin-left: 4px;
+  vertical-align: center;
+}
+.form-button-right {
+  float: right;
+}
