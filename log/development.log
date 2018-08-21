@@ -5385,3 +5385,922 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 2450ms (Views: 2449.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/sign_up" for 127.0.0.1 at 2018-08-20 22:30:14 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:30:18 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (6.6ms)
+  Rendered shared/_navbar.html.haml (6.6ms)
+  Rendered shared/_banner.html.haml (2.2ms)
+Completed 200 OK in 82ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-08-20 22:30:39 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/registrations/new.html.haml within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 11.1ms)
+
+
+  
+SyntaxError (/home/dancondo/code/dancondo/tigairo/app/views/devise/registrations/new.html.haml:5: syntax error, unexpected '=', expecting ')'
+l: { autocomplete: "email" } = f.input :password,           
+                              ^
+/home/dancondo/code/dancondo/tigairo/app/views/devise/registrations/new.html.haml:5: syntax error, unexpected '=', expecting ')'
+                             = f.input :password_confirmatio
+                              ^):
+  
+app/views/devise/registrations/new.html.haml:5: syntax error, unexpected '=', expecting ')'
+app/views/devise/registrations/new.html.haml:5: syntax error, unexpected '=', expecting ')'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-08-20 22:31:31 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/registrations/new.html.haml within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/dancondo/code/dancondo/tigairo/app/views/devise/registrations/new.html.haml:5: syntax error, unexpected '=', expecting ')'
+l: { autocomplete: "email" } = f.input :password,           
+                              ^
+/home/dancondo/code/dancondo/tigairo/app/views/devise/registrations/new.html.haml:5: syntax error, unexpected '=', expecting ')'
+                             = f.input :password_confirmatio
+                              ^):
+  
+app/views/devise/registrations/new.html.haml:5: syntax error, unexpected '=', expecting ')'
+app/views/devise/registrations/new.html.haml:5: syntax error, unexpected '=', expecting ')'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-08-20 22:31:45 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.1ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (431.3ms)
+  Rendered shared/_navbar.html.haml (5.5ms)
+Completed 200 OK in 472ms (Views: 470.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:37:42 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (2.9ms)
+  Rendered shared/_navbar.html.haml (6.7ms)
+  Rendered shared/_banner.html.haml (1.7ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:47:55 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+    17:     レジャーをシェア ほっとできる場所だったり、 いつも行く小さなお店だったり }
+    18:   .col-sm-4
+    19:     =render 'info_card', locals: { title: 今日のひとこと,text: なんとなくつぶやきたいことは
+    20:      ここへ }
+  
+app/views/pages/home.html.haml:20
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:48:11 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 5 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+    17:     レジャーをシェア ほっとできる場所だったり、 いつも行く小さなお店だったり }
+    18:   .col-sm-4
+    19:     =render 'info_card', locals: { title: 今日のひとこと, text: なんとなくつぶやきたいことは
+    20:      ここへ }
+  
+app/views/pages/home.html.haml:20
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:48:44 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    11: .row
+    12:   .col-sm-4
+    13:     =render 'info_card', locals: { title: 'ここでの「ふつう', text: 'それぞれの国での「ふつう」
+    14:         をシェア 意外な同じ「ふつう」があったり 慣れるのが難しい「ふつう」があったり' }
+    15:   .col-sm-4
+    16:     =render 'info_card', locals: { title: 'おすすめスポット', text: 'おきにいりの場所、お店、
+    17:         レジャーをシェア ほっとできる場所だったり、 いつも行く小さなお店だったり' }
+  
+app/views/pages/home.html.haml:14
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:49:03 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (5.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+    14:       をシェア 意外な同じ「ふつう」があったり 慣れるのが難しい「ふつう」があったり' }
+    15:   .col-sm-4
+    16:     =render 'info_card', locals: { title: 'おすすめスポット', text: 'おきにいりの場所、お店、
+    17:         レジャーをシェア ほっとできる場所だったり、 いつも行く小さなお店だったり' }
+    18:   .col-sm-4
+    19:     =render 'info_card', locals: { title: '今日のひとこと', text: 'なんとなくつぶやきたいことは
+    20:          ここへ' }
+  
+app/views/pages/home.html.haml:17
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:49:09 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Inconsistent indentation: 9 spaces used for indentation, but the rest of the document was indented using 2 spaces.):
+    17:       レジャーをシェア ほっとできる場所だったり、 いつも行く小さなお店だったり' }
+    18:   .col-sm-4
+    19:     =render 'info_card', locals: { title: '今日のひとこと', text: 'なんとなくつぶやきたいことは
+    20:          ここへ' }
+  
+app/views/pages/home.html.haml:20
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:49:13 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:49:16 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:49:17 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:49:20 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:49:43 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:50:58 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:51:18 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:51:27 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:51:29 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:51:30 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:51:33 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:51:34 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:51:34 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:51:41 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:51:47 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (11.4ms)
+  Rendered shared/_navbar.html.haml (4.2ms)
+  Rendered shared/_banner.html.haml (1.2ms)
+Completed 200 OK in 2438ms (Views: 2436.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:52:43 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:53:09 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:56:53 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:57:00 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:57:11 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 22:57:43 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:03:10 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:03:35 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:05:29 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (4.2ms)
+  Rendered pages/home.html.haml within layouts/application (17.5ms)
+  Rendered shared/_navbar.html.haml (8.0ms)
+  Rendered shared/_banner.html.haml (1.7ms)
+Completed 200 OK in 97ms (Views: 94.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:05:46 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:07:42 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:07:51 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:09:51 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:37:14 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:37:15 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:37:59 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:38:00 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:38:06 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:38:17 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:38:34 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered pages/home.html.haml within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:46:14 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (364.4ms)
+  Rendered pages/home.html.haml within layouts/application (384.4ms)
+Completed 500 Internal Server Error in 389ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ここでの「ふつう」' for #<#<Class:0x000055a79e8a3248>:0x00007fd45c0a3100>):
+    1: .row
+    2:   .col-sm-12.col-md-4
+    3:     .info-card
+    4:       %h1= ここでの「ふつう」
+    5:       %p= それぞれの国での「ふつう」
+    6:       をシェア 意外な同じ「ふつう」があったり 慣れるのが難しい「ふつう」があったり
+    7: 
+  
+app/views/shared/_info_card.html.haml:4:in `_app_views_shared__info_card_html_haml__1144161881866748546_47089206088080'
+app/views/pages/home.html.haml:12:in `_app_views_pages_home_html_haml__2970152112853495704_70275026984260'
+Started GET "/" for 127.0.0.1 at 2018-08-20 23:46:25 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (1.9ms)
+  Rendered pages/home.html.haml within layouts/application (5.9ms)
+  Rendered shared/_navbar.html.haml (5.4ms)
+  Rendered shared/_banner.html.haml (1.3ms)
+Completed 200 OK in 412ms (Views: 411.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 00:01:27 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (6.0ms)
+  Rendered pages/home.html.haml within layouts/application (10.1ms)
+  Rendered shared/_navbar.html.haml (4.4ms)
+  Rendered shared/_banner.html.haml (1.2ms)
+Completed 200 OK in 166ms (Views: 165.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:13:15 -0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (2.1ms)
+  Rendered pages/home.html.haml within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The line was indented 2 levels deeper than the previous line.):
+     6:       %p それぞれの国での「ふつう」
+     7:       をシェア 意外な同じ「ふつう」があったり 慣れるのが難しい「ふつう」があったり
+     8:   .col-sm-12.col-md-4
+     9:       = image_tag 'mapicon.png'
+    10:       %h1 おすすめスポット
+    11:       %p おきにいりの場所、お店、レジャーをシェア ほっとできる場所だったり、 いつも行く小さなお店だったり
+    12:   .col-sm-12.col-md-4
+  
+app/views/shared/_info_card.html.haml:9
+app/views/pages/home.html.haml:12:in `_app_views_pages_home_html_haml___892811690654091453_70252479608040'
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:13:46 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (3210.8ms)
+  Rendered pages/home.html.haml within layouts/application (3219.9ms)
+  Rendered shared/_navbar.html.haml (4.5ms)
+  Rendered shared/_banner.html.haml (1.3ms)
+Completed 200 OK in 3341ms (Views: 3339.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:14:17 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (4.9ms)
+  Rendered pages/home.html.haml within layouts/application (8.3ms)
+  Rendered shared/_navbar.html.haml (5.4ms)
+  Rendered shared/_banner.html.haml (1.9ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:15:37 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (9.2ms)
+  Rendered pages/home.html.haml within layouts/application (17.6ms)
+  Rendered shared/_navbar.html.haml (4.4ms)
+  Rendered shared/_banner.html.haml (1.8ms)
+Completed 200 OK in 2294ms (Views: 2292.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:16:02 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (11.1ms)
+  Rendered pages/home.html.haml within layouts/application (20.4ms)
+  Rendered shared/_navbar.html.haml (4.7ms)
+  Rendered shared/_banner.html.haml (1.6ms)
+Completed 200 OK in 2296ms (Views: 2293.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:16:28 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (8.8ms)
+  Rendered pages/home.html.haml within layouts/application (16.9ms)
+  Rendered shared/_navbar.html.haml (5.2ms)
+  Rendered shared/_banner.html.haml (1.6ms)
+Completed 200 OK in 2295ms (Views: 2291.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:16:45 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (4.7ms)
+  Rendered pages/home.html.haml within layouts/application (8.1ms)
+  Rendered shared/_navbar.html.haml (4.7ms)
+  Rendered shared/_banner.html.haml (1.4ms)
+Completed 200 OK in 2337ms (Views: 2336.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:17:01 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (5.6ms)
+  Rendered pages/home.html.haml within layouts/application (8.7ms)
+  Rendered shared/_navbar.html.haml (6.7ms)
+  Rendered shared/_banner.html.haml (1.6ms)
+Completed 200 OK in 49ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:18:19 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (6.2ms)
+  Rendered pages/home.html.haml within layouts/application (9.6ms)
+  Rendered shared/_navbar.html.haml (13.7ms)
+  Rendered shared/_banner.html.haml (3.4ms)
+Completed 200 OK in 2210ms (Views: 2209.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:19:15 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (5.9ms)
+  Rendered pages/home.html.haml within layouts/application (8.4ms)
+  Rendered shared/_navbar.html.haml (4.1ms)
+  Rendered shared/_banner.html.haml (1.1ms)
+Completed 200 OK in 2176ms (Views: 2175.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:19:32 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (12.4ms)
+  Rendered pages/home.html.haml within layouts/application (21.8ms)
+  Rendered shared/_navbar.html.haml (5.2ms)
+  Rendered shared/_banner.html.haml (1.2ms)
+Completed 200 OK in 2266ms (Views: 2263.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:19:52 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (13.3ms)
+  Rendered pages/home.html.haml within layouts/application (23.2ms)
+  Rendered shared/_navbar.html.haml (6.3ms)
+  Rendered shared/_banner.html.haml (1.6ms)
+Completed 200 OK in 2237ms (Views: 2235.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:21:05 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (10.7ms)
+  Rendered pages/home.html.haml within layouts/application (19.7ms)
+  Rendered shared/_navbar.html.haml (5.2ms)
+  Rendered shared/_banner.html.haml (2.1ms)
+Completed 200 OK in 63ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:21:32 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (13.3ms)
+  Rendered pages/home.html.haml within layouts/application (22.1ms)
+  Rendered shared/_navbar.html.haml (4.2ms)
+  Rendered shared/_banner.html.haml (1.2ms)
+Completed 200 OK in 2260ms (Views: 2258.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:23:06 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (12.7ms)
+  Rendered pages/home.html.haml within layouts/application (21.6ms)
+  Rendered shared/_navbar.html.haml (5.3ms)
+  Rendered shared/_banner.html.haml (1.5ms)
+Completed 200 OK in 2236ms (Views: 2234.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:23:31 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (5.8ms)
+  Rendered pages/home.html.haml within layouts/application (10.7ms)
+  Rendered shared/_navbar.html.haml (4.9ms)
+  Rendered shared/_banner.html.haml (1.4ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:23:57 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (9.3ms)
+  Rendered pages/home.html.haml within layouts/application (17.7ms)
+  Rendered shared/_navbar.html.haml (4.2ms)
+  Rendered shared/_banner.html.haml (1.2ms)
+Completed 200 OK in 2231ms (Views: 2228.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:24:37 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (11.5ms)
+  Rendered pages/home.html.haml within layouts/application (22.8ms)
+  Rendered shared/_navbar.html.haml (3.8ms)
+  Rendered shared/_banner.html.haml (1.0ms)
+Completed 200 OK in 2218ms (Views: 2216.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:24:45 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (12.4ms)
+  Rendered pages/home.html.haml within layouts/application (22.0ms)
+  Rendered shared/_navbar.html.haml (4.6ms)
+  Rendered shared/_banner.html.haml (1.7ms)
+Completed 200 OK in 2292ms (Views: 2289.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:25:12 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (5.4ms)
+  Rendered pages/home.html.haml within layouts/application (9.5ms)
+  Rendered shared/_navbar.html.haml (4.8ms)
+  Rendered shared/_banner.html.haml (1.6ms)
+Completed 200 OK in 2267ms (Views: 2265.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:25:59 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (7.0ms)
+  Rendered pages/home.html.haml within layouts/application (9.7ms)
+  Rendered shared/_navbar.html.haml (11.3ms)
+  Rendered shared/_banner.html.haml (1.4ms)
+Completed 200 OK in 2300ms (Views: 2299.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:26:42 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (4.0ms)
+  Rendered pages/home.html.haml within layouts/application (6.3ms)
+  Rendered shared/_navbar.html.haml (4.5ms)
+  Rendered shared/_banner.html.haml (1.3ms)
+Completed 200 OK in 2206ms (Views: 2205.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:27:10 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (4.0ms)
+  Rendered pages/home.html.haml within layouts/application (7.1ms)
+  Rendered shared/_navbar.html.haml (3.9ms)
+  Rendered shared/_banner.html.haml (1.4ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:27:43 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (4.8ms)
+  Rendered pages/home.html.haml within layouts/application (7.5ms)
+  Rendered shared/_navbar.html.haml (5.2ms)
+  Rendered shared/_banner.html.haml (1.4ms)
+Completed 200 OK in 42ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:28:26 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (21.7ms)
+  Rendered pages/home.html.haml within layouts/application (24.1ms)
+  Rendered shared/_navbar.html.haml (15.8ms)
+  Rendered shared/_banner.html.haml (1.7ms)
+Completed 200 OK in 2355ms (Views: 2354.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:28:46 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (4.8ms)
+  Rendered pages/home.html.haml within layouts/application (7.5ms)
+  Rendered shared/_navbar.html.haml (7.5ms)
+  Rendered shared/_banner.html.haml (1.5ms)
+Completed 200 OK in 44ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:29:10 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (8.2ms)
+  Rendered pages/home.html.haml within layouts/application (11.8ms)
+  Rendered shared/_navbar.html.haml (18.1ms)
+  Rendered shared/_banner.html.haml (4.7ms)
+Completed 200 OK in 2455ms (Views: 2454.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:29:36 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (13.2ms)
+  Rendered pages/home.html.haml within layouts/application (24.9ms)
+  Rendered shared/_navbar.html.haml (13.6ms)
+  Rendered shared/_banner.html.haml (1.6ms)
+Completed 200 OK in 2384ms (Views: 2381.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:29:53 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (5.6ms)
+  Rendered pages/home.html.haml within layouts/application (9.4ms)
+  Rendered shared/_navbar.html.haml (23.6ms)
+  Rendered shared/_banner.html.haml (4.9ms)
+Completed 200 OK in 2246ms (Views: 2245.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:30:36 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (7.7ms)
+  Rendered pages/home.html.haml within layouts/application (14.8ms)
+  Rendered shared/_navbar.html.haml (4.5ms)
+  Rendered shared/_banner.html.haml (1.2ms)
+Completed 200 OK in 2250ms (Views: 2249.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:30:59 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (6.9ms)
+  Rendered pages/home.html.haml within layouts/application (9.9ms)
+  Rendered shared/_navbar.html.haml (4.6ms)
+  Rendered shared/_banner.html.haml (7.9ms)
+Completed 200 OK in 2259ms (Views: 2257.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:31:18 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (6.5ms)
+  Rendered pages/home.html.haml within layouts/application (9.4ms)
+  Rendered shared/_navbar.html.haml (5.4ms)
+  Rendered shared/_banner.html.haml (1.5ms)
+Completed 200 OK in 2294ms (Views: 2293.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:31:30 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (7.3ms)
+  Rendered pages/home.html.haml within layouts/application (10.6ms)
+  Rendered shared/_navbar.html.haml (5.0ms)
+  Rendered shared/_banner.html.haml (1.3ms)
+Completed 200 OK in 2292ms (Views: 2291.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:31:53 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (13.6ms)
+  Rendered pages/home.html.haml within layouts/application (24.0ms)
+  Rendered shared/_navbar.html.haml (5.0ms)
+  Rendered shared/_banner.html.haml (1.3ms)
+Completed 200 OK in 2303ms (Views: 2300.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:32:50 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (10.5ms)
+  Rendered pages/home.html.haml within layouts/application (21.1ms)
+  Rendered shared/_navbar.html.haml (4.7ms)
+  Rendered shared/_banner.html.haml (1.3ms)
+Completed 200 OK in 2283ms (Views: 2279.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:33:36 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (7.5ms)
+  Rendered pages/home.html.haml within layouts/application (11.7ms)
+  Rendered shared/_navbar.html.haml (5.4ms)
+  Rendered shared/_banner.html.haml (1.3ms)
+Completed 200 OK in 2240ms (Views: 2238.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:33:51 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (12.9ms)
+  Rendered pages/home.html.haml within layouts/application (23.9ms)
+  Rendered shared/_navbar.html.haml (4.8ms)
+  Rendered shared/_banner.html.haml (2.6ms)
+Completed 200 OK in 2308ms (Views: 2305.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:34:31 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (12.2ms)
+  Rendered pages/home.html.haml within layouts/application (23.2ms)
+  Rendered shared/_navbar.html.haml (5.0ms)
+  Rendered shared/_banner.html.haml (1.4ms)
+Completed 200 OK in 2300ms (Views: 2298.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:35:04 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (6.4ms)
+  Rendered pages/home.html.haml within layouts/application (8.7ms)
+  Rendered shared/_navbar.html.haml (4.8ms)
+  Rendered shared/_banner.html.haml (1.5ms)
+Completed 200 OK in 2250ms (Views: 2249.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:35:31 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (8.4ms)
+  Rendered pages/home.html.haml within layouts/application (18.7ms)
+  Rendered shared/_navbar.html.haml (4.6ms)
+  Rendered shared/_banner.html.haml (1.2ms)
+Completed 200 OK in 2260ms (Views: 2258.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:35:56 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (13.0ms)
+  Rendered pages/home.html.haml within layouts/application (21.8ms)
+  Rendered shared/_navbar.html.haml (4.7ms)
+  Rendered shared/_banner.html.haml (1.2ms)
+Completed 200 OK in 2247ms (Views: 2243.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:36:28 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (8.8ms)
+  Rendered pages/home.html.haml within layouts/application (18.4ms)
+  Rendered shared/_navbar.html.haml (5.6ms)
+  Rendered shared/_banner.html.haml (1.6ms)
+Completed 200 OK in 2289ms (Views: 2286.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:36:44 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (13.6ms)
+  Rendered pages/home.html.haml within layouts/application (22.6ms)
+  Rendered shared/_navbar.html.haml (5.0ms)
+  Rendered shared/_banner.html.haml (1.3ms)
+Completed 200 OK in 2304ms (Views: 2302.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-21 13:37:01 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (12.3ms)
+  Rendered pages/home.html.haml within layouts/application (21.0ms)
+  Rendered shared/_navbar.html.haml (4.7ms)
+  Rendered shared/_banner.html.haml (1.2ms)
+Completed 200 OK in 2224ms (Views: 2221.9ms | ActiveRecord: 0.0ms)
+
+
