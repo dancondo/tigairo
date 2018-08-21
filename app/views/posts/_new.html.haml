@@ -4,6 +4,7 @@
     .form-block
       = f.input :photo, label: false do
         .image-upload-box
+          = f.input :photo, label: false, input_html: { class: 'file-input' }
           .upload-block-box
             = image_tag 'image_upload.svg'
           .upload-block-box

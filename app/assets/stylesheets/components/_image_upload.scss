@@ -1,10 +1,12 @@
 .image-upload-box {
+  position: relative;
   background-color: white;
   height: 200px;
   width: 200px;
   text-align: center;
   padding: 40px 0;
   color: $text-super-lighter;
+  cursor: pointer;
   img {
     height: 64px;
     width: 64px;

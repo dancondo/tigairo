@@ -11,8 +11,12 @@
   %body
     = render 'shared/navbar'
     = render 'shared/banner' if current_page?(:root)
-    .container
-      = yield
+    - if current_page?(:root)
+      .container.top-32
+        =yield
+    - else
+      .container.top-64
+        = yield
 
     = javascript_include_tag 'application'
     / = javascript_pack_tag 'application'
