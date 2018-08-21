@@ -1,0 +1,33 @@
+.home-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .8rem;
+  p {
+    margin: 0;
+    color: $text-lighter;
+    text-align: left;
+  }
+}
+.home-text-block {
+  height: 57px;
+  text-align: right;
+  width: 60%;
+  span {
+    width: 100%;
+    text-align: left;
+  }
+}
+.bttn-home {
+  font-size: 1rem;
+  color: $light-text;
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem !important;
+  font-weight: bold;
+  box-shadow: 3px 3px 6px rgba($text, .3);
+  i {
+    margin-left: 8px;
+  }
+}

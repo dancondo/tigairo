@@ -1,6 +1,10 @@
-%h1 Peges#home
-%p Find me in app/views/peges/home.html.haml
-.btn-group
-  %button{ type: 'button', class: 'btn btn-danger dropdown-toggle', 'data-toggle': 'dropdown', 'aria-haspopup': "true", 'aria-expanded': "false" } Action
-  .dropdown-menu
-    %a{ class: 'dropdown-menu-item' } Oba
+.home-block
+  .home-text-block
+    %p
+      留学しているからこそ分かる 日本とは違う「ふつう」の
+    %span
+      つぶやきサイト
+  .home-bttn-block
+    = link_to posts_url, class: 'bttn bttn-action bttn-home' do
+      Start
+      %i.fas.fa-angle-right
