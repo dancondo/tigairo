@@ -1,7 +1,7 @@
 .form-container
   = simple_form_for @post do |f|
     = f.input :title, label: false, placeholder: 'タイトル'
-    .form-block
+    .post-block
       = f.input :photo, label: false do
         .image-upload-box
           %img#imgpreview
@@ -12,8 +12,7 @@
             %h3 Add Image
           .upload-block-box
             %p （なくてもOK）
-      .form-block-inputs
-        = f.association :category, label: false, prompt: 'カテゴリー'
+      .post-block-inputs
         = f.association :category, label: false, prompt: 'カテゴリー'
         = image_tag 'globeicon.png', class: 'avatar'
     = f.input :content, label: false, placeholder: '本文を入力　（３００文字まで）', input_html: { rows: 10 }

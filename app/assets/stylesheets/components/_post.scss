@@ -1,0 +1,49 @@
+.post {
+  position: relative;
+  background-color: $background-gray;
+  border-radius: 16px;
+  box-shadow: 0 3px 6px $shadow;
+  h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+.post-date {
+  font-size: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.post-image-box {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  img {
+    height: 150%;
+    width: 100%;
+  }
+}
+.post-block-show{
+  padding: 24px 0;
+  .post-block-inputs {
+    margin-right: -20px;
+  }
+}
+// Shared with form
+
+.post-block {
+  display: flex;
+  align-items: start;
+  select {
+    font-size: 12px;
+  }
+}
+.post-block-inputs {
+  text-align: center;
+  margin-left: 4px;
+  flex: 1;
+}

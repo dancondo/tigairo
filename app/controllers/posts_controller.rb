@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :set_user, only: [:create, :update, :delete]
 
   def index
     @posts = Post.all
@@ -7,17 +8,30 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post.user = @user
     if @post.save
       redirect_to posts_url
     else
-      render :new
+      redirect_to posts_url
     end
+  end
+
+  def update
+
+  end
+
+  def delete
+
   end
 
   private
 
+  def set_user
+    @user = current_user
+  end
+
   def post_params
-    params.require(:post).permit(:user, :category, :title, :content, :photo)
+    params.require(:post).permit(:user_id, :category_id, :title, :content, :photo)
   end
 
 end

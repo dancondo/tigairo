@@ -1,15 +1,3 @@
-.form-block {
-  display: flex;
-  align-items: start;
-  select {
-    font-size: 12px;
-  }
-}
-.form-block-inputs {
-  text-align: center;
-  margin-left: 4px;
-  vertical-align: center;
-}
 .form-button-right {
   float: right;
 }
@@ -29,4 +17,23 @@
   border-radius: 8px;
   height: 150%;
   width: 100%;
+}
+.image-upload-box {
+  position: relative;
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  text-align: center;
+  padding: 40px 0;
+  color: $text-super-lighter;
+  cursor: pointer;
+  .image-upload-image {
+    height: 64px;
+    width: 64px;
+  }
+}
+.upload-block-box {
+  display: inline-block;
+
 }

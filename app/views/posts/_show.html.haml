@@ -1,0 +1,18 @@
+.modal-content.post
+  .modal-body
+    %p.post-date
+      = l(post.created_at.to_date)
+    %h4.post-title
+      = post.title
+    .post-block.post-block-show
+      .post-image-box
+        = image_tag post.photo.url, class: 'post-img'
+      .post-block-inputs
+        = image_tag 'globeicon.png', class: 'avatar image-post'
+        %p
+          Mayuko
+        = image_tag 'brasil.png', class: 'avatar image-post'
+        %p
+          Brazil
+    %p.post-content
+      = post.content
