@@ -11308,3 +11308,76 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 2382ms (Views: 2380.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/posts" for 127.0.0.1 at 2018-08-22 01:03:30 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.haml:2
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:17
+  Rendered posts/_new.html.haml (16.6ms)
+  Rendered posts/index.html.haml within layouts/application (22.0ms)
+  Rendered shared/_navbar.html.haml (5.5ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-22 01:03:32 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (9.1ms)
+  Rendered pages/home.html.haml within layouts/application (17.7ms)
+  Rendered shared/_navbar.html.haml (6.1ms)
+  Rendered shared/_banner.html.haml (2.3ms)
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-22 01:09:11 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (9.0ms)
+  Rendered pages/home.html.haml within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "favicon.ico" is not present in the asset pipeline.):
+    4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    5:     %meta{:name => "viewport", content: "width=device-width, initial-scale=1, shrink-to-fit=no"}
+    6:     %title Tigairo
+    7:     = favicon_link_tag
+    8:     = csrf_meta_tags
+    9:     = csp_meta_tag
+   10:     = stylesheet_link_tag 'application', media: 'all'
+  
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml__2008147188519078842_69863327358520'
+Started GET "/" for 127.0.0.1 at 2018-08-22 01:10:22 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (8.5ms)
+  Rendered pages/home.html.haml within layouts/application (12.7ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "favicon.ico" is not present in the asset pipeline.):
+    4:     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    5:     %meta{:name => "viewport", content: "width=device-width, initial-scale=1, shrink-to-fit=no"}
+    6:     %title Tigairo
+    7:     = favicon_link_tag
+    8:     = csrf_meta_tags
+    9:     = csp_meta_tag
+   10:     = stylesheet_link_tag 'application', media: 'all'
+  
+app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml__2008147188519078842_69863673184840'
+Started GET "/" for 127.0.0.1 at 2018-08-22 01:10:31 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (12.7ms)
+  Rendered pages/home.html.haml within layouts/application (23.9ms)
+  Rendered shared/_navbar.html.haml (4.6ms)
+  Rendered shared/_banner.html.haml (1.2ms)
+Completed 200 OK in 2698ms (Views: 2696.4ms | ActiveRecord: 0.0ms)
+
+
