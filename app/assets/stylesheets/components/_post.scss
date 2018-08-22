@@ -3,6 +3,7 @@
   background-color: $background-gray;
   border-radius: 16px;
   box-shadow: 0 3px 6px $shadow;
+  margin: 40px 0;
   h4 {
     font-size: 16px;
     margin-bottom: 0;
@@ -10,6 +11,9 @@
   p {
     font-size: 12px;
   }
+}
+.post-content {
+  margin-bottom: 16px;
 }
 .post-date {
   font-size: 8px;
@@ -32,6 +36,14 @@
   .post-block-inputs {
     margin-right: -20px;
   }
+}
+.post-block-simple {
+  padding-bottom: 0;
+}
+.post-floats {
+  float: right;
+  text-align: center;
+  margin: 0 16px;
 }
 // Shared with form
 
