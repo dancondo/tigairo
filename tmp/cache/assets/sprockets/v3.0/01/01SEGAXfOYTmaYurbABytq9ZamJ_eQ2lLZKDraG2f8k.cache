@@ -1,0 +1,15 @@
+I"<(function() {
+  var imagePreview;
+
+  imagePreview = function(input) {
+    var filerd;
+    filerd = new FileReader();
+    console.log(filerd);
+    filerd.onload = function(event) {
+      return $('imgpreview').attr('src', e.target.result);
+    };
+    return filerd.readAsDataURL(input.files[0]);
+  };
+
+}).call(this);
+:ET

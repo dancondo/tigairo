@@ -1,4 +1,6 @@
 %h1 Hello
+- @posts.each do |post|
+  = post.title
 %button.bttn.bttn-action#open-modal{"data-target" => "#form-modal", "data-toggle" => "modal", :type => "button"}
   +Write
 #form-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalCenterTitle", :role => "dialog", :tabindex => "-1"}

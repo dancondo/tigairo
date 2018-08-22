@@ -21,3 +21,12 @@
   height: 200px;
   opacity: 0;
 }
+#imgpreview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  border-radius: 8px;
+  height: 150%;
+  width: 100%;
+}

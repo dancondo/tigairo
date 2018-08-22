@@ -1,0 +1,22 @@
+I"þ(function() {
+  var fileInput, imagePreview;
+
+  imagePreview = function(input) {
+    var filerd;
+    console.log(input);
+    if (input.files && input.files[0]) {
+      filerd = new FileReader();
+      console.log(filerd);
+      filerd.onload = function(event) {
+        return $('#imgpreview').attr('src', event.target.result);
+      };
+      return filerd.readAsDataURL(input.files[0]);
+    }
+  };
+
+  fileInput = $('.file-input').on("change", function() {
+    return imagePreview(this);
+  });
+
+}).call(this);
+:ET

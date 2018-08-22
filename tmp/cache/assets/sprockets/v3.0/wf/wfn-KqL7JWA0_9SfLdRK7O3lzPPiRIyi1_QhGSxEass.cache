@@ -1,0 +1,26 @@
+I"(function() {
+  var imagePreview, input;
+
+  imagePreview = function() {
+    var filerd;
+    console.log(input);
+    if (input.files && input.files[0]) {
+      filerd = new FileReader();
+      console.log(filerd);
+      filerd.onload = function(event) {
+        return $('imgpreview').attr('src', e.target.result);
+      };
+      return filerd.readAsDataURL(input.files[0]);
+    }
+  };
+
+  input = $('.file-input');
+
+  console.log(input);
+
+  input.onload = function(event) {
+    return imagePreview;
+  };
+
+}).call(this);
+:ET

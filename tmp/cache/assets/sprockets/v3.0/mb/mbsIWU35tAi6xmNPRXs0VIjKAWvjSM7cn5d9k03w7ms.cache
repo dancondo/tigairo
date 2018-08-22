@@ -1,0 +1,12 @@
+I"(function() {
+  (function($) {
+    var filerd;
+    filerd = new fileReader();
+    filerd.onload(event)(function() {
+      return $('imgpreview').attr('src', e.target.result);
+    });
+    return filerd.readAsDataURL(input.files[0]);
+  })(jQuery);
+
+}).call(this);
+:ET

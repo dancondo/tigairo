@@ -1,0 +1,5 @@
+I"_(function() {
+  $('img').attr('src', URL.createObjectURL(this.files[0]));
+
+}).call(this);
+:ET
