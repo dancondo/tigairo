@@ -16709,3 +16709,4217 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 68ms (Views: 64.0ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-08-23 13:13:47 -0300
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (324.0ms)
+  Rendered pages/home.html.haml within layouts/application (336.6ms)
+  Rendered shared/_navbar.html.haml (10.8ms)
+  Rendered shared/_banner.html.haml (6.0ms)
+Completed 200 OK in 405ms (Views: 404.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:13:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:01 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:01 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:01 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:01 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:01 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:01 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:01 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 13:14:05 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (10.1ms)
+  Rendered pages/home.html.haml within layouts/application (20.9ms)
+  Rendered shared/_navbar.html.haml (7.5ms)
+  Rendered shared/_banner.html.haml (7.6ms)
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-23 13:14:06 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:06 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:06 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:06 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:06 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:06 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:06 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:06 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:06 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:06 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:06 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:06 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:06 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:07 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 13:14:08 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (14.3ms)
+  Rendered pages/home.html.haml within layouts/application (23.4ms)
+  Rendered shared/_navbar.html.haml (6.8ms)
+  Rendered shared/_banner.html.haml (1.8ms)
+Completed 200 OK in 73ms (Views: 70.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-23 13:14:31 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:31 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:31 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:31 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:37 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 13:14:56 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (9.0ms)
+  Rendered pages/home.html.haml within layouts/application (13.6ms)
+  Rendered shared/_navbar.html.haml (6.1ms)
+  Rendered shared/_banner.html.haml (1.7ms)
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 13:14:57 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (6.2ms)
+  Rendered pages/home.html.haml within layouts/application (16.5ms)
+  Rendered shared/_navbar.html.haml (6.1ms)
+  Rendered shared/_banner.html.haml (1.6ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:14:59 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:00 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:04 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (6.8ms)
+  Rendered pages/home.html.haml within layouts/application (10.3ms)
+  Rendered shared/_navbar.html.haml (6.4ms)
+  Rendered shared/_banner.html.haml (2.2ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:09 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:20 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:21 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 13:15:22 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (217.7ms)
+  Rendered pages/home.html.haml within layouts/application (224.4ms)
+  Rendered shared/_navbar.html.haml (5.1ms)
+  Rendered shared/_banner.html.haml (1.7ms)
+Completed 200 OK in 289ms (Views: 287.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:15:24 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:17:15 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.5ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (76.2ms)
+  Rendered shared/_navbar.html.haml (6.4ms)
+Completed 200 OK in 315ms (Views: 279.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 13:17:17 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (11.3ms)
+  Rendered pages/home.html.haml within layouts/application (20.4ms)
+  Rendered shared/_navbar.html.haml (13.1ms)
+  Rendered shared/_banner.html.haml (4.5ms)
+Completed 200 OK in 100ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-23 13:17:19 -0300
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:17:19 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.9ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (18.0ms)
+  Rendered shared/_navbar.html.haml (5.8ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:17:23 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HiX5PE/ocADqz5CRATOqQzYy1Z7NiGqumMCo4GzVT7J5Imzr+iZpnTC8NiO29UfBVJ2f2wdcJNBfo4YXozBg6w==", "user"=>{"email"=>"daniloraphaelcondo@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "daniloraphaelcondo@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 172ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-23 13:17:23 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (28.6ms)
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:12
+  Rendered users/_user_info.html.haml (3.0ms)
+  Rendered posts/_show.html.haml (14.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:24
+  Rendered users/_user_info.html.haml (0.9ms)
+  Rendered posts/_show.html.haml (2.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:12
+  Rendered users/_user_info.html.haml (0.9ms)
+  Rendered posts/_show.html.haml (3.2ms)
+  Rendered posts/index.html.haml within layouts/application (57.5ms)
+  Rendered shared/_navbar.html.haml (5.2ms)
+Completed 200 OK in 108ms (Views: 86.2ms | ActiveRecord: 10.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8318156253109745280)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateCountries (20180823162452)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (31.1ms)[0m  [1m[35mCREATE TABLE "countries" ("id" bigserial primary key, "name" character varying, "photo_path" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180823162452_create_countries.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180823162452"]]
+  ↳ bin/rails:9
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddCountryToUsers (20180823162552)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "country_id" bigint[0m
+  ↳ db/migrate/20180823162552_add_country_to_users.rb:3
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_country_id" ON "users"  ("country_id")[0m
+  ↳ db/migrate/20180823162552_add_country_to_users.rb:3
+  [1m[35m (5.7ms)[0m  [1m[35mALTER TABLE "users" ADD CONSTRAINT "fk_rails_7325e2cdfa"
+FOREIGN KEY ("country_id")
+  REFERENCES "countries" ("id")
+[0m
+  ↳ db/migrate/20180823162552_add_country_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180823162552"]]
+  ↳ bin/rails:9
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(8318156253109745280)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:27:20 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:27:20 -0300
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/_edit.html.haml (9.1ms)
+  Rendered users/show.html.haml within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 6.6ms)
+
+
+  
+SyntaxError (/home/dancondo/code/dancondo/tigairo/app/models/country.rb:2: syntax error, unexpected ':', expecting keyword_end
+  has_many: :users
+           ^):
+  
+app/models/country.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/views/users/_edit.html.haml:15:in `block in _app_views_users__edit_html_haml__2098700665469537743_70235868984120'
+app/views/users/_edit.html.haml:2:in `_app_views_users__edit_html_haml__2098700665469537743_70235868984120'
+app/views/users/show.html.haml:12:in `_app_views_users_show_html_haml___3807927174929388713_70235869659400'
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/_edit.html.haml (6.9ms)
+  Rendered users/show.html.haml within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 4.0ms)
+
+
+  
+SyntaxError (/home/dancondo/code/dancondo/tigairo/app/models/country.rb:2: syntax error, unexpected ':', expecting keyword_end
+  has_many: :users
+           ^):
+  
+app/models/country.rb:2: syntax error, unexpected ':', expecting keyword_end
+app/views/users/_edit.html.haml:15:in `block in _app_views_users__edit_html_haml__2098700665469537743_70235868984120'
+app/views/users/_edit.html.haml:2:in `_app_views_users__edit_html_haml__2098700665469537743_70235868984120'
+app/views/users/show.html.haml:12:in `_app_views_users_show_html_haml___3807927174929388713_70235869659400'
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:27:31 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (17.9ms)
+  Rendered users/show.html.haml within layouts/application (23.9ms)
+  Rendered shared/_navbar.html.haml (6.5ms)
+Completed 200 OK in 88ms (Views: 67.3ms | ActiveRecord: 6.0ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "ごはん"]]
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "友達との接し方"]]
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "お店の人"]]
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "ファッション"]]
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "お祝い"]]
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "時間"]]
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "街"]]
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "仕事"]]
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "恋愛"]]
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "その他"]]
+  ↳ db/seeds.rb:10
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries" WHERE "countries"."name" = $1[0m  [["name", "アメリカ"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "photo_path", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "アメリカ"], ["photo_path", "#flags/{country}.png"], ["created_at", "2018-08-23 16:38:22.981165"], ["updated_at", "2018-08-23 16:38:22.981165"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries" WHERE "countries"."name" = $1[0m  [["name", "ブラジル"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "photo_path", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "ブラジル"], ["photo_path", "#flags/{country}.png"], ["created_at", "2018-08-23 16:38:22.985681"], ["updated_at", "2018-08-23 16:38:22.985681"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries" WHERE "countries"."name" = $1[0m  [["name", "カナダ"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCountry Create (0.2ms)[0m  [1m[32mINSERT INTO "countries" ("name", "photo_path", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "カナダ"], ["photo_path", "#flags/{country}.png"], ["created_at", "2018-08-23 16:38:22.988628"], ["updated_at", "2018-08-23 16:38:22.988628"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries" WHERE "countries"."name" = $1[0m  [["name", "イギリス"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCountry Create (0.2ms)[0m  [1m[32mINSERT INTO "countries" ("name", "photo_path", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "イギリス"], ["photo_path", "#flags/{country}.png"], ["created_at", "2018-08-23 16:38:22.991597"], ["updated_at", "2018-08-23 16:38:22.991597"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries" WHERE "countries"."name" = $1[0m  [["name", "オーストラリア"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mCountry Create (0.2ms)[0m  [1m[32mINSERT INTO "countries" ("name", "photo_path", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "オーストラリア"], ["photo_path", "#flags/{country}.png"], ["created_at", "2018-08-23 16:38:22.994423"], ["updated_at", "2018-08-23 16:38:22.994423"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:38:34 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (22.0ms)
+  Rendered users/show.html.haml within layouts/application (28.5ms)
+  Rendered shared/_navbar.html.haml (6.3ms)
+Completed 200 OK in 74ms (Views: 65.2ms | ActiveRecord: 4.5ms)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2018-08-23 13:38:42 -0300
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vdrlLIpBM793e3VF1IX9abEZShmOVZEnV1gegSNsTgHpSAsCYIhFkhKJ5b3AkHCFopwAxBoLZPkcvb6o+acwvg==", "user"=>{"nickname"=>"Danilo", "country_id"=>"2"}, "commit"=>"submit", "id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+Unpermitted parameter: :country_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:38:42 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.6ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (14.7ms)
+  Rendered users/show.html.haml within layouts/application (20.9ms)
+  Rendered shared/_navbar.html.haml (6.9ms)
+Completed 200 OK in 63ms (Views: 59.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:40:38 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (37.3ms)
+  Rendered users/show.html.haml within layouts/application (384.0ms)
+Completed 500 Internal Server Error in 414ms (ActiveRecord: 8.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fc21c3807a8>:0x00007fc21c560e38>
+Did you mean?  @user):
+    17:       = image_tag @user.photo.url, class: 'avatar profile-avatar profile-picture'
+    18:     %h4= @user.nickname
+    19:   .profile-body
+    20: -if user.country
+    21:   = image_tag user.country.photo_path
+  
+app/views/users/show.html.haml:20:in `_app_views_users_show_html_haml___3807927174929388713_70235836915160'
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:40:46 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (18.3ms)
+  Rendered users/show.html.haml within layouts/application (30.6ms)
+  Rendered shared/_navbar.html.haml (6.4ms)
+Completed 200 OK in 99ms (Views: 94.0ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2018-08-23 13:40:52 -0300
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uIF/G7CJo27DZNdxORbo5o/AQeb3u54on+fwAdDHEl7sE5E1WkDVQ6aWR4ktA2UKnEULO2Pla/bUAlAoCgxs4Q==", "user"=>{"nickname"=>"Danilo", "country_id"=>"2"}, "commit"=>"submit", "id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+Unpermitted parameter: :country_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 14ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:40:53 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (11.5ms)
+  Rendered users/show.html.haml within layouts/application (18.7ms)
+  Rendered shared/_navbar.html.haml (6.0ms)
+Completed 200 OK in 66ms (Views: 62.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:41:02 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (12.1ms)
+  Rendered users/show.html.haml within layouts/application (25.6ms)
+  Rendered shared/_navbar.html.haml (6.1ms)
+Completed 200 OK in 76ms (Views: 67.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:41:54 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (22.6ms)
+  Rendered users/show.html.haml within layouts/application (29.9ms)
+  Rendered shared/_navbar.html.haml (6.2ms)
+Completed 200 OK in 89ms (Views: 67.0ms | ActiveRecord: 6.8ms)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2018-08-23 13:41:58 -0300
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iEkmsQNtiSt/c3M06hbNGb6EKV6RTVDSZKSKkrEUHDfc28if6aT/BhqB48z+A0D1rQFjgwUTpQwvQSq7a99iiA==", "user"=>{"nickname"=>"Danilo", "country_id"=>"2"}, "commit"=>"submit", "id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+Unpermitted parameter: :country_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 10ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:41:58 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (11.8ms)
+  Rendered users/show.html.haml within layouts/application (18.1ms)
+  Rendered shared/_navbar.html.haml (7.4ms)
+Completed 200 OK in 73ms (Views: 68.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 13:42:31 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (7.0ms)
+  Rendered pages/home.html.haml within layouts/application (18.6ms)
+  Rendered shared/_navbar.html.haml (9.3ms)
+  Rendered shared/_banner.html.haml (2.8ms)
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-23 13:42:33 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 9.2ms)
+
+
+  
+RuntimeError ():
+  
+app/controllers/posts_controller.rb:7:in `index'
+Started PUT "/__web_console/repl_sessions/d34d7813a4e83d5b3a5c637f454f3741" for 127.0.0.1 at 2018-08-23 13:42:38 -0300
+Started PUT "/__web_console/repl_sessions/d34d7813a4e83d5b3a5c637f454f3741" for 127.0.0.1 at 2018-08-23 13:42:38 -0300
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Started PUT "/__web_console/repl_sessions/d34d7813a4e83d5b3a5c637f454f3741" for 127.0.0.1 at 2018-08-23 13:42:40 -0300
+Started PUT "/__web_console/repl_sessions/d34d7813a4e83d5b3a5c637f454f3741" for 127.0.0.1 at 2018-08-23 13:42:42 -0300
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Started PUT "/__web_console/repl_sessions/d34d7813a4e83d5b3a5c637f454f3741" for 127.0.0.1 at 2018-08-23 13:42:44 -0300
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Started GET "/posts" for 127.0.0.1 at 2018-08-23 13:43:21 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (19.6ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:12
+  Rendered users/_user_info.html.haml (10.6ms)
+  Rendered posts/_show.html.haml (20.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:24
+  Rendered users/_user_info.html.haml (1.2ms)
+  Rendered posts/_show.html.haml (2.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:12
+  Rendered users/_user_info.html.haml (1.7ms)
+  Rendered posts/_show.html.haml (5.3ms)
+  Rendered posts/index.html.haml within layouts/application (55.5ms)
+  Rendered shared/_navbar.html.haml (6.9ms)
+Completed 200 OK in 129ms (Views: 99.9ms | ActiveRecord: 8.5ms)
+
+
+Started PATCH "/users/1" for 127.0.0.1 at 2018-08-23 13:43:28 -0300
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VQhJAZi718eZk6kNnBS9gIUo6PHi+DpXcdqz/jqbElABmqcvcnKh6vxhOfWIATBslq2iLHamz4k6PxPX4FBs7w==", "user"=>{"nickname"=>"Danilo", "country_id"=>"2"}, "commit"=>"submit", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "country_id" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["country_id", 2], ["updated_at", "2018-08-23 16:43:28.652184"], ["id", 1]]
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 18ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:43:28 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (41.4ms)
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.haml:20
+  Rendered users/show.html.haml within layouts/application (380.0ms)
+Completed 500 Internal Server Error in 388ms (ActiveRecord: 4.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fc21d4149c0>:0x00007fc21cde7cf0>
+Did you mean?  @user):
+    19:   .profile-body
+    20: -if @user.country
+    21:   oooooooooooo
+    22:   = image_tag user.country.photo_path
+  
+app/views/users/show.html.haml:22:in `_app_views_users_show_html_haml___3807927174929388713_70235845645040'
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:43:42 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (19.4ms)
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.haml:20
+  Rendered users/show.html.haml within layouts/application (43.4ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (The asset "" is not present in the asset pipeline.):
+    19:   .profile-body
+    20: -if @user.country
+    21:   oooooooooooo
+    22:   = image_tag @user.country.photo_path
+  
+app/views/users/show.html.haml:22:in `_app_views_users_show_html_haml___3807927174929388713_70235853531660'
+Started PUT "/__web_console/repl_sessions/8323c192ed356d347704a1731e086f00" for 127.0.0.1 at 2018-08-23 13:43:53 -0300
+Started PUT "/__web_console/repl_sessions/8323c192ed356d347704a1731e086f00" for 127.0.0.1 at 2018-08-23 13:43:54 -0300
+Started PUT "/__web_console/repl_sessions/8323c192ed356d347704a1731e086f00" for 127.0.0.1 at 2018-08-23 13:43:55 -0300
+Started PUT "/__web_console/repl_sessions/8323c192ed356d347704a1731e086f00" for 127.0.0.1 at 2018-08-23 13:44:10 -0300
+Started PUT "/__web_console/repl_sessions/8323c192ed356d347704a1731e086f00" for 127.0.0.1 at 2018-08-23 13:44:13 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPost Destroy (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPost Destroy (0.8ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPost Destroy (0.7ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (1.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mCountry Load (1.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCountry Destroy (1.6ms)[0m  [1m[31mDELETE FROM "countries" WHERE "countries"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCountry Destroy (1.1ms)[0m  [1m[31mDELETE FROM "countries" WHERE "countries"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCountry Destroy (1.0ms)[0m  [1m[31mDELETE FROM "countries" WHERE "countries"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCountry Destroy (1.0ms)[0m  [1m[31mDELETE FROM "countries" WHERE "countries"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCountry Destroy (1.1ms)[0m  [1m[31mDELETE FROM "countries" WHERE "countries"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "ごはん"]]
+  ↳ db/seeds.rb:13
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "友達との接し方"]]
+  ↳ db/seeds.rb:13
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "お店の人"]]
+  ↳ db/seeds.rb:13
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "ファッション"]]
+  ↳ db/seeds.rb:13
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "お祝い"]]
+  ↳ db/seeds.rb:13
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "時間"]]
+  ↳ db/seeds.rb:13
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "街"]]
+  ↳ db/seeds.rb:13
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "仕事"]]
+  ↳ db/seeds.rb:13
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "恋愛"]]
+  ↳ db/seeds.rb:13
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = $1[0m  [["name", "その他"]]
+  ↳ db/seeds.rb:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries" WHERE "countries"."name" = $1[0m  [["name", "アメリカ"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "photo_path", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "アメリカ"], ["photo_path", "flags/アメリカ.png"], ["created_at", "2018-08-23 16:45:22.358285"], ["updated_at", "2018-08-23 16:45:22.358285"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries" WHERE "countries"."name" = $1[0m  [["name", "ブラジル"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "photo_path", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "ブラジル"], ["photo_path", "flags/ブラジル.png"], ["created_at", "2018-08-23 16:45:22.362179"], ["updated_at", "2018-08-23 16:45:22.362179"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT "countries".* FROM "countries" WHERE "countries"."name" = $1[0m  [["name", "カナダ"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCountry Create (0.3ms)[0m  [1m[32mINSERT INTO "countries" ("name", "photo_path", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "カナダ"], ["photo_path", "flags/カナダ.png"], ["created_at", "2018-08-23 16:45:22.365433"], ["updated_at", "2018-08-23 16:45:22.365433"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries" WHERE "countries"."name" = $1[0m  [["name", "イギリス"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCountry Create (0.6ms)[0m  [1m[32mINSERT INTO "countries" ("name", "photo_path", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "イギリス"], ["photo_path", "flags/イギリス.png"], ["created_at", "2018-08-23 16:45:22.371012"], ["updated_at", "2018-08-23 16:45:22.371012"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries" WHERE "countries"."name" = $1[0m  [["name", "オーストラリア"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mCountry Create (0.4ms)[0m  [1m[32mINSERT INTO "countries" ("name", "photo_path", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "オーストラリア"], ["photo_path", "flags/オーストラリア.png"], ["created_at", "2018-08-23 16:45:22.376722"], ["updated_at", "2018-08-23 16:45:22.376722"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:45:29 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-23 13:45:29 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.3ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (17.5ms)
+  Rendered shared/_navbar.html.haml (6.3ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-08-23 13:45:32 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/registrations/new.html.haml within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/dancondo/code/dancondo/tigairo/app/views/devise/registrations/new.html.haml:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/devise/registrations/new.html.haml:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-08-23 13:45:46 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/registrations/new.html.haml within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/dancondo/code/dancondo/tigairo/app/views/devise/registrations/new.html.haml:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/devise/registrations/new.html.haml:22: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-08-23 13:46:05 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.5ms)
+  Rendered devise/registrations/new.html.haml within layouts/application (36.5ms)
+  Rendered shared/_navbar.html.haml (8.3ms)
+Completed 200 OK in 86ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-08-23 13:46:19 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FaKu7yeJfed8BOq+pgKKubRm8+CDShcykxirqF+Uzu9BMEDBzUALyhn2ekayFwdVp+O5PRcU4uzY/QuBhV+wUA==", "user"=>{"email"=>"daniloraphaelcondo@gmail.com", "nickname"=>"Danilo", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameter: :nickname
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "daniloraphaelcondo@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "daniloraphaelcondo@gmail.com"], ["encrypted_password", "$2a$11$kGpOcCEHVKCDYECmy5WNrO2nm459rpYd48ifZ6zJfLkeqs2gfOYNq"], ["created_at", "2018-08-23 16:46:19.432161"], ["updated_at", "2018-08-23 16:46:19.432161"]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 148ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-08-23 13:46:19 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:15:in `set_user'
+Started GET "/users/2" for 127.0.0.1 at 2018-08-23 13:46:23 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (12.7ms)
+  Rendered users/show.html.haml within layouts/application (21.9ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    14: .user-profile
+    15:   .profile-header
+    16:     .profile-picture-box
+    17:       = image_tag @user.photo.url, class: 'avatar profile-avatar profile-picture'
+    18:     %h4= @user.nickname
+    19:   .profile-body
+    20: -if @user.country
+  
+app/views/users/show.html.haml:17:in `_app_views_users_show_html_haml___3807927174929388713_70235849215080'
+Started GET "/users/2" for 127.0.0.1 at 2018-08-23 14:02:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  Rendered users/show.html.haml within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 6.4ms)
+
+
+  
+SyntaxError (/home/dancondo/code/dancondo/tigairo/app/views/users/show.html.haml:18: syntax error, unexpected ';'
+; _hamlout.buffer << ((::Haml::
+ ^
+/home/dancondo/code/dancondo/tigairo/app/views/users/show.html.haml:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/users/show.html.haml:18: syntax error, unexpected ';'
+app/views/users/show.html.haml:27: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/users/2" for 127.0.0.1 at 2018-08-23 14:02:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (23.4ms)
+  Rendered users/show.html.haml within layouts/application (342.2ms)
+Completed 500 Internal Server Error in 358ms (ActiveRecord: 5.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007fc2240a5a58>:0x00007fc21ec9c6f0>
+Did you mean?  @user):
+    14: .user-profile
+    15:   .profile-header
+    16:     .profile-picture-box
+    17:       - if user.photo.present?
+    18:         = image_tag @user.photo.url, class: 'avatar profile-avatar profile-picture'
+    19:       - else
+    20:         = image_tag 'default.png', class: 'avatar profile-avatar profile-picture'
+  
+app/views/users/show.html.haml:17:in `_app_views_users_show_html_haml___3807927174929388713_70235858462820'
+Started GET "/users/2" for 127.0.0.1 at 2018-08-23 14:02:40 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (19.6ms)
+  Rendered users/show.html.haml within layouts/application (44.8ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (The asset "default.png" is not present in the asset pipeline.):
+    17:       - if @user.photo.present?
+    18:         = image_tag @user.photo.url, class: 'avatar profile-avatar profile-picture'
+    19:       - else
+    20:         = image_tag 'default.png', class: 'avatar profile-avatar profile-picture'
+    21:     %h4= @user.nickname
+    22:   .profile-body
+    23: -if @user.country
+  
+app/views/users/show.html.haml:20:in `_app_views_users_show_html_haml___3807927174929388713_70235857687100'
+Started GET "/users/2" for 127.0.0.1 at 2018-08-23 14:03:03 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (15.1ms)
+  Rendered users/show.html.haml within layouts/application (3113.8ms)
+  Rendered shared/_navbar.html.haml (4.1ms)
+Completed 200 OK in 3246ms (Views: 3242.2ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/users/2" for 127.0.0.1 at 2018-08-23 14:03:18 -0300
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kd3/Z7Iz/ytV7m1doE/5N08hsHj6Lik8jnlS6+QrP+3FTxFJWPqJBjAc/aW0WnTbXKT6pW5w3OLFnPLCPuBBUg==", "user"=>{"nickname"=>"Danilo", "country_id"=>""}, "commit"=>"submit", "id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "nickname" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["nickname", "Danilo"], ["updated_at", "2018-08-23 17:03:18.152488"], ["id", 2]]
+  ↳ app/controllers/users_controller.rb:7
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 11ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2018-08-23 14:03:18 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (13.5ms)
+  Rendered users/show.html.haml within layouts/application (20.9ms)
+  Rendered shared/_navbar.html.haml (8.1ms)
+Completed 200 OK in 75ms (Views: 70.1ms | ActiveRecord: 1.1ms)
+
+

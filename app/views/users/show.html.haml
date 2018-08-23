@@ -14,6 +14,12 @@
 .user-profile
   .profile-header
     .profile-picture-box
-      = image_tag @user.photo.url, class: 'avatar profile-avatar profile-picture'
+      - if @user.photo.present?
+        = image_tag @user.photo.url, class: 'avatar profile-avatar profile-picture'
+      - else
+        = image_tag 'default.png', class: 'avatar profile-avatar profile-picture'
     %h4= @user.nickname
   .profile-body
+-if @user.country
+  oooooooooooo
+  = image_tag @user.country.photo_path
