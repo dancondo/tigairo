@@ -3,7 +3,7 @@
     = f.input :photo, label: false do
       .profile-picture-box
         .image-upload-box.avatar.profile-picture
-          %img#imgpreview
+          %img#imgpreview.square
           = f.input :photo, label: false, input_html: { class: 'file-input' }
           .upload-block-box
             = image_tag 'image_upload.svg', class: 'image-upload-image'

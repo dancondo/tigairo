@@ -26,8 +26,10 @@
   width: 200px;
   overflow: hidden;
   border-radius: 8px;
+  display: flex;
+  background-color: $gray-text;
+  align-items: center;
   img {
-    height: 150%;
     width: 100%;
   }
 }

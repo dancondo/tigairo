@@ -14,7 +14,6 @@
 .user-profile
   .profile-header
     .profile-picture-box
-      .image-upload-box.avatar.profile-picture
-        = image_tag @user.photo.url, class: 'profile-avatar'
+      = image_tag @user.photo.url, class: 'avatar profile-avatar profile-picture'
     %h4= @user.nickname
   .profile-body
