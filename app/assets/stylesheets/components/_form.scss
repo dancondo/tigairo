@@ -15,7 +15,7 @@
   left: 0;
   display: none;
   border-radius: 8px;
-  height: 150%;
+  height: 170%;
   width: 100%;
 }
 .image-upload-box {
@@ -36,4 +36,13 @@
 .upload-block-box {
   display: inline-block;
 
+}
+.profile-picture-box {
+  display: flex;
+  justify-content: space-around;
+}
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  padding: 0;
 }
