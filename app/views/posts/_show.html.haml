@@ -1,4 +1,4 @@
-- if post.photo.url
+-if post.photo.url
   .modal-content.post
     .modal-body
       %p.post-date
@@ -9,12 +9,7 @@
         .post-image-box
           = image_tag post.photo.url, class: 'post-img'
         .post-block-inputs
-          = image_tag 'globeicon.png', class: 'avatar image-post'
-          %p
-            Mayuko
-          = image_tag 'brasil.png', class: 'avatar image-post'
-          %p
-            Brazil
+          = render partial: 'users/user_info', locals: { user: post.user }
       %p.post-content
         = post.content
 -else
@@ -26,11 +21,6 @@
         = post.title
       .post-block-show.post-block-simple
         .post-floats
-          = image_tag 'globeicon.png', class: 'avatar image-post'
-          %p
-            Mayuko
-          = image_tag 'brasil.png', class: 'avatar image-post'
-          %p
-            Brazil
+          = render partial: 'users/user_info', locals: { user: post.user }
         %p.post-content
           = post.content

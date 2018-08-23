@@ -1,0 +1,17 @@
+.form-container
+  = simple_form_for @user do |f|
+    = f.input :photo, label: false do
+      .profile-picture-box
+        .image-upload-box.avatar.profile-picture
+          %img#imgpreview.square
+          = f.input :photo, label: false, input_html: { class: 'file-input' }
+          .upload-block-box
+            = image_tag 'image_upload.svg', class: 'image-upload-image'
+          .upload-block-box
+            %h3 Add Image
+          .upload-block-box
+            %p （なくてもOK）
+    = f.input :nickname, label: false, placeholder: 'Nickname'
+    / = f.association :country, label: false, prompt: '　留学先の国'
+    / = f.input :content, label: false, placeholder: '本文を入力　（３００文字まで）', input_html: { rows: 10 }
+    = f.submit :submit, class: 'bttn bttn-action form-button-right'
