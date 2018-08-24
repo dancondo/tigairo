@@ -5,8 +5,28 @@
   padding: 32px;
   background-color: $background-gray;
   border-radius: 16px;
+  color: $gray-text;
   h4 {
     text-align: center;
-    color: $gray-text;
   }
+  p {
+    margin: 0;
+  }
+}
+.profile-block {
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+.profile-country-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-country-img {
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

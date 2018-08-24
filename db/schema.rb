@@ -10,13 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_23_031615) do
+ActiveRecord::Schema.define(version: 2018_08_23_162552) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "categories", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "countries", force: :cascade do |t|
+    t.string "name"
+    t.string "photo_path"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -43,10 +50,13 @@ ActiveRecord::Schema.define(version: 2018_08_23_031615) do
     t.datetime "updated_at", null: false
     t.string "photo"
     t.string "nickname"
+    t.bigint "country_id"
+    t.index ["country_id"], name: "index_users_on_country_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "posts", "categories"
   add_foreign_key "posts", "users"
+  add_foreign_key "users", "countries"
 end
