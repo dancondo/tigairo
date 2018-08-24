@@ -39,3 +39,12 @@
     .profile-block
       %p ひとこと　：
       %p.field-text ブラジルで貧困層の人々に対するボランティアをしたくて来ました…が今はとりあえずお休みして、ウェブデザインの勉強をやってます！ 時々考えすぎてパ二くります。でも、ここに来られて幸せだなあと思ってます。
+  .profile-posts-block
+    %span 過去の投稿
+    .profile-posts
+      %h6
+        = image_tag 'globeicon.png', class: 'icon'
+        ここでの「ふつう」
+        = "(#{@user.posts.count})"
+        %i.fas.fa-angle-right
+

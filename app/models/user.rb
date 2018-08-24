@@ -5,5 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   mount_uploader :photo, PhotoUploader
   belongs_to :country, optional: true
+  has_many :posts
   accepts_nested_attributes_for :country
 end
