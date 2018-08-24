@@ -2,6 +2,8 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
+#### Image Preview
+
 imagePreview = (input) ->
   if input.files and input.files[0]
     filerd = new FileReader()
@@ -13,4 +15,13 @@ imagePreview = (input) ->
       image.attr('src', event.target.result)
     filerd.readAsDataURL(input.files[0])
 
-fileInput = $('.file-input').on "change", -> imagePreview(this)
+$('.file-input').on "change", -> imagePreview(this)
+
+#### Collapser
+
+Collapser = (trigger) ->
+  collapsableContent = $($(trigger).data("target"))
+  console.log(collapsableContent)
+  collapsableContent.css('max-height', '100%')
+
+$('.collapsable').click -> Collapser(this)

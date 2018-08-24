@@ -1,26 +1,35 @@
--if post.photo.url
-  .modal-content.post
-    .modal-body
-      %p.post-date
-        = l(post.created_at.to_date)
-      %h4.post-title
-        = post.title
-      .post-block.post-block-show
-        .post-image-box
-          = image_tag post.photo.url, class: 'post-img'
-        .post-block-inputs
-          = render partial: 'users/user_info', locals: { user: post.user }
-      %p.post-content
-        = post.content
--else
-  .modal-content.post
-    .modal-body
-      %p.post-date
-        = l(post.created_at.to_date)
-      %h4.post-title
-        = post.title
-      .post-block-show.post-block-simple
-        .post-floats
-          = render partial: 'users/user_info', locals: { user: post.user }
+.post-container
+  -if post.photo.url
+    .content-box
+      .post-body
+        %p.post-date
+          = l(post.created_at.to_date)
+        %h4.post-title
+          = post.title
+        .post-block.post-block-show
+          .post-image-box
+            = image_tag post.photo.url, class: 'post-img'
+          .post-block-inputs
+            = render partial: 'users/user_info', locals: { user: post.user }
         %p.post-content
           = post.content
+  -else
+    .content-box.post
+      .post-body
+        %p.post-date
+          = l(post.created_at.to_date)
+        %h4.post-title
+          = post.title
+        .post-block-show.post-block-simple
+          .post-floats
+            = render partial: 'users/user_info', locals: { user: post.user }
+          %p.post-content
+            = post.content
+  .posts-extras-box
+    .post-extras
+      %a.collapsable{data: { target: "#comment-box#{post.id}" } }
+        Comment
+      %a
+        %i.far.fa-smile-beam
+      .hidden-content.comments-box{:id => "comment-box#{post.id}"}
+        = render 'comments/new'
