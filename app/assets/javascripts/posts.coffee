@@ -21,7 +21,7 @@ $('.file-input').on "change", -> imagePreview(this)
 
 Collapser = (trigger) ->
   collapsableContent = $($(trigger).data("target"))
-  console.log(collapsableContent)
+  collapsableContent.slideToggle('slow');
   collapsableContent.css('max-height', '100%')
 
 $('.collapsable').click -> Collapser(this)
