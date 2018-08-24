@@ -1,6 +1,8 @@
 .bttn {
-  border-radius: 8px;
-  padding: 12px 16px;}
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 8px 12px;
+}
 .bttn-action {
   background-color: $action;
   color: $white-text;
@@ -11,7 +13,6 @@
 }
 .edit-button {
   color: $blue-text !important;
-  font-size: 12px;
   i {
     font-size: 16px;
   }

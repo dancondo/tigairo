@@ -6,6 +6,8 @@ imagePreview = (input) ->
   if input.files and input.files[0]
     filerd = new FileReader()
     image = $('#imgpreview')
+    box = $('.image-upload-box')
+    box.addClass('post-image-box')
     filerd.onload = (event) ->
       image.css('display', 'block')
       image.attr('src', event.target.result)
