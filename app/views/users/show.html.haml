@@ -42,9 +42,10 @@
   .profile-posts-block
     %span 過去の投稿
     .profile-posts
-      %h6
-        = image_tag 'globeicon.png', class: 'icon'
-        ここでの「ふつう」
-        = "(#{@user.posts.count})"
-        %i.fas.fa-angle-right
+      = link_to user_posts_url(@user) do
+        %h6
+          = image_tag 'globeicon.png', class: 'icon'
+          ここでの「ふつう」
+          = "(#{@user.posts.count})"
+          %i.fas.fa-angle-right
 

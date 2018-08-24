@@ -2,8 +2,12 @@ class PostsController < ApplicationController
   before_action :set_user, only: [:create, :update, :delete]
 
   def index
-    @posts = Post.all.order(created_at: 'desc')
-    @post = Post.new
+    if params[:user_id]
+      @posts = Post.where(user: User.find(params[:user_id])).order(created_at: 'desc')
+    else
+      @posts = Post.all.order(created_at: 'desc')
+      @post = Post.new
+    end
   end
 
   def create
