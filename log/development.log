@@ -22682,3 +22682,264 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 68ms (Views: 63.2ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-08-24 13:08:20 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (8.0ms)
+  Rendered pages/home.html.haml within layouts/application (13.5ms)
+  Rendered shared/_navbar.html.haml (7.8ms)
+  Rendered shared/_banner.html.haml (1.7ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-24 13:08:21 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (18.5ms)
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:13
+  Rendered posts/index.html.haml within layouts/application (26.3ms)
+  Rendered shared/_navbar.html.haml (7.0ms)
+Completed 200 OK in 72ms (Views: 66.6ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2018-08-24 13:09:26 -0300
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9vR0lLiZeW9qviiY8IcAnWqA57gt/55YH7OBHSvinu0d2nh1AkJoJ/NSnkRHQtehANz9y3resU0AjqPqOEbiRg==", "post"=>{"title"=>"お寿司がかわいい、甘いのもあり", "photo"=>#<ActionDispatch::Http::UploadedFile:0x00007f8018ec3930 @tempfile=#<Tempfile:/tmp/RackMultipart20180824-13103-191bz9g.jpeg>, @original_filename="Victor.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[photo]\"; filename=\"Victor.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "category_id"=>"1", "content"=>"　ブラジルのお寿司はアート。小さいケーキみたいだっ たり、形も色も様々。中にはジャムが乗ってて甘いのも ある。 　お刺身の味のおいしさが大事な日本の寿司と違って、 お魚自体はそんなにおいしくないのが多い気がする… というか私には何を食べているのか分からないことの 方が多い。これは野菜？刺身？ツナ？ジャム？…みたい な。 　写真のは自分で好きな量とって重さで値段が決まるシ ステムで、ブラジルでは、かなりよくあるシステム。 　ブラジルのお寿司は味はあんまり…と言いつつも、な んだかんだ楽しくてちょいちょい食べてるかも。"}, "commit"=>"submit"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:12
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:12
+  [1m[36mPost Create (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("content", "category_id", "user_id", "created_at", "updated_at", "title", "photo") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["content", "　ブラジルのお寿司はアート。小さいケーキみたいだっ たり、形も色も様々。中にはジャムが乗ってて甘いのも ある。 　お刺身の味のおいしさが大事な日本の寿司と違って、 お魚自体はそんなにおいしくないのが多い気がする… というか私には何を食べているのか分からないことの 方が多い。これは野菜？刺身？ツナ？ジャム？…みたい な。 　写真のは自分で好きな量とって重さで値段が決まるシ ステムで、ブラジルでは、かなりよくあるシステム。 　ブラジルのお寿司は味はあんまり…と言いつつも、な んだかんだ楽しくてちょいちょい食べてるかも。"], ["category_id", 1], ["user_id", 1], ["created_at", "2018-08-24 16:09:26.327499"], ["updated_at", "2018-08-24 16:09:26.327499"], ["title", "お寿司がかわいい、甘いのもあり"], ["photo", "Victor.jpeg"]]
+  ↳ app/controllers/posts_controller.rb:12
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:12
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 7471ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-24 13:09:33 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (14.7ms)
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:12
+  Rendered users/_user_info.html.haml (2.1ms)
+  Rendered posts/_show.html.haml (11.3ms)
+  Rendered posts/index.html.haml within layouts/application (38.2ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 2.8ms)
+
+
+  
+SyntaxError (/home/dancondo/code/dancondo/tigairo/app/views/users/_user_info.html.haml:2: syntax error, unexpected ';'
+; _hamlout.buffer << ((::Haml::
+ ^
+/home/dancondo/code/dancondo/tigairo/app/views/users/_user_info.html.haml:9: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/users/_user_info.html.haml:2: syntax error, unexpected ';'
+app/views/users/_user_info.html.haml:9: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/posts/_show.html.haml:12:in `_app_views_posts__show_html_haml__296636478210946702_70094073210360'
+app/views/posts/index.html.haml:14:in `block in _app_views_posts_index_html_haml__1786126081409740712_70094074070520'
+app/views/posts/index.html.haml:13:in `_app_views_posts_index_html_haml__1786126081409740712_70094074070520'
+Started GET "/posts" for 127.0.0.1 at 2018-08-24 13:10:01 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (17.7ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:12
+  Rendered users/_user_info.html.haml (5.1ms)
+  Rendered posts/_show.html.haml (14.1ms)
+  Rendered posts/index.html.haml within layouts/application (47.4ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (The asset "brasil.png" is not present in the asset pipeline.):
+    4:   = image_tag 'default.png', class: 'avatar avatar-small profile-avatar'
+    5: %p
+    6:   = user.nickname
+    7: = image_tag 'brasil.png', class: 'avatar avatar-small'
+    8: %p
+    9:   Brazil
+  
+app/views/users/_user_info.html.haml:7:in `_app_views_users__user_info_html_haml___2679896199811999223_70094086835620'
+app/views/posts/_show.html.haml:12:in `_app_views_posts__show_html_haml__296636478210946702_70094087188000'
+app/views/posts/index.html.haml:14:in `block in _app_views_posts_index_html_haml__1786126081409740712_70094088162840'
+app/views/posts/index.html.haml:13:in `_app_views_posts_index_html_haml__1786126081409740712_70094088162840'
+Started GET "/posts" for 127.0.0.1 at 2018-08-24 13:10:36 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (19.8ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:12
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.4ms)
+  Rendered posts/_show.html.haml (13.5ms)
+  Rendered posts/index.html.haml within layouts/application (47.5ms)
+  Rendered shared/_navbar.html.haml (6.3ms)
+Completed 200 OK in 96ms (Views: 87.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-24 13:11:02 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (12.8ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:13
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:12
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.7ms)
+  Rendered posts/_show.html.haml (11.5ms)
+  Rendered posts/index.html.haml within layouts/application (29.4ms)
+  Rendered shared/_navbar.html.haml (16.7ms)
+Completed 200 OK in 80ms (Views: 75.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-24 13:11:09 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (17.4ms)
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:12
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.9ms)
+  Rendered posts/_show.html.haml (13.2ms)
+  Rendered posts/index.html.haml within layouts/application (44.5ms)
+  Rendered shared/_navbar.html.haml (5.8ms)
+Completed 200 OK in 91ms (Views: 82.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-24 13:12:09 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (26.7ms)
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:12
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.3ms)
+  Rendered posts/_show.html.haml (13.3ms)
+  Rendered posts/index.html.haml within layouts/application (50.6ms)
+  Rendered shared/_navbar.html.haml (7.2ms)
+Completed 200 OK in 97ms (Views: 90.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-24 13:13:11 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (18.2ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:13
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:12
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.7ms)
+  Rendered posts/_show.html.haml (13.0ms)
+  Rendered posts/index.html.haml within layouts/application (37.6ms)
+  Rendered shared/_navbar.html.haml (4.7ms)
+Completed 200 OK in 2317ms (Views: 2313.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-24 13:13:23 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (18.2ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:12
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.4ms)
+  Rendered posts/_show.html.haml (14.0ms)
+  Rendered posts/index.html.haml within layouts/application (48.8ms)
+  Rendered shared/_navbar.html.haml (6.0ms)
+Completed 200 OK in 2450ms (Views: 2442.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-24 13:13:46 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (38.4ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:12
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (7.1ms)
+  Rendered posts/_show.html.haml (28.8ms)
+  Rendered posts/index.html.haml within layouts/application (85.2ms)
+  Rendered shared/_navbar.html.haml (13.0ms)
+Completed 200 OK in 141ms (Views: 133.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-24 13:13:54 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (6.2ms)
+  Rendered pages/home.html.haml within layouts/application (9.8ms)
+  Rendered shared/_navbar.html.haml (6.8ms)
+  Rendered shared/_banner.html.haml (2.1ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
