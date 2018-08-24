@@ -1,0 +1,10 @@
+.comment-box {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  text-align: left;
+}
+.text-area {
+  p {
+    background-color: $background;
+  }
+}

@@ -32,4 +32,5 @@
       %a
         %i.far.fa-smile-beam
       .hidden-content.comments-box{:id => "comment-box#{post.id}"}
-        = render 'comments/new'
+        = render partial: 'comments/new', locals: { post: post }
+        = render partial: 'comments/index', locals: { comments: post.comments }
