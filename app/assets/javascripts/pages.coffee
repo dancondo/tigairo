@@ -7,6 +7,9 @@
 toggleBar = (trigger) ->
   navbar = $($(trigger).data("target"))
   navbar.toggle('slide', { direction: 'right'})
+  $('body').toggleClass('no-flow')
+  $('.overlay').toggle()
 
 
 $('#navbar-toggle').on "click", -> toggleBar(this)
+$('#navbar-close').on "click", -> toggleBar(this)

@@ -1,7 +1,15 @@
+#navbar-close {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+}
 .sidenav  {
   background-color: transparent;
   text-align: right;
-  width: 300px;
+  width: 320px;
   position: fixed;
   right: 0;
   top: 0;
@@ -14,12 +22,18 @@
   padding: 12px;
 }
 .navbar-list {
+  position: absolute;
+  top: 0;
+  right: 0;
   text-align: left;
+  height: 100vh;
   background-color: $background;
   padding-left: 16px;
   display: none;
   .nav-link {
-    display: block;
+  }
+  h2 {
+    text-align: center;
   }
 }
 .logo-navbar {

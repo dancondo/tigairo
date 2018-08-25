@@ -1,0 +1,24 @@
+I"Ä(function() {
+  var toggleBar;
+
+  toggleBar = function(trigger) {
+    var navbar;
+    navbar = $($(trigger).data("target"));
+    navbar.toggle('slide', {
+      direction: 'right'
+    });
+    return $('.overlay').toggle('slide', {
+      direction: 'right'
+    }, 100);
+  };
+
+  $('#navbar-toggle').on("click", function() {
+    return toggleBar(this);
+  });
+
+  $('#navbar-close').on("click", function() {
+    return toggleBar(this);
+  });
+
+}).call(this);
+:ET

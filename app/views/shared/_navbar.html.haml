@@ -1,9 +1,15 @@
 = link_to :root do
   = image_tag 'logo.png', alt: 'Tigairo Logo', class: 'logo-navbar'
+.overlay
 %nav.sidenav
   %button.nav-burger#navbar-toggle{ data: { target: '.navbar-list' }}
     %i.fas.fa-bars
   %ul.navbar-list
+    %button#navbar-close{ data: { target: '.navbar-list' }}
+      x
+    %h2
+      = link_to :root do
+        = image_tag 'logo.png', alt: 'Tigairo Logo', class: 'logo-navbar'
     %li.nav-link
       = link_to posts_url, class: 'section-title-info' do
         = image_tag 'globeicon.png', class: 'icon'

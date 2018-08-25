@@ -1,0 +1,18 @@
+I"_(function() {
+  var openBar;
+
+  openBar = function(trigger) {
+    var navbar;
+    navbar = $($(trigger).data("target"));
+    navbar.toggle('slide', {
+      direction: 'right'
+    });
+    return $(trigger).closest('nav').toggleClass('sidenav-color');
+  };
+
+  $('#navbar-toggle').on("click", function() {
+    return openBar(this);
+  });
+
+}).call(this);
+:ET
