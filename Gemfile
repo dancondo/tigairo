@@ -15,6 +15,7 @@ gem 'autoprefixer-rails'
 gem 'bootstrap'
 gem 'font-awesome-sass'
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'popper_js'
 gem 'simple_form'
 gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x

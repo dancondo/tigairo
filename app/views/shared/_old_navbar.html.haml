@@ -1,0 +1,31 @@
+= link_to :root do
+  = image_tag 'logo.png', alt: 'Tigairo Logo', class: 'logo-navbar'
+%nav.sidenav
+  %button.nav-burger
+    %i.fas.fa-bars
+  %ul.navbar-list
+    %li.nav-link
+      = link_to posts_url do
+        = image_tag 'globeicon.png', class: 'icon'
+        ここでの「ふつう」
+
+
+
+%nav.navbar.navbar-expand-lg.my-navbar.navbar-light.fixed-top
+  = link_to :root do
+    = image_tag 'logo.png', alt: 'Tigairo Logo', class: 'logo-navbar'
+  %button.navbar-toggler{"aria-controls" => "navbarTogglerDemo03", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarTogglerDemo03", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #navbarTogglerDemo03.collapse.navbar-collapse
+    %ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+      %li.nav-item.active
+        %a.nav-link{:href => "#"}
+          Home
+          %span.sr-only (current)
+      %li.nav-item
+        %a.nav-link{:href => "#"} Link
+      %li.nav-item
+        %a.nav-link.disabled{:href => "#"} Disabled
+    %form.form-inline.my-2.my-lg-0
+      %input.form-control.mr-sm-2{"aria-label" => "Search", :placeholder => "Search", :type => "search"}/
+      %button.btn.btn-outline-success.my-2.my-sm-0{:type => "submit"} Search
