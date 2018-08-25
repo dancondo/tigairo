@@ -1,7 +1,48 @@
-%p.text-right.profile-edit
-  %a.edit-button#open-modal{"data-target" => "#form-modal", "data-toggle" => "modal"}
-    %i.fas.fa-edit
-    Edit
+.profile-container
+  %p.text-right.profile-edit
+    %a.edit-button#open-modal{"data-target" => "#form-modal", "data-toggle" => "modal"}
+      %i.fas.fa-edit
+      Edit
+  .user-profile.content-box
+    .profile-header
+      .profile-picture-box
+        - if @user.photo.present?
+          = image_tag @user.photo.url, class: 'avatar profile-avatar profile-picture'
+        - else
+          = image_tag 'default.png', class: 'avatar profile-avatar profile-picture'
+      %h4= @user.nickname
+    .profile-body
+      .profile-block
+        %p 留学先の国：
+        .profile-country-box
+          -if @user.country
+            %p= @user.country.name
+            .profile-country-img
+              = image_tag @user.country.photo_path, class: 'avatar avatar-xs'
+      .profile-block
+        %p 留学期間　：
+        %p 201８年４月～１０月
+      .profile-block
+        %p 留学の目的：
+        %p.field-text ボランティアなど自分のやりたいことを色々やってみるため
+      .profile-block
+        %p 留学期間　：
+        %p 201８年４月～１０月
+      .profile-block
+        %p ひとこと　：
+        %p.field-text ブラジルで貧困層の人々に対するボランティアをしたくて来ました…が今はとりあえずお休みして、ウェブデザインの勉強をやってます！ 時々考えすぎてパ二くります。でも、ここに来られて幸せだなあと思ってます。
+    .profile-posts-block
+      %span 過去の投稿
+      .profile-posts
+        = link_to user_posts_url(@user) do
+          %h6
+            = image_tag 'globeicon.png', class: 'icon'
+            ここでの「ふつう」
+            = "(#{@user.posts.count})"
+            %i.fas.fa-angle-right
+
+// Modal
+
 #form-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalCenterTitle", :role => "dialog", :tabindex => "-1"}
   .modal-dialog{:role => "document"}
     .modal-content
@@ -10,42 +51,3 @@
           %span{"aria-hidden" => "true"} ×
       .modal-body
         =render 'users/edit'
-
-.user-profile
-  .profile-header
-    .profile-picture-box
-      - if @user.photo.present?
-        = image_tag @user.photo.url, class: 'avatar profile-avatar profile-picture'
-      - else
-        = image_tag 'default.png', class: 'avatar profile-avatar profile-picture'
-    %h4= @user.nickname
-  .profile-body
-    .profile-block
-      %p 留学先の国：
-      .profile-country-box
-        -if @user.country
-          %p= @user.country.name
-          .profile-country-img
-            = image_tag @user.country.photo_path, class: 'avatar avatar-xs'
-    .profile-block
-      %p 留学期間　：
-      %p 201８年４月～１０月
-    .profile-block
-      %p 留学の目的：
-      %p.field-text ボランティアなど自分のやりたいことを色々やってみるため
-    .profile-block
-      %p 留学期間　：
-      %p 201８年４月～１０月
-    .profile-block
-      %p ひとこと　：
-      %p.field-text ブラジルで貧困層の人々に対するボランティアをしたくて来ました…が今はとりあえずお休みして、ウェブデザインの勉強をやってます！ 時々考えすぎてパ二くります。でも、ここに来られて幸せだなあと思ってます。
-  .profile-posts-block
-    %span 過去の投稿
-    .profile-posts
-      = link_to user_posts_url(@user) do
-        %h6
-          = image_tag 'globeicon.png', class: 'icon'
-          ここでの「ふつう」
-          = "(#{@user.posts.count})"
-          %i.fas.fa-angle-right
-
