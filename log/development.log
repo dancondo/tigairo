@@ -31152,3 +31152,497 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 227ms (Views: 222.0ms | ActiveRecord: 2.9ms)
 
 
+Started GET "/posts" for 127.0.0.1 at 2018-08-25 17:56:38 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (14.9ms)
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:18
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.4ms)
+  Rendered comments/_new.html.haml (3.2ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (9.1ms)
+  Rendered posts/_show.html.haml (27.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCACHE Country Load (0.0ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (1.3ms)
+  Rendered comments/_new.html.haml (2.0ms)
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (0.9ms)
+  Rendered posts/_show.html.haml (7.7ms)
+  Rendered posts/index.html.haml within layouts/application (58.2ms)
+  Rendered shared/_navbar.html.haml (7.8ms)
+Completed 200 OK in 227ms (Views: 220.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-25 18:52:12 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (6.3ms)
+  Rendered pages/home.html.haml within layouts/application (9.8ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.haml:26
+  Rendered shared/_navbar.html.haml (9.4ms)
+  Rendered shared/_banner.html.haml (2.3ms)
+Completed 200 OK in 185ms (Views: 183.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-25 18:52:58 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (15.2ms)
+  Rendered pages/home.html.haml within layouts/application (22.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.haml:26
+  Rendered shared/_navbar.html.haml (6.3ms)
+  Rendered shared/_banner.html.haml (1.4ms)
+Completed 200 OK in 2670ms (Views: 2668.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-25 18:57:13 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:4
+  Rendered shared/_info_card.html.haml (4.9ms)
+  Rendered pages/home.html.haml within layouts/application (21.3ms)
+  Rendered shared/_navbar.html.haml (8.2ms)
+  Rendered shared/_banner.html.haml (1.7ms)
+Completed 200 OK in 182ms (Views: 175.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-25 18:57:16 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (21.8ms)
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (13.0ms)
+  Rendered comments/_new.html.haml (4.0ms)
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (10.5ms)
+  Rendered posts/_show.html.haml (40.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCACHE Country Load (0.0ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (1.3ms)
+  Rendered comments/_new.html.haml (2.2ms)
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (1.0ms)
+  Rendered posts/_show.html.haml (8.0ms)
+  Rendered posts/index.html.haml within layouts/application (79.7ms)
+  Rendered shared/_navbar.html.haml (8.5ms)
+Completed 200 OK in 294ms (Views: 234.7ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-25 18:57:22 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:4
+  Rendered shared/_info_card.html.haml (7.7ms)
+  Rendered pages/home.html.haml within layouts/application (14.7ms)
+  Rendered shared/_navbar.html.haml (9.4ms)
+  Rendered shared/_banner.html.haml (2.0ms)
+Completed 200 OK in 208ms (Views: 206.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-25 18:59:11 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/application_helper.rb:4
+  Rendered shared/_info_card.html.haml (10.5ms)
+  Rendered pages/home.html.haml within layouts/application (27.0ms)
+  Rendered shared/_navbar.html.haml (9.2ms)
+  Rendered shared/_banner.html.haml (2.2ms)
+Completed 200 OK in 199ms (Views: 196.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-25 18:59:13 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (17.6ms)
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:21
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.9ms)
+  Rendered comments/_new.html.haml (3.9ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.0ms)
+  Rendered posts/_show.html.haml (30.5ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCACHE Country Load (0.0ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (2.0ms)
+  Rendered comments/_new.html.haml (3.2ms)
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (1.3ms)
+  Rendered posts/_show.html.haml (18.5ms)
+  Rendered posts/index.html.haml within layouts/application (80.2ms)
+  Rendered shared/_navbar.html.haml (9.8ms)
+Completed 200 OK in 259ms (Views: 245.0ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-25 19:00:23 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (7.9ms)
+  Rendered pages/home.html.haml within layouts/application (14.6ms)
+  Rendered shared/_navbar.html.haml (7.4ms)
+  Rendered shared/_banner.html.haml (2.1ms)
+Completed 200 OK in 215ms (Views: 211.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-25 19:00:26 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (3.9ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (15.9ms)
+  Rendered shared/_navbar.html.haml (11.6ms)
+Completed 200 OK in 232ms (Views: 205.7ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-25 19:00:43 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (10.5ms)
+  Rendered pages/home.html.haml within layouts/application (21.8ms)
+  Rendered shared/_navbar.html.haml (8.6ms)
+  Rendered shared/_banner.html.haml (1.9ms)
+Completed 200 OK in 218ms (Views: 215.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-25 19:00:46 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (26.0ms)
+  Rendered posts/index.html.haml within layouts/application (34.2ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 9.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `photo' for nil:NilClass):
+    14:             %p （なくてもOK）
+    15:       .post-block-inputs
+    16:         = f.association :category, label: false, prompt: 'カテゴリー'
+    17:         - if current_user.photo.present?
+    18:           = image_tag current_user.photo.url, class: 'avatar avatar-small profile-avatar'
+    19:         - else
+    20:           = image_tag 'default.png', class: 'avatar avatar-small profile-avatar'
+  
+app/views/posts/_new.html.haml:17:in `block in _app_views_posts__new_html_haml__1031298654002696828_70281968181160'
+app/views/posts/_new.html.haml:2:in `_app_views_posts__new_html_haml__1031298654002696828_70281968181160'
+app/views/posts/index.html.haml:16:in `_app_views_posts_index_html_haml___3418713697888656347_70281712730660'
+Started GET "/posts" for 127.0.0.1 at 2018-08-25 19:00:47 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (26.9ms)
+  Rendered posts/index.html.haml within layouts/application (44.0ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `photo' for nil:NilClass):
+    14:             %p （なくてもOK）
+    15:       .post-block-inputs
+    16:         = f.association :category, label: false, prompt: 'カテゴリー'
+    17:         - if current_user.photo.present?
+    18:           = image_tag current_user.photo.url, class: 'avatar avatar-small profile-avatar'
+    19:         - else
+    20:           = image_tag 'default.png', class: 'avatar avatar-small profile-avatar'
+  
+app/views/posts/_new.html.haml:17:in `block in _app_views_posts__new_html_haml__1031298654002696828_70281970450160'
+app/views/posts/_new.html.haml:2:in `_app_views_posts__new_html_haml__1031298654002696828_70281970450160'
+app/views/posts/index.html.haml:16:in `_app_views_posts_index_html_haml___3418713697888656347_70281962856960'
+Started GET "/posts" for 127.0.0.1 at 2018-08-25 19:01:16 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  Rendered devise/sessions/_new.html.haml (486.3ms)
+  Rendered posts/index.html.haml within layouts/application (503.2ms)
+Completed 500 Internal Server Error in 512ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x00007fd7790ab3f8>:0x00007fd7787f05d8>):
+    1: %h2 Log in
+    2: = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    3:   .form-inputs
+    4:     = f.input :email,
+    5:       required: false,
+  
+app/views/devise/sessions/_new.html.haml:2:in `_app_views_devise_sessions__new_html_haml___2543573644516664753_70281717077700'
+app/views/posts/index.html.haml:19:in `_app_views_posts_index_html_haml___3418713697888656347_70281708144700'
+Started GET "/posts" for 127.0.0.1 at 2018-08-25 19:03:16 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  Rendered devise/sessions/_new.html.haml (351.2ms)
+  Rendered posts/index.html.haml within layouts/application (358.0ms)
+Completed 500 Internal Server Error in 388ms (ActiveRecord: 5.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x00007fd7a06ae4e0>:0x00007fd7a06ac9b0>
+Did you mean?  resource):
+    1: %h2 Log in
+    2: = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    3:   .form-inputs
+    4:     = f.input :email,
+    5:       required: false,
+  
+app/views/devise/sessions/_new.html.haml:2:in `_app_views_devise_sessions__new_html_haml___2543573644516664753_70281731230400'
+app/views/posts/index.html.haml:19:in `_app_views_posts_index_html_haml___3418713697888656347_70282043029220'
+Started PUT "/__web_console/repl_sessions/c92b3727f37e8c0627b1a2ac34edd362" for 127.0.0.1 at 2018-08-25 19:03:31 -0300
+Started PUT "/__web_console/repl_sessions/c92b3727f37e8c0627b1a2ac34edd362" for 127.0.0.1 at 2018-08-25 19:03:32 -0300
+Started GET "/posts" for 127.0.0.1 at 2018-08-25 19:04:22 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mCACHE Post Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/views/posts/index.html.haml:19
+  Rendered devise/sessions/_new.html.haml (856.9ms)
+  Rendered posts/index.html.haml within layouts/application (873.5ms)
+Completed 500 Internal Server Error in 882ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `devise_mapping' for #<#<Class:0x00007fd7a06ae4e0>:0x00007fd796711f18>):
+     8:     = f.input :password,
+     9:       required: false,
+    10:       input_html: { autocomplete: "current-password" }
+    11:     = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
+    12:   .form-actions
+    13:     = f.button :submit, "Log in"
+    14: = render "devise/shared/links"
+  
+app/views/devise/sessions/_new.html.haml:11:in `block in _app_views_devise_sessions__new_html_haml___2543573644516664753_70281960076160'
+app/views/devise/sessions/_new.html.haml:2:in `_app_views_devise_sessions__new_html_haml___2543573644516664753_70281960076160'
+app/views/posts/index.html.haml:19:in `_app_views_posts_index_html_haml___3418713697888656347_70281959347700'
+Started GET "/posts" for 127.0.0.1 at 2018-08-25 19:06:44 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (13.3ms)
+  Rendered comments/_new.html.haml (3.7ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (12.5ms)
+  Rendered posts/_show.html.haml (55.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCACHE Country Load (0.0ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (1.3ms)
+  Rendered comments/_new.html.haml (2.7ms)
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (1.1ms)
+  Rendered posts/_show.html.haml (8.7ms)
+  Rendered posts/index.html.haml within layouts/application (74.9ms)
+  Rendered shared/_navbar.html.haml (6.3ms)
+Completed 200 OK in 224ms (Views: 195.3ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-25 19:06:47 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.7ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (16.5ms)
+  Rendered shared/_navbar.html.haml (7.6ms)
+Completed 200 OK in 160ms (Views: 156.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-25 19:06:50 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.5ms)
+  Rendered comments/_new.html.haml (3.5ms)
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (9.7ms)
+  Rendered posts/_show.html.haml (30.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCACHE Country Load (0.0ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (1.3ms)
+  Rendered comments/_new.html.haml (2.1ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (1.6ms)
+  Rendered posts/_show.html.haml (8.9ms)
+  Rendered posts/index.html.haml within layouts/application (59.0ms)
+  Rendered shared/_navbar.html.haml (6.9ms)
+Completed 200 OK in 212ms (Views: 206.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-25 19:07:14 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (5.8ms)
+  Rendered pages/home.html.haml within layouts/application (10.0ms)
+  Rendered shared/_navbar.html.haml (7.1ms)
+  Rendered shared/_banner.html.haml (1.7ms)
+Completed 200 OK in 165ms (Views: 164.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-08-25 19:07:27 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (13.0ms)
+  Rendered shared/_navbar.html.haml (7.6ms)
+Completed 200 OK in 175ms (Views: 173.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-25 19:07:30 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.haml within layouts/application
+  Rendered shared/_info_card.html.haml (10.1ms)
+  Rendered pages/home.html.haml within layouts/application (20.9ms)
+  Rendered shared/_navbar.html.haml (8.2ms)
+  Rendered shared/_banner.html.haml (2.4ms)
+Completed 200 OK in 204ms (Views: 201.7ms | ActiveRecord: 0.0ms)
+
+
