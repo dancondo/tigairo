@@ -19,12 +19,14 @@ $('.file-input').on "change", -> imagePreview(this)
 
 #### Collapser
 
-## $background-gray: #F4F5F3;
-
 Collapser = (trigger) ->
   collapsableContent = $($(trigger).data("target"))
-  collapsableContent.toggleClass('show-content')
+  collapsableContent.slideToggle('slow')
+
   container = $(trigger.closest('.post-container'))
   container.toggleClass('focus-container')
+
+  contentBox = container.children('.content-box')
+  contentBox.toggleClass('plain')
 
 $('.collapsable').click -> Collapser(this)
