@@ -9,7 +9,7 @@
 .sidenav  {
   background-color: transparent;
   text-align: right;
-  width: 320px;
+  width: 70%;
   position: fixed;
   right: 0;
   top: 0;
@@ -35,6 +35,12 @@
   h2 {
     text-align: center;
   }
+}
+@media (max-width: 450px) {
+  .navbar-list{
+    width: 100%;
+  }
+
 }
 .logo-navbar {
   height: 3rem;
