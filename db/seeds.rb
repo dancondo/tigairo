@@ -1,13 +1,11 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-Post.destroy_all
-User.destroy_all
-Country.destroy_all
+### Destruction
+
+# Post.destroy_all
+# User.destroy_all
+# Country.destroy_all
+
+### Construction
+
 categories = %w[ごはん 友達との接し方 お店の人 ファッション お祝い 時間 街 仕事 恋愛 その他]
 categories.each do |category|
   next unless Category.where(name: category) == []
@@ -17,4 +15,10 @@ countries = %w[アメリカ ブラジル カナダ イギリス オーストラ�
 countries.each do |country|
   next unless Country.where(name: country) == []
   Country.create!(name: country, photo_path: "flags/#{country}.png")
+end
+
+reaction_tags = %w[いいね おもしろい びっくり かなしい あるある]
+reaction_tags.each do |reaction_tag|
+  next unless ReactionTag.where(name: reaction_tag) == []
+  ReactionTag.create!(name: reaction_tag, photo_path: "reaction_tags_photos/#{reaction_tag}.png")
 end
