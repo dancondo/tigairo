@@ -42,6 +42,7 @@ $('.post-extras').click (e) -> e.stopPropagation()
 
 DropUp = (trigger) ->
   dropContent = $($(trigger).data("target"))
+  console.log(dropContent)
   dropContent.show()
   toHideArea = dropContent.closest('.post-extras')
   toHideArea.children('.trigger-buttons').css('opacity', '0')
