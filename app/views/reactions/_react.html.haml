@@ -1,6 +1,13 @@
-.reactions-box
-  -@reaction_tags.each do |reaction_tag|
-    .reaction
-      = button_to public_send("#{target}_reaction_path", post_id: post.id, reaction_tag_id: reaction_tag.id), method: :post do
-        = image_tag reaction_tag.photo_path, class: 'reaction-image'
-        %p= reaction_tag.name
+- if target == 'post'
+  .reactions-box
+    -@reaction_tags.each do |reaction_tag|
+      .reaction
+        = button_to public_send("#{target}_reaction_path", post_id: post.id, reaction_tag_id: reaction_tag.id), method: :post do
+          = image_tag reaction_tag.photo_path, class: 'reaction-image'
+          %p= reaction_tag.name
+- if target == 'comment'
+  .reactions-box.reaction-box-small
+    -@reaction_tags.each do |reaction_tag|
+      .reaction
+        = button_to public_send("#{target}_reaction_path", comment_id: comment.id, reaction_tag_id: reaction_tag.id), method: :post do
+          = image_tag reaction_tag.photo_path, class: 'reaction-image-small'

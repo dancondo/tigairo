@@ -7,6 +7,10 @@
   top: 8px;
   background-color: $background;
 }
+.reactions-container-for-comments {
+  background-color: transparent !important;
+  top: 4px;
+}
 .reactions-box {
   display: flex;
   justify-content: space-around;
@@ -15,6 +19,10 @@
   border-radius: 8px;
   box-shadow: 10px 10px 10px $shadow;
   padding: 16px;
+}
+.reaction-box-small {
+  padding: 8px !important;
+  width: 60% !important;
 }
 .reaction {
   text-align: center;
@@ -31,6 +39,10 @@
 .reaction-image {
   height: 50px;
   width: 50px;
+}
+.reaction-image-small {
+  height: 16px;
+  width: 16px;
 }
 @media (max-width: 350px) {
   .reaction {
