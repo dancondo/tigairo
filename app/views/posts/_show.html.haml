@@ -29,9 +29,10 @@
     .post-extras
       .trigger-buttons
         %a.collapsable{ data: { target: "#comment-box#{post.id}" } }
-          Comment
+          = "Comment #{post.comments.count}"
         %a.reactions-toggler{ data: { target: "#reactions-box#{post.id}" } }
           %i.far.fa-smile-beam
+          = post.reactions.count
 
       .hidden-content.comments-container{ id: "comment-box#{post.id}"}
         = render partial: 'comments/new', locals: { post: post }

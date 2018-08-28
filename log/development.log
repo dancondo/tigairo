@@ -40715,3 +40715,169 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 545ms (Views: 538.2ms | ActiveRecord: 2.9ms)
 
 
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:16:41 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (18.3ms)
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.0ms)
+  Rendered comments/_new.html.haml (4.8ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (10.4ms)
+  [1m[36mReactionTag Load (0.5ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (23.3ms)
+  [1m[36mReaction Load (0.6ms)[0m  [1m[34mSELECT "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:43
+  [1m[36mReactionTag Load (0.2ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:44
+  Rendered posts/_show.html.haml (62.3ms)
+  Rendered posts/index.html.haml within layouts/application (94.6ms)
+  Rendered shared/_navbar.html.haml (11.3ms)
+Completed 200 OK in 266ms (Views: 259.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:17:11 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (17.6ms)
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.7ms)
+  Rendered comments/_new.html.haml (3.7ms)
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.6ms)
+  [1m[36mReactionTag Load (0.5ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (10.6ms)
+  [1m[36mReaction Load (0.5ms)[0m  [1m[34mSELECT "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:43
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:44
+  Rendered posts/_show.html.haml (45.6ms)
+  Rendered posts/index.html.haml within layouts/application (87.8ms)
+  Rendered shared/_navbar.html.haml (8.3ms)
+Completed 200 OK in 267ms (Views: 258.1ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:17:25 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (16.3ms)
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.3ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  Rendered comments/_new.html.haml (4.2ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.0ms)
+  [1m[36mReactionTag Load (0.5ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (9.5ms)
+  [1m[36mReaction Load (0.5ms)[0m  [1m[34mSELECT "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:43
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:44
+  Rendered posts/_show.html.haml (47.3ms)
+  Rendered posts/index.html.haml within layouts/application (87.8ms)
+  Rendered shared/_navbar.html.haml (8.2ms)
+Completed 200 OK in 269ms (Views: 259.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:17:41 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (17.4ms)
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (3.9ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (3.3ms)
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.1ms)
+  [1m[36mReactionTag Load (0.4ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (7.6ms)
+  [1m[36mReaction Load (0.3ms)[0m  [1m[34mSELECT "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:44
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:45
+  Rendered posts/_show.html.haml (41.7ms)
+  Rendered posts/index.html.haml within layouts/application (72.8ms)
+  Rendered shared/_navbar.html.haml (6.6ms)
+Completed 200 OK in 232ms (Views: 225.7ms | ActiveRecord: 4.9ms)
+
+
