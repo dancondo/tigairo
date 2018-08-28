@@ -16,6 +16,11 @@
 }
 .reaction {
   text-align: center;
+  button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
   p {
     font-size: 10px;
     margin: 0;

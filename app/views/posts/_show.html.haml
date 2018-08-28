@@ -39,7 +39,3 @@
         = render partial: 'comments/index', locals: { comments: post.comments }
       .reactions-container{ id: "reactions-box#{post.id}" }
         = render partial: 'reactions/react', locals: { target: 'post', post: post, reaction: @reaction }
-
-
-    -post.reactions.each do |reaction|
-      =reaction.reaction_tag.name

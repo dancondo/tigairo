@@ -1,6 +1,6 @@
 .reactions-box
   -@reaction_tags.each do |reaction_tag|
     .reaction
-      = link_to public_send("#{target}_reaction_path", post_id: post.id, reaction_tag_id: reaction_tag.id), method: :post do
+      = button_to public_send("#{target}_reaction_path", post_id: post.id, reaction_tag_id: reaction_tag.id), method: :post do
         = image_tag reaction_tag.photo_path, class: 'reaction-image'
         %p= reaction_tag.name

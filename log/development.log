@@ -40881,3 +40881,2437 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 232ms (Views: 225.7ms | ActiveRecord: 4.9ms)
 
 
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:19:28 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (20.0ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.8ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.4ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (9.4ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (8.8ms)
+  Rendered posts/_show.html.haml (44.4ms)
+  Rendered posts/index.html.haml within layouts/application (78.6ms)
+  Rendered shared/_navbar.html.haml (8.2ms)
+Completed 200 OK in 265ms (Views: 259.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:19:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:20:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:20:30 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (17.4ms)
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.9ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (5.1ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (9.7ms)
+  [1m[36mReactionTag Load (0.4ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (8.9ms)
+  Rendered posts/_show.html.haml (46.0ms)
+  Rendered posts/index.html.haml within layouts/application (76.1ms)
+  Rendered shared/_navbar.html.haml (10.8ms)
+Completed 200 OK in 282ms (Views: 275.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:20:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:20:33 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:21:31 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (22.2ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (6.7ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (5.2ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.8ms)
+  [1m[36mReactionTag Load (0.4ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (10.3ms)
+  Rendered posts/_show.html.haml (50.5ms)
+  Rendered posts/index.html.haml within layouts/application (86.6ms)
+  Rendered shared/_navbar.html.haml (11.1ms)
+Completed 200 OK in 291ms (Views: 285.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:21:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:22:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:22:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=4" for 127.0.0.1 at 2018-08-27 21:22:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started PUT "/__web_console/repl_sessions/91f5a6b1a3fde306bfd5b4dbf6fe188e" for 127.0.0.1 at 2018-08-27 21:24:41 -0300
+Started PUT "/__web_console/repl_sessions/91f5a6b1a3fde306bfd5b4dbf6fe188e" for 127.0.0.1 at 2018-08-27 21:24:41 -0300
+Started PUT "/__web_console/repl_sessions/91f5a6b1a3fde306bfd5b4dbf6fe188e" for 127.0.0.1 at 2018-08-27 21:24:43 -0300
+Started GET "/users/1" for 127.0.0.1 at 2018-08-27 21:25:15 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/show.html.haml within layouts/application
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.haml:18
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts" WHERE "posts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/users/show.html.haml:41
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT "countries".* FROM "countries"[0m
+  ↳ app/views/users/_edit.html.haml:15
+  Rendered users/_edit.html.haml (10.8ms)
+  Rendered users/show.html.haml within layouts/application (39.6ms)
+  Rendered shared/_navbar.html.haml (6.0ms)
+Completed 200 OK in 198ms (Views: 173.2ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:25:26 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (26.5ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (7.2ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.9ms)
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (10.3ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (17.3ms)
+  Rendered posts/_show.html.haml (63.5ms)
+  Rendered posts/index.html.haml within layouts/application (103.1ms)
+  Rendered shared/_navbar.html.haml (7.0ms)
+Completed 200 OK in 302ms (Views: 247.0ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/posts/2/reactions/change?reaction_tag_id=3" for 127.0.0.1 at 2018-08-27 21:26:03 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:26:07 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (19.0ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.1ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.9ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.3ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (9.9ms)
+  Rendered posts/_show.html.haml (47.9ms)
+  Rendered posts/index.html.haml within layouts/application (80.8ms)
+  Rendered shared/_navbar.html.haml (9.8ms)
+Completed 200 OK in 304ms (Views: 296.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:27:12 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (17.1ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.4ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.0ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.9ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (7.9ms)
+  Rendered posts/_show.html.haml (43.3ms)
+  Rendered posts/index.html.haml within layouts/application (87.2ms)
+  Rendered shared/_navbar.html.haml (9.3ms)
+Completed 200 OK in 273ms (Views: 265.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/posts/2/reactions/change?reaction_tag_id=1" for 127.0.0.1 at 2018-08-27 21:27:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:27:43 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (16.2ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.5ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.4ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (7.7ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (10.7ms)
+  Rendered posts/_show.html.haml (46.2ms)
+  Rendered posts/index.html.haml within layouts/application (85.9ms)
+  Rendered shared/_navbar.html.haml (9.8ms)
+Completed 200 OK in 294ms (Views: 286.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:27:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:27:49 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (20.1ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (6.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.2ms)
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (10.9ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (10.4ms)
+  Rendered posts/_show.html.haml (50.1ms)
+  Rendered posts/index.html.haml within layouts/application (94.3ms)
+  Rendered shared/_navbar.html.haml (9.4ms)
+Completed 200 OK in 320ms (Views: 313.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/posts/2/reactions/change?reaction_tag_id=4" for 127.0.0.1 at 2018-08-27 21:28:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:30:06 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (18.7ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.8ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (5.0ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.8ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (288.3ms)
+  Rendered posts/_show.html.haml (323.6ms)
+  Rendered posts/index.html.haml within layouts/application (376.9ms)
+Completed 500 Internal Server Error in 385ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `post_reactions_path' for #<#<Class:0x00007ffa72091ae0>:0x00007ffa64607be0>
+Did you mean?  post_reaction_path
+               post_reaction_url):
+    1: .reactions-box
+    2:   -@reaction_tags.each do |reaction_tag|
+    3:     .reaction
+    4:       = link_to public_send("#{target}_reactions_path", post_id: post.id, reaction_tag_id: reaction_tag.id), method: :post do
+    5:         = image_tag reaction_tag.photo_path, class: 'reaction-image'
+    6:         %p= reaction_tag.name
+  
+app/views/reactions/_react.html.haml:4:in `public_send'
+app/views/reactions/_react.html.haml:4:in `block in _app_views_reactions__react_html_haml__2110228318459355543_70356812206880'
+app/views/reactions/_react.html.haml:2:in `_app_views_reactions__react_html_haml__2110228318459355543_70356812206880'
+app/views/posts/_show.html.haml:41:in `_app_views_posts__show_html_haml___4102488601720543805_70356814429860'
+app/views/posts/index.html.haml:20:in `block in _app_views_posts_index_html_haml___854799975529477383_70356701383520'
+app/views/posts/index.html.haml:19:in `_app_views_posts_index_html_haml___854799975529477383_70356701383520'
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 21:30:13 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (16.5ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.6ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.0ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (7.2ms)
+  Rendered posts/_show.html.haml (40.2ms)
+  Rendered posts/index.html.haml within layouts/application (66.6ms)
+  Rendered shared/_navbar.html.haml (6.4ms)
+Completed 200 OK in 241ms (Views: 233.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/posts/2/reactions/change?reaction_tag_id=2" for 127.0.0.1 at 2018-08-27 21:30:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/rails/info/routes?path=/" for 127.0.0.1 at 2018-08-27 21:33:05 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/"}
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/po" for 127.0.0.1 at 2018-08-27 21:33:05 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/po"}
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/pos" for 127.0.0.1 at 2018-08-27 21:33:05 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/pos"}
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/pos" for 127.0.0.1 at 2018-08-27 21:33:06 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/pos"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/posts" for 127.0.0.1 at 2018-08-27 21:33:07 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/posts"}
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/posts/2" for 127.0.0.1 at 2018-08-27 21:33:08 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/posts/2"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/posts/2/" for 127.0.0.1 at 2018-08-27 21:33:09 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/posts/2/"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/posts/2" for 127.0.0.1 at 2018-08-27 21:33:10 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/posts/2"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/posts/" for 127.0.0.1 at 2018-08-27 21:33:16 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/posts/"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/posts/r" for 127.0.0.1 at 2018-08-27 21:33:17 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/posts/r"}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/posts/re" for 127.0.0.1 at 2018-08-27 21:33:19 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/posts/re"}
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes?path=/posts/" for 127.0.0.1 at 2018-08-27 21:33:20 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"/posts/"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:35:37 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:35:45 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:35:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:35:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:35:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:35:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:35:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:35:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 21:35:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=3" for 127.0.0.1 at 2018-08-27 21:35:53 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 23:11:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:12:30 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (35.9ms)
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (10.9ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (10.7ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (17.7ms)
+  [1m[36mReactionTag Load (0.5ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (17.9ms)
+  Rendered posts/_show.html.haml (94.7ms)
+  Rendered posts/index.html.haml within layouts/application (151.0ms)
+  Rendered shared/_navbar.html.haml (7.5ms)
+Completed 200 OK in 360ms (Views: 352.3ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/posts/2/reactions/change?reaction_tag_id=1" for 127.0.0.1 at 2018-08-27 23:12:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/posts/2/reactions/change"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:13:54 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (23.6ms)
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.6ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.8ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.8ms)
+  [1m[36mReactionTag Load (0.5ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (11.0ms)
+  Rendered posts/_show.html.haml (53.7ms)
+  Rendered posts/index.html.haml within layouts/application (99.8ms)
+  Rendered shared/_navbar.html.haml (11.9ms)
+Completed 200 OK in 317ms (Views: 307.5ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/posts/2/reactions/change?reaction_tag_id=2" for 127.0.0.1 at 2018-08-27 23:13:59 -0300
+Processing by ReactionsController#change as JS
+  Parameters: {"authenticity_token"=>"BEdLHhp3TBjtKhTBYa3KbtXK4so0ZoJeCZ1vcE7zRIJpT0bDEd5No4hblyQkMep9W5DoIEY9m2DkU6g13DjDbg==", "reaction_tag_id"=>"2", "post_id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (0.3ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+  [1m[36mReactionTag Load (0.2ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:7
+Unpermitted parameters: :authenticity_token, :post_id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mReactionTag Load (0.2ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mReaction Update (0.7ms)[0m  [1m[33mUPDATE "reactions" SET "reaction_tag_id" = $1, "updated_at" = $2 WHERE "reactions"."id" = $3[0m  [["reaction_tag_id", 2], ["updated_at", "2018-08-28 02:13:59.344368"], ["id", 2]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:13
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 20ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:13:59 -0300
+Processing by PostsController#index as JS
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (17.5ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.4ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (5.4ms)
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.9ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (9.4ms)
+  Rendered posts/_show.html.haml (63.4ms)
+  Rendered posts/index.html.haml within layouts/application (100.3ms)
+  Rendered shared/_navbar.html.haml (11.1ms)
+Completed 200 OK in 292ms (Views: 281.3ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/posts/2/reactions/change?reaction_tag_id=2" for 127.0.0.1 at 2018-08-27 23:14:06 -0300
+Processing by ReactionsController#change as JS
+  Parameters: {"authenticity_token"=>"BEdLHhp3TBjtKhTBYa3KbtXK4so0ZoJeCZ1vcE7zRIJpT0bDEd5No4hblyQkMep9W5DoIEY9m2DkU6g13DjDbg==", "reaction_tag_id"=>"2", "post_id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (1.2ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+  [1m[36mReactionTag Load (0.7ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:8
+  [1m[36mReaction Destroy (0.7ms)[0m  [1m[31mDELETE FROM "reactions" WHERE "reactions"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/reactions_controller.rb:8
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:8
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 22ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:06 -0300
+Processing by PostsController#index as JS
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (16.1ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.4ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (7.6ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (9.6ms)
+  Rendered posts/_show.html.haml (56.9ms)
+  Rendered posts/index.html.haml within layouts/application (91.4ms)
+  Rendered shared/_navbar.html.haml (7.4ms)
+Completed 200 OK in 256ms (Views: 244.5ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/posts/2/reactions/change?reaction_tag_id=2" for 127.0.0.1 at 2018-08-27 23:14:08 -0300
+Processing by ReactionsController#change as JS
+  Parameters: {"authenticity_token"=>"BEdLHhp3TBjtKhTBYa3KbtXK4so0ZoJeCZ1vcE7zRIJpT0bDEd5No4hblyQkMep9W5DoIEY9m2DkU6g13DjDbg==", "reaction_tag_id"=>"2", "post_id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (1.5ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+Unpermitted parameters: :authenticity_token, :post_id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[36mReactionTag Load (0.5ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[36mReaction Create (1.6ms)[0m  [1m[32mINSERT INTO "reactions" ("reaction_target_type", "reaction_target_id", "reaction_tag_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["reaction_tag_id", 2], ["user_id", 1], ["created_at", "2018-08-28 02:14:08.811098"], ["updated_at", "2018-08-28 02:14:08.811098"]]
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:22
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 28ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:08 -0300
+Processing by PostsController#index as JS
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (14.4ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.5ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (3.7ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (7.5ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (8.4ms)
+  Rendered posts/_show.html.haml (52.2ms)
+  Rendered posts/index.html.haml within layouts/application (84.3ms)
+  Rendered shared/_navbar.html.haml (9.5ms)
+Completed 200 OK in 272ms (Views: 264.1ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/posts/2/reactions/change?reaction_tag_id=2" for 127.0.0.1 at 2018-08-27 23:14:09 -0300
+Processing by ReactionsController#change as JS
+  Parameters: {"authenticity_token"=>"BEdLHhp3TBjtKhTBYa3KbtXK4so0ZoJeCZ1vcE7zRIJpT0bDEd5No4hblyQkMep9W5DoIEY9m2DkU6g13DjDbg==", "reaction_tag_id"=>"2", "post_id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (0.3ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:8
+  [1m[36mReaction Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reactions" WHERE "reactions"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/reactions_controller.rb:8
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:8
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 8ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:09 -0300
+Processing by PostsController#index as JS
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (14.2ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.9ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.1ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (7.6ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (9.4ms)
+  Rendered posts/_show.html.haml (55.1ms)
+  Rendered posts/index.html.haml within layouts/application (89.4ms)
+  Rendered shared/_navbar.html.haml (8.2ms)
+Started POST "/posts/2/reactions/change?reaction_tag_id=2" for 127.0.0.1 at 2018-08-27 23:14:09 -0300
+Processing by ReactionsController#change as JS
+  Parameters: {"authenticity_token"=>"BEdLHhp3TBjtKhTBYa3KbtXK4so0ZoJeCZ1vcE7zRIJpT0bDEd5No4hblyQkMep9W5DoIEY9m2DkU6g13DjDbg==", "reaction_tag_id"=>"2", "post_id"=>"2"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (4.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (1.0ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+Unpermitted parameters: :authenticity_token, :post_id
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[36mReactionTag Load (0.9ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[36mReaction Create (1.1ms)[0m  [1m[32mINSERT INTO "reactions" ("reaction_target_type", "reaction_target_id", "reaction_tag_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["reaction_tag_id", 2], ["user_id", 1], ["created_at", "2018-08-28 02:14:09.634606"], ["updated_at", "2018-08-28 02:14:09.634606"]]
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:22
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 40ms (ActiveRecord: 28.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:09 -0300
+Processing by PostsController#index as JS
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 285ms (Views: 277.4ms | ActiveRecord: 3.0ms)
+
+
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (14.5ms)
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.4ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (3.6ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (6.9ms)
+Started POST "/posts/2/reactions/change?reaction_tag_id=2" for 127.0.0.1 at 2018-08-27 23:14:09 -0300
+  [1m[36mReactionTag Load (0.7ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+Processing by ReactionsController#change as JS
+  Parameters: {"authenticity_token"=>"BEdLHhp3TBjtKhTBYa3KbtXK4so0ZoJeCZ1vcE7zRIJpT0bDEd5No4hblyQkMep9W5DoIEY9m2DkU6g13DjDbg==", "reaction_tag_id"=>"2", "post_id"=>"2"}
+  Rendered reactions/_react.html.haml (14.2ms)
+  Rendered posts/_show.html.haml (57.2ms)
+  Rendered posts/index.html.haml within layouts/application (93.7ms)
+  [1m[36mUser Load (10.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (21.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (8.3ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+  Rendered shared/_navbar.html.haml (8.0ms)
+  [1m[36mReactionTag Load (15.3ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:7
+  [1m[35m (15.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:8
+  [1m[36mReaction Destroy (16.1ms)[0m  [1m[31mDELETE FROM "reactions" WHERE "reactions"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/reactions_controller.rb:8
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:8
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 133ms (ActiveRecord: 99.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:09 -0300
+Processing by PostsController#index as JS
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (14.3ms)
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (1.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.8ms)
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (3.6ms)
+Completed 200 OK in 329ms (Views: 318.6ms | ActiveRecord: 6.9ms)
+
+
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.1ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (8.5ms)
+  Rendered posts/_show.html.haml (64.0ms)
+  Rendered posts/index.html.haml within layouts/application (103.1ms)
+  Rendered shared/_navbar.html.haml (6.8ms)
+Completed 200 OK in 267ms (Views: 246.0ms | ActiveRecord: 15.4ms)
+
+
+Started POST "/posts/2/reactions/change?reaction_tag_id=2" for 127.0.0.1 at 2018-08-27 23:14:33 -0300
+Processing by ReactionsController#change as JS
+  Parameters: {"authenticity_token"=>"BEdLHhp3TBjtKhTBYa3KbtXK4so0ZoJeCZ1vcE7zRIJpT0bDEd5No4hblyQkMep9W5DoIEY9m2DkU6g13DjDbg==", "reaction_tag_id"=>"2", "post_id"=>"2"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (1.1ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+Unpermitted parameters: :authenticity_token, :post_id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[36mReactionTag Load (0.7ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[36mReaction Create (1.4ms)[0m  [1m[32mINSERT INTO "reactions" ("reaction_target_type", "reaction_target_id", "reaction_tag_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["reaction_tag_id", 2], ["user_id", 1], ["created_at", "2018-08-28 02:14:33.664026"], ["updated_at", "2018-08-28 02:14:33.664026"]]
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:22
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 27ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:33 -0300
+Processing by PostsController#index as JS
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (15.6ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.4ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.4ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.0ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (7.2ms)
+  [1m[36mReactionTag Load (0.4ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (11.9ms)
+  Rendered posts/_show.html.haml (59.5ms)
+  Rendered posts/index.html.haml within layouts/application (110.2ms)
+  Rendered shared/_navbar.html.haml (8.2ms)
+Completed 200 OK in 274ms (Views: 262.4ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/posts/2/reactions/change?reaction_tag_id=2" for 127.0.0.1 at 2018-08-27 23:14:36 -0300
+Processing by ReactionsController#change as JS
+  Parameters: {"authenticity_token"=>"BEdLHhp3TBjtKhTBYa3KbtXK4so0ZoJeCZ1vcE7zRIJpT0bDEd5No4hblyQkMep9W5DoIEY9m2DkU6g13DjDbg==", "reaction_tag_id"=>"2", "post_id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (0.6ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:8
+  [1m[36mReaction Destroy (0.4ms)[0m  [1m[31mDELETE FROM "reactions" WHERE "reactions"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/reactions_controller.rb:8
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:8
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 14ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:36 -0300
+Processing by PostsController#index as JS
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (17.3ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (5.3ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.0ms)
+  [1m[36mReactionTag Load (0.4ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (10.0ms)
+  Rendered posts/_show.html.haml (62.9ms)
+  Rendered posts/index.html.haml within layouts/application (99.2ms)
+  Rendered shared/_navbar.html.haml (11.9ms)
+Completed 200 OK in 303ms (Views: 294.1ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/posts/2/reactions/change?reaction_tag_id=2" for 127.0.0.1 at 2018-08-27 23:14:39 -0300
+Processing by ReactionsController#change as JS
+  Parameters: {"authenticity_token"=>"BEdLHhp3TBjtKhTBYa3KbtXK4so0ZoJeCZ1vcE7zRIJpT0bDEd5No4hblyQkMep9W5DoIEY9m2DkU6g13DjDbg==", "reaction_tag_id"=>"2", "post_id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (0.5ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+Unpermitted parameters: :authenticity_token, :post_id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[36mReactionTag Load (0.2ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[36mReaction Create (0.6ms)[0m  [1m[32mINSERT INTO "reactions" ("reaction_target_type", "reaction_target_id", "reaction_tag_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["reaction_tag_id", 2], ["user_id", 1], ["created_at", "2018-08-28 02:14:39.358526"], ["updated_at", "2018-08-28 02:14:39.358526"]]
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:22
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 14ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:39 -0300
+Processing by PostsController#index as JS
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (18.0ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (6.3ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (5.4ms)
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (10.3ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (11.4ms)
+  Rendered posts/_show.html.haml (67.5ms)
+  Rendered posts/index.html.haml within layouts/application (105.2ms)
+  Rendered shared/_navbar.html.haml (8.3ms)
+Completed 200 OK in 301ms (Views: 293.3ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/posts/2/reactions/change?reaction_tag_id=1" for 127.0.0.1 at 2018-08-27 23:14:39 -0300
+Processing by ReactionsController#change as JS
+  Parameters: {"authenticity_token"=>"BEdLHhp3TBjtKhTBYa3KbtXK4so0ZoJeCZ1vcE7zRIJpT0bDEd5No4hblyQkMep9W5DoIEY9m2DkU6g13DjDbg==", "reaction_tag_id"=>"1", "post_id"=>"2"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (1.1ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+  [1m[36mReactionTag Load (0.7ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:7
+Unpermitted parameters: :authenticity_token, :post_id
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mReactionTag Load (0.6ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mReaction Update (0.8ms)[0m  [1m[33mUPDATE "reactions" SET "reaction_tag_id" = $1, "updated_at" = $2 WHERE "reactions"."id" = $3[0m  [["reaction_tag_id", 1], ["updated_at", "2018-08-28 02:14:39.901004"], ["id", 6]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:13
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 37ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:39 -0300
+Processing by PostsController#index as JS
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (14.4ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.6ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (11.1ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (27.8ms)
+  Rendered posts/_show.html.haml (80.7ms)
+  Rendered posts/index.html.haml within layouts/application (112.5ms)
+  Rendered shared/_navbar.html.haml (9.6ms)
+Completed 200 OK in 303ms (Views: 294.7ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/posts/2/reactions/change?reaction_tag_id=1" for 127.0.0.1 at 2018-08-27 23:14:41 -0300
+Processing by ReactionsController#change as JS
+  Parameters: {"authenticity_token"=>"BEdLHhp3TBjtKhTBYa3KbtXK4so0ZoJeCZ1vcE7zRIJpT0bDEd5No4hblyQkMep9W5DoIEY9m2DkU6g13DjDbg==", "reaction_tag_id"=>"1", "post_id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (0.5ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+  [1m[36mReactionTag Load (0.1ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:8
+  [1m[36mReaction Destroy (0.3ms)[0m  [1m[31mDELETE FROM "reactions" WHERE "reactions"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/reactions_controller.rb:8
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:8
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 10ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:41 -0300
+Processing by PostsController#index as JS
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (12.8ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.0ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.1ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (7.1ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (8.2ms)
+  Rendered posts/_show.html.haml (52.3ms)
+  Rendered posts/index.html.haml within layouts/application (83.3ms)
+  Rendered shared/_navbar.html.haml (7.9ms)
+Completed 200 OK in 241ms (Views: 233.5ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/posts/2/reactions/change?reaction_tag_id=3" for 127.0.0.1 at 2018-08-27 23:14:42 -0300
+Processing by ReactionsController#change as JS
+  Parameters: {"authenticity_token"=>"BEdLHhp3TBjtKhTBYa3KbtXK4so0ZoJeCZ1vcE7zRIJpT0bDEd5No4hblyQkMep9W5DoIEY9m2DkU6g13DjDbg==", "reaction_tag_id"=>"3", "post_id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (1.3ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+Unpermitted parameters: :authenticity_token, :post_id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[36mReactionTag Load (0.6ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[36mReaction Create (1.4ms)[0m  [1m[32mINSERT INTO "reactions" ("reaction_target_type", "reaction_target_id", "reaction_tag_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["reaction_tag_id", 3], ["user_id", 1], ["created_at", "2018-08-28 02:14:42.320663"], ["updated_at", "2018-08-28 02:14:42.320663"]]
+  ↳ app/controllers/reactions_controller.rb:22
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:22
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 29ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:42 -0300
+Processing by PostsController#index as JS
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (14.1ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.3ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.0ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (6.7ms)
+  [1m[36mReactionTag Load (0.4ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (8.7ms)
+  Rendered posts/_show.html.haml (51.3ms)
+  Rendered posts/index.html.haml within layouts/application (82.5ms)
+  Rendered shared/_navbar.html.haml (7.0ms)
+Completed 200 OK in 237ms (Views: 228.5ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/posts/2/reactions/change?reaction_tag_id=4" for 127.0.0.1 at 2018-08-27 23:14:43 -0300
+Processing by ReactionsController#change as JS
+  Parameters: {"authenticity_token"=>"BEdLHhp3TBjtKhTBYa3KbtXK4so0ZoJeCZ1vcE7zRIJpT0bDEd5No4hblyQkMep9W5DoIEY9m2DkU6g13DjDbg==", "reaction_tag_id"=>"4", "post_id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (0.4ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+  [1m[36mReactionTag Load (0.2ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:7
+Unpermitted parameters: :authenticity_token, :post_id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mReactionTag Load (0.2ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mReaction Update (0.4ms)[0m  [1m[33mUPDATE "reactions" SET "reaction_tag_id" = $1, "updated_at" = $2 WHERE "reactions"."id" = $3[0m  [["reaction_tag_id", 4], ["updated_at", "2018-08-28 02:14:43.365510"], ["id", 7]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:13
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 14ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:43 -0300
+Processing by PostsController#index as JS
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (12.9ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (4.3ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.0ms)
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (6.7ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (7.7ms)
+  Rendered posts/_show.html.haml (50.4ms)
+  Rendered posts/index.html.haml within layouts/application (80.4ms)
+  Rendered shared/_navbar.html.haml (7.9ms)
+Completed 200 OK in 256ms (Views: 248.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:51 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (17.3ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (6.2ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.1ms)
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (7.2ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (13.7ms)
+  Rendered posts/_show.html.haml (48.6ms)
+  Rendered posts/index.html.haml within layouts/application (90.2ms)
+  Rendered shared/_navbar.html.haml (9.0ms)
+Completed 200 OK in 267ms (Views: 261.1ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 23:14:54 -0300
+Processing by ReactionsController#change as HTML
+  Parameters: {"authenticity_token"=>"aINqzVuo+Y9H7lnFPvjFo8aYtpExlECQoCv13V9TM+QFi2cQUAH4NCKf2iB7ZOWwSMK8e0PPWa5N5TKYzZi0CA==", "reaction_tag_id"=>"5", "post_id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (0.3ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+  [1m[36mReactionTag Load (0.2ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:7
+Unpermitted parameters: :authenticity_token, :post_id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[36mReaction Update (0.7ms)[0m  [1m[33mUPDATE "reactions" SET "reaction_tag_id" = $1, "updated_at" = $2 WHERE "reactions"."id" = $3[0m  [["reaction_tag_id", 5], ["updated_at", "2018-08-28 02:14:54.351844"], ["id", 7]]
+  ↳ app/controllers/reactions_controller.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:13
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 16ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:54 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (17.2ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (5.0ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (9.1ms)
+  [1m[36mReactionTag Load (0.4ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (9.4ms)
+  Rendered posts/_show.html.haml (51.3ms)
+  Rendered posts/index.html.haml within layouts/application (80.1ms)
+  Rendered shared/_navbar.html.haml (9.5ms)
+Completed 200 OK in 282ms (Views: 277.0ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/posts/2/reactions/change?reaction_tag_id=5" for 127.0.0.1 at 2018-08-27 23:14:58 -0300
+Processing by ReactionsController#change as HTML
+  Parameters: {"authenticity_token"=>"jQ0eM4QXQ+cTdod+TOSolVvJlzCb34DyX9wZd8tF9cHgBRPuj75CXHYHBJsJeIiG1ZOd2umEmcyyEt4yWY5yLQ==", "reaction_tag_id"=>"5", "post_id"=>"2"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:37
+  [1m[36mReaction Load (1.1ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Post"], ["reaction_target_id", 2], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+  [1m[36mReactionTag Load (0.4ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:8
+  [1m[36mReaction Destroy (0.4ms)[0m  [1m[31mDELETE FROM "reactions" WHERE "reactions"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/reactions_controller.rb:8
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:8
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 16ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:14:58 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (18.4ms)
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.4ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (6.1ms)
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (8.6ms)
+  [1m[36mReactionTag Load (0.4ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (11.2ms)
+  Rendered posts/_show.html.haml (50.0ms)
+  Rendered posts/index.html.haml within layouts/application (81.0ms)
+  Rendered shared/_navbar.html.haml (10.4ms)
+Completed 200 OK in 286ms (Views: 280.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:16:06 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (16.9ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (5.0ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (4.2ms)
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (7.6ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (8.9ms)
+  Rendered posts/_show.html.haml (45.3ms)
+  Rendered posts/index.html.haml within layouts/application (87.0ms)
+  Rendered shared/_navbar.html.haml (6.1ms)
+Completed 200 OK in 2633ms (Views: 2627.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-27 23:16:22 -0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.haml:5
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:16
+  Rendered posts/_new.html.haml (15.0ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_show.html.haml:13
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (3.2ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/posts/_show.html.haml:32
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 2], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:35
+  Rendered comments/_new.html.haml (2.9ms)
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  Rendered comments/_index.html.haml (5.5ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:2
+  Rendered reactions/_react.html.haml (8.6ms)
+  Rendered posts/_show.html.haml (34.7ms)
+  Rendered posts/index.html.haml within layouts/application (59.0ms)
+  Rendered shared/_navbar.html.haml (9.1ms)
+Completed 200 OK in 2780ms (Views: 2776.2ms | ActiveRecord: 2.7ms)
+
+

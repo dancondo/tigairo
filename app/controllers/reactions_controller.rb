@@ -3,7 +3,6 @@ class ReactionsController < ApplicationController
 
 
   def change
-    # Find the same reaction
     if @reaction = Reaction.find_by(reaction_target: @reaction_target, user: current_user)
       if @reaction.reaction_tag.id == params[:reaction_tag_id].to_i
         if @reaction.destroy
