@@ -10,6 +10,8 @@ class PostsController < ApplicationController
       @post = Post.new
     end
     @comment = Comment.new
+    @reaction = Reaction.new
+    @reaction_tags = ReactionTag.all
   end
 
   def create
