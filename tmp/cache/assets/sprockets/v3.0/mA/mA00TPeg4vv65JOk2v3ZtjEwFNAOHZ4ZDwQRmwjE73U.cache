@@ -1,0 +1,27 @@
+I"z(function() {
+  var DropUp;
+
+  $('html').click(function() {
+    $(".reactions-container").hide();
+    return $('.trigger-buttons').css('opacity', '1');
+  });
+
+  $('.post-extras').click(function(e) {
+    return e.stopPropagation();
+  });
+
+  DropUp = function(trigger) {
+    var dropContent, toHideArea;
+    dropContent = $($(trigger).data("target"));
+    console.log(dropContent);
+    dropContent.show();
+    toHideArea = dropContent.closest('.post-extras');
+    return toHideArea.children('.trigger-buttons').css('opacity', '0');
+  };
+
+  $('.reactions-toggler').on("click", function() {
+    return DropUp(this);
+  });
+
+}).call(this);
+:ET
