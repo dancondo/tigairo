@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   end
   root 'pages#home'
   resources :posts, only: [:index, :create, :update, :delete] do
-    resources :comments, only: [:create, :update, :delete]
+    post 'reactions/change', to: 'reactions#change', as: 'reaction'
+    resources :comments, only: [:create, :update, :delete] do
+      post 'reactions/change', to: 'reactions#change', as: 'reaction'
+    end
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

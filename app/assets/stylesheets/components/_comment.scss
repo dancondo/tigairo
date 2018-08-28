@@ -8,9 +8,14 @@
 }
 .text-area {
   font-size: 12px;
+  margin: 8px 0;
+  a {
+    font-size: 12px;
+  }
   p {
     background-color: $background;
     padding: 4px;
     border-radius: 16px;
+    margin: 0;
   }
 }

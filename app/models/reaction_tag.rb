@@ -1,0 +1,2 @@
+class ReactionTag < ApplicationRecord
+end

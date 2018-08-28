@@ -27,10 +27,15 @@
             = post.content
   .posts-extras-box
     .post-extras
-      %a.collapsable{data: { target: "#comment-box#{post.id}" } }
-        Comment
-      %a
-        %i.far.fa-smile-beam
-      .hidden-content.comments-container{:id => "comment-box#{post.id}"}
+      .trigger-buttons
+        %a.collapsable{ data: { target: "#comment-box#{post.id}" } }
+          = "Comment #{post.comments.count}"
+        %a.reactions-toggler{ data: { target: "#reactions-box#{post.id}" } }
+          %i.far.fa-smile-beam
+          = post.reactions.count
+
+      .hidden-content.comments-container{ id: "comment-box#{post.id}"}
         = render partial: 'comments/new', locals: { post: post }
         = render partial: 'comments/index', locals: { comments: post.comments }
+      .reactions-container{ id: "reactions-box#{post.id}" }
+        = render partial: 'reactions/react', locals: { target: 'post', post: post, reaction: @reaction }

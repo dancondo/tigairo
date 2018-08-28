@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reaction_target_name: MyString
+  reaction_target: one
+  reaction_target_type: Reaction target
+  reaction_tag: one
+  user: one
+
+two:
+  reaction_target_name: MyString
+  reaction_target: two
+  reaction_target_type: Reaction target
+  reaction_tag: two
+  user: two

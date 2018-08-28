@@ -1,0 +1,43 @@
+.reactions-container {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 8px;
+  background-color: $background;
+}
+.reactions-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $background-gray;
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px $shadow;
+  padding: 16px;
+}
+.reaction {
+  text-align: center;
+  button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+  p {
+    font-size: 10px;
+    margin: 0;
+  }
+}
+.reaction-image {
+  height: 50px;
+  width: 50px;
+}
+@media (max-width: 350px) {
+  .reaction {
+    p {
+      font-size: 8px;
+    }
+  }
+  .reaction-image {
+    height: 32px;
+    width: 32px;
+  }
+}
