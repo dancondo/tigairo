@@ -1,6 +1,7 @@
 .post-container
-  =link_to post ,method: :delete, data: { confirm: 'Are you sure?' } do
-    .fas.fa-trash
+  .post-change-buttons
+    =link_to post ,method: :delete, data: { confirm: 'Are you sure?' } do
+      .fas.fa-trash
   -if post.photo.url
     .content-box
       .post-body
