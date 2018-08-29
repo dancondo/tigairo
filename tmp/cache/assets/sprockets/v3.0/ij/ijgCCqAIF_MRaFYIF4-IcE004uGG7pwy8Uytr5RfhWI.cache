@@ -1,0 +1,29 @@
+I"Õ(function() {
+  var DropUp;
+
+  $('html').click(function() {
+    $(".reactions-container").hide();
+    return $('.trigger-buttons').css('opacity', '1');
+  });
+
+  $('.trigger-buttons').click(function(e) {
+    return e.stopPropagation();
+  });
+
+  DropUp = function(trigger) {
+    var dropContent, toHideArea;
+    $(".reactions-container").hide();
+    dropContent = $($(trigger).data("target"));
+    dropContent.show();
+    if (!dropContent.hasClass('reactions-container-for-comments')) {
+      toHideArea = dropContent.closest('.post-extras');
+      return toHideArea.children('.trigger-buttons').css('opacity', '0');
+    }
+  };
+
+  $('.reactions-toggler').on("hover", function() {
+    return DropUp(this);
+  });
+
+}).call(this);
+:ET

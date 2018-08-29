@@ -61,6 +61,7 @@
 body {
   color: $text;
   background-color: $background;
+  overflow-x: hidden;
 }
 h1 {
   font-size: 2rem;
