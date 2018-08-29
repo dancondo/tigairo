@@ -3,10 +3,11 @@
     = f.input :title, label: false, placeholder: 'タイトル'
     .post-block
       = f.input :photo, label: false do
-        .image-upload-box
-          -if post.photo.present?
+        -if post.photo.present?
+          .image-upload-box.post-image-box
             = image_tag post.photo.url, id: 'imgpreview', class: 'show-content'
-          -else
+        -else
+          .image-upload-box
             %img#imgpreview
             = f.input :photo, label: false, input_html: { class: 'file-input' }
             .upload-block-box
