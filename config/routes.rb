@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     resources :posts, only: :index
   end
   root 'pages#home'
-  resources :posts, only: [:index, :create, :update, :delete] do
+  resources :posts, only: [:index, :create, :update, :destroy] do
     post 'reactions/change', to: 'reactions#change', as: 'reaction'
     resources :comments, only: [:create, :update, :delete]
   end
