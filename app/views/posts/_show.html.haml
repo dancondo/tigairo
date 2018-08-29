@@ -1,5 +1,7 @@
 .post-container
   .post-change-buttons
+    %button#open-modal{"data-target" => "#form-modal#{post.id}", "data-toggle" => "modal", :type => "button"}
+      Edit
     =link_to post ,method: :delete, data: { confirm: 'Are you sure?' } do
       .fas.fa-trash
   -if post.photo.url
@@ -43,3 +45,12 @@
         = render partial: 'comments/post_comment', locals: { post: post }
       .reactions-container{ id: "reactions-box#{post.id}" }
         = render partial: 'reactions/react', locals: { target: 'post', post: post, reaction: @reaction }
+
+.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalCenterTitle", :role => "dialog", :tabindex => "-1", id: "form-modal#{post.id}" }
+  .modal-dialog{:role => "document"}
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+      .modal-body
+        =render partial: 'posts/new', locals: { post: post }

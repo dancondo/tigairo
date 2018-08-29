@@ -49,6 +49,9 @@
 .hidden-content {
   display: none;
 }
+.show-content {
+  display: block !important;
+}
 .focus-container {
   transition: all .2s ease-out;
   background-color: $background-gray;

@@ -1,17 +1,20 @@
 .form-container
-  = simple_form_for @post do |f|
+  = simple_form_for post do |f|
     = f.input :title, label: false, placeholder: 'タイトル'
     .post-block
       = f.input :photo, label: false do
         .image-upload-box
-          %img#imgpreview
-          = f.input :photo, label: false, input_html: { class: 'file-input' }
-          .upload-block-box
-            = image_tag 'image_upload.svg', class: 'image-upload-image'
-          .upload-block-box
-            %h3 Add Image
-          .upload-block-box
-            %p （なくてもOK）
+          -if post.photo.present?
+            = image_tag post.photo.url, id: 'imgpreview', class: 'show-content'
+          -else
+            %img#imgpreview
+            = f.input :photo, label: false, input_html: { class: 'file-input' }
+            .upload-block-box
+              = image_tag 'image_upload.svg', class: 'image-upload-image'
+            .upload-block-box
+              %h3 Add Image
+            .upload-block-box
+              %p （なくてもOK）
       .post-block-inputs
         = f.association :category, label: false, prompt: 'カテゴリー'
         - if current_user.photo.present?

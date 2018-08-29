@@ -26,7 +26,11 @@ class PostsController < ApplicationController
   end
 
   def update
-
+    if @post.update(post_params)
+      redirect_to posts_url
+    else
+      redirect_to posts_url
+    end
   end
 
   def destroy

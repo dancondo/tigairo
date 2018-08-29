@@ -41,6 +41,11 @@
 }
 .post-change-buttons {
   text-align: right;
+  button {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+  }
 }
 // Comments and Reactions
 
