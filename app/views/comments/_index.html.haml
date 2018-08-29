@@ -15,5 +15,5 @@
         %a.reactions-toggler{ data: { target: "#comment-reactions-box#{comment.id}" } }
           %i.far.fa-smile-beam
           = comment.reactions.count
-      .reactions-container.reactions-container-for-comments{ id: "comment-reactions-box#{comment.id}" }
-        = render partial: 'reactions/react', locals: { target: 'comment', comment: comment, reaction: @reaction }
+        .reactions-container.reactions-container-for-comments{ id: "comment-reactions-box#{comment.id}" }
+          = render partial: 'reactions/react', locals: { target: 'comment', comment: comment, reaction: @reaction }
