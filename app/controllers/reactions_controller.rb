@@ -4,6 +4,7 @@ class ReactionsController < ApplicationController
 
   def change
     if @reaction = Reaction.find_by(reaction_target: @reaction_target, user: current_user)
+      authorize @reaction
       if @reaction.reaction_tag.id == params[:reaction_tag_id].to_i
         if @reaction.destroy
           redirect_to posts_url
@@ -17,6 +18,7 @@ class ReactionsController < ApplicationController
       end
     else
       @reaction = Reaction.new(reaction_params)
+      authorize @reaction
       @reaction.reaction_target = @reaction_target
       @reaction.user = current_user
       if @reaction.save
