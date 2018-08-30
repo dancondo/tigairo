@@ -5,9 +5,9 @@ class PostsController < ApplicationController
 
   def index
     if params[:user_id]
-      @posts = Post.where(user: User.find(params[:user_id])).order(created_at: 'desc')
+      @posts = policy_scope(Post).where(user: User.find(params[:user_id])).order(created_at: 'desc')
     else
-      @posts = Post.all.order(created_at: 'desc')
+      @posts = policy_scope(Post).order(created_at: 'desc')
       @post = Post.new
     end
     @comment = Comment.new
@@ -18,6 +18,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.user = @user
+    authorize(@post)
     if @post.save
       redirect_to posts_url
     else
@@ -26,6 +27,7 @@ class PostsController < ApplicationController
   end
 
   def update
+    authorize(@post)
     if @post.update(post_params)
       redirect_to posts_url
     else
@@ -34,6 +36,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
+    authorize(@post)
     if @post.destroy
       redirect_to posts_url
     else

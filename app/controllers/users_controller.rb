@@ -1,9 +1,12 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :update]
+
   def show
+    authorize @user
   end
 
   def update
+    authorize @user
     if @user.update(user_params)
       redirect_to @user
     else

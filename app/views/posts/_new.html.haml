@@ -1,28 +1,29 @@
-.form-container
-  = simple_form_for post do |f|
-    = f.input :title, label: false, placeholder: 'タイトル'
-    .post-block
-      = f.input :photo, label: false do
-        -if post.photo.present?
-          .image-upload-box.post-image-box
-            = image_tag post.photo.url, id: 'imgpreview', class: 'show-content'
-        -else
-          .image-upload-box
-            %img#imgpreview
-            = f.input :photo, label: false, input_html: { class: 'file-input' }
-            .upload-block-box
-              = image_tag 'image_upload.svg', class: 'image-upload-image'
-            .upload-block-box
-              %h3 Add Image
-            .upload-block-box
-              %p （なくてもOK）
-      .post-block-inputs
-        = f.association :category, label: false, prompt: 'カテゴリー'
-        - if current_user.photo.present?
-          = image_tag current_user.photo.url, class: 'avatar avatar-small profile-avatar'
-        - else
-          = image_tag 'default.png', class: 'avatar avatar-small profile-avatar'
+-if user_signed_in?
+  .form-container
+    = simple_form_for post do |f|
+      = f.input :title, label: false, placeholder: 'タイトル'
+      .post-block
+        = f.input :photo, label: false do
+          -if post.photo.present?
+            .image-upload-box.post-image-box
+              = image_tag post.photo.url, id: 'imgpreview', class: 'show-content'
+          -else
+            .image-upload-box
+              %img#imgpreview
+              = f.input :photo, label: false, input_html: { class: 'file-input' }
+              .upload-block-box
+                = image_tag 'image_upload.svg', class: 'image-upload-image'
+              .upload-block-box
+                %h3 Add Image
+              .upload-block-box
+                %p （なくてもOK）
+        .post-block-inputs
+          = f.association :category, label: false, prompt: 'カテゴリー'
+          - if current_user.photo.present?
+            = image_tag current_user.photo.url, class: 'avatar avatar-small profile-avatar'
+          - else
+            = image_tag 'default.png', class: 'avatar avatar-small profile-avatar'
 
 
-    = f.input :content, label: false, placeholder: '本文を入力　（３００文字まで）', input_html: { rows: 10 }
-    = f.submit :submit, class: 'bttn bttn-action form-button-right'
+      = f.input :content, label: false, placeholder: '本文を入力　（３００文字まで）', input_html: { rows: 10 }
+      = f.submit :submit, class: 'bttn bttn-action form-button-right'
