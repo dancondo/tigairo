@@ -16,4 +16,3 @@ DropUp = (trigger) ->
     toHideArea.children('.trigger-buttons').css('opacity', '0')
 
 $('.reactions-toggler').on "click", -> DropUp(this)
-

@@ -3,7 +3,10 @@
     -@reaction_tags.each do |reaction_tag|
       .reaction
         = button_to public_send("#{target}_reaction_path", post_id: post.id, reaction_tag_id: reaction_tag.id), method: :post do
-          = image_tag reaction_tag.photo_path, class: 'reaction-image'
+          -if post.reactions.find_by(user: current_user, reaction_tag: reaction_tag)
+            = image_tag reaction_tag.photo_path, class: 'reaction-image reaction-image-selected'
+          -else
+            = image_tag reaction_tag.photo_path, class: 'reaction-image'
           %p= reaction_tag.name
 - if target == 'comment'
   .reactions-box.reaction-box-small

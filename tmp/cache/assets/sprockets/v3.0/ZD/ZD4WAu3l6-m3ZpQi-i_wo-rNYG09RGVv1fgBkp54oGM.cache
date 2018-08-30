@@ -1,15 +1,0 @@
-I"(function() {
-  var toggleBar;
-
-  toggleBar = function(trigger) {
-    var navbar;
-    navbar = $($(trigger).data("target"));
-    return navbar.slideToggle('slow');
-  };
-
-  $('#navbar-toggle').on("click", function() {
-    return toggleBar(this);
-  });
-
-}).call(this);
-:ET

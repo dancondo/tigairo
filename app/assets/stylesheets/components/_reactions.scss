@@ -41,10 +41,24 @@
 .reaction-image {
   height: 50px;
   width: 50px;
+  opacity: .5;
+  &:hover {
+    opacity: 1;
+  }
+}
+.reaction-image-selected {
+  opacity: 1;
+  &:hover {
+    opacity: .5;
+  }
 }
 .reaction-image-small {
   height: 16px;
   width: 16px;
+  opacity: .5;
+  &:hover {
+    opacity: 1;
+  }
 }
 @media (max-width: 350px) {
   .reaction {
