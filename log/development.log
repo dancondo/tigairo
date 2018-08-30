@@ -57675,3 +57675,464 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 291ms (Views: 284.3ms | ActiveRecord: 4.3ms)
 
 
+Started GET "/posts" for 127.0.0.1 at 2018-08-30 16:59:46 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:10
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (21.8ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/policies/post_policy.rb:13
+  Rendered users/_user_info.html.haml (4.4ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  ↳ app/views/posts/_show.html.haml:38
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 7], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:41
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (5.6ms)
+  Rendered comments/_post_comment.html.haml (3.5ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:3
+  Rendered reactions/_react.html.haml (17.1ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (8.9ms)
+  Rendered posts/_show.html.haml (76.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/policies/post_policy.rb:13
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (10.8ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  ↳ app/views/posts/_show.html.haml:38
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 6], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:41
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (0.8ms)
+  Rendered comments/_post_comment.html.haml (0.7ms)
+  Rendered reactions/_react.html.haml (2.8ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (10.7ms)
+  Rendered posts/_show.html.haml (33.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/policies/post_policy.rb:13
+  [1m[36mCACHE Country Load (0.0ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (1.3ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  ↳ app/views/posts/_show.html.haml:38
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 5], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:41
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (1.5ms)
+  Rendered comments/_post_comment.html.haml (0.9ms)
+  Rendered reactions/_react.html.haml (3.3ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (8.9ms)
+  Rendered posts/_show.html.haml (22.6ms)
+  Rendered posts/index.html.haml within layouts/application (164.4ms)
+  Rendered shared/_navbar.html.haml (7.7ms)
+Completed 200 OK in 356ms (Views: 291.5ms | ActiveRecord: 25.3ms)
+
+
+Started POST "/posts/6/comments" for 127.0.0.1 at 2018-08-30 16:59:56 -0300
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DLdfYWm9azpnzojmZqoaG3+hxtK6Wrhq5yQPLW5dGFWVo1uQuFtvVpQWRYAL+FX/uaa9FufGN6rPo9Gatq0y9g==", "comment"=>{"content"=>"ola, seu merda!"}, "button"=>"", "post_id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:9
+  [1m[36mComment Create (1.4ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "post_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["post_id", 6], ["content", "ola, seu merda!"], ["created_at", "2018-08-30 19:59:56.201265"], ["updated_at", "2018-08-30 19:59:56.201265"]]
+  ↳ app/controllers/comments_controller.rb:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:9
+Redirected to http://localhost:3000/posts
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 3.6ms)
+
+
+  
+Pundit::AuthorizationNotPerformedError (CommentsController):
+  
+pundit (2.0.0) lib/pundit.rb:178:in `verify_authorized'
+activesupport (5.2.1) lib/active_support/callbacks.rb:426:in `block in make_lambda'
+activesupport (5.2.1) lib/active_support/callbacks.rb:236:in `block in halting_and_conditional'
+activesupport (5.2.1) lib/active_support/callbacks.rb:517:in `block in invoke_after'
+activesupport (5.2.1) lib/active_support/callbacks.rb:517:in `each'
+activesupport (5.2.1) lib/active_support/callbacks.rb:517:in `invoke_after'
+activesupport (5.2.1) lib/active_support/callbacks.rb:133:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/posts/6/comments" for 127.0.0.1 at 2018-08-30 17:00:13 -0300
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DLdfYWm9azpnzojmZqoaG3+hxtK6Wrhq5yQPLW5dGFWVo1uQuFtvVpQWRYAL+FX/uaa9FufGN6rPo9Gatq0y9g==", "comment"=>{"content"=>"ola, seu merda!"}, "button"=>"", "post_id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:10
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "post_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["post_id", 6], ["content", "ola, seu merda!"], ["created_at", "2018-08-30 20:00:13.956204"], ["updated_at", "2018-08-30 20:00:13.956204"]]
+  ↳ app/controllers/comments_controller.rb:10
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:10
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 52ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-30 17:00:13 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:10
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (22.7ms)
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/policies/post_policy.rb:13
+  Rendered users/_user_info.html.haml (4.7ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  ↳ app/views/posts/_show.html.haml:38
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 7], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:41
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (5.1ms)
+  Rendered comments/_post_comment.html.haml (3.4ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:3
+  Rendered reactions/_react.html.haml (17.0ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (8.3ms)
+  Rendered posts/_show.html.haml (59.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/policies/post_policy.rb:13
+  [1m[36mCountry Load (0.2ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (10.6ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  ↳ app/views/posts/_show.html.haml:38
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 6], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:41
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 8], ["reaction_target_type", "Comment"]]
+  ↳ app/views/comments/_index.html.haml:17
+  Rendered reactions/_react.html.haml (5.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 9], ["reaction_target_type", "Comment"]]
+  ↳ app/views/comments/_index.html.haml:17
+  Rendered reactions/_react.html.haml (2.8ms)
+  Rendered comments/_index.html.haml (17.4ms)
+  Rendered comments/_post_comment.html.haml (0.5ms)
+  Rendered reactions/_react.html.haml (2.6ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (12.0ms)
+  Rendered posts/_show.html.haml (49.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/policies/post_policy.rb:13
+  [1m[36mCACHE Country Load (0.0ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (1.3ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  ↳ app/views/posts/_show.html.haml:38
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 5], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:41
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (0.8ms)
+  Rendered comments/_post_comment.html.haml (0.6ms)
+  Rendered reactions/_react.html.haml (2.7ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (8.3ms)
+  Rendered posts/_show.html.haml (19.8ms)
+  Rendered posts/index.html.haml within layouts/application (161.3ms)
+  Rendered shared/_navbar.html.haml (22.0ms)
+Completed 200 OK in 360ms (Views: 330.5ms | ActiveRecord: 16.9ms)
+
+
+Started POST "/posts/6/comments" for 127.0.0.1 at 2018-08-30 17:00:22 -0300
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T8j7VLlS9Ym+EjWpVCVfoV3qFUf3zpGYu0HMt5qm1FzW3P+laLTx5U3K+M85dxBFm+1ug6pSHliTxhIAQlb+/w==", "comment"=>{"content"=>"eita"}, "button"=>"", "post_id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:10
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("user_id", "post_id", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["user_id", 2], ["post_id", 6], ["content", "eita"], ["created_at", "2018-08-30 20:00:22.386129"], ["updated_at", "2018-08-30 20:00:22.386129"]]
+  ↳ app/controllers/comments_controller.rb:10
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:10
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 8ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-30 17:00:22 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:10
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (17.9ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/policies/post_policy.rb:13
+  Rendered users/_user_info.html.haml (2.5ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  ↳ app/views/posts/_show.html.haml:38
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 7], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:41
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (5.9ms)
+  Rendered comments/_post_comment.html.haml (3.5ms)
+  [1m[36mReactionTag Load (0.2ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:3
+  Rendered reactions/_react.html.haml (11.0ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (10.5ms)
+  Rendered posts/_show.html.haml (53.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/policies/post_policy.rb:13
+  [1m[36mCountry Load (0.3ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (2.8ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  ↳ app/views/posts/_show.html.haml:38
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 6], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:41
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 8], ["reaction_target_type", "Comment"]]
+  ↳ app/views/comments/_index.html.haml:17
+  Rendered reactions/_react.html.haml (6.6ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 9], ["reaction_target_type", "Comment"]]
+  ↳ app/views/comments/_index.html.haml:17
+  Rendered reactions/_react.html.haml (3.2ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 10], ["reaction_target_type", "Comment"]]
+  ↳ app/views/comments/_index.html.haml:17
+  Rendered reactions/_react.html.haml (3.0ms)
+  Rendered comments/_index.html.haml (23.9ms)
+  Rendered comments/_post_comment.html.haml (0.6ms)
+  Rendered reactions/_react.html.haml (3.5ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (9.4ms)
+  Rendered posts/_show.html.haml (48.7ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/policies/post_policy.rb:13
+  [1m[36mCACHE Country Load (0.0ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (1.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  ↳ app/views/posts/_show.html.haml:38
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 5], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:41
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (0.9ms)
+  Rendered comments/_post_comment.html.haml (0.6ms)
+  Rendered reactions/_react.html.haml (3.1ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (10.9ms)
+  Rendered posts/_show.html.haml (24.0ms)
+  Rendered posts/index.html.haml within layouts/application (154.7ms)
+  Rendered shared/_navbar.html.haml (7.4ms)
+Completed 200 OK in 323ms (Views: 314.3ms | ActiveRecord: 6.4ms)
+
+
+Started POST "/comments/8/reactions/change?reaction_tag_id=1" for 127.0.0.1 at 2018-08-30 17:00:34 -0300
+Processing by ReactionsController#change as HTML
+  Parameters: {"authenticity_token"=>"7sZkwTQEwaSOdjn+uvKBsJMimL58unu+IafjevnHxHt30mAw5eLFyH2u9JjXoM5UVSXjeiEm9H4JID3NITfu2A==", "reaction_tag_id"=>"1", "comment_id"=>"8"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/dancondo/.rbenv/versions/2.4.4/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT  "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:40
+  [1m[36mReaction Load (0.4ms)[0m  [1m[34mSELECT  "reactions".* FROM "reactions" WHERE "reactions"."reaction_target_type" = $1 AND "reactions"."reaction_target_id" = $2 AND "reactions"."user_id" = $3 LIMIT $4[0m  [["reaction_target_type", "Comment"], ["reaction_target_id", 8], ["user_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:6
+Unpermitted parameters: :authenticity_token, :comment_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reactions_controller.rb:24
+  [1m[36mReactionTag Load (0.2ms)[0m  [1m[34mSELECT  "reaction_tags".* FROM "reaction_tags" WHERE "reaction_tags"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reactions_controller.rb:24
+  [1m[36mReaction Create (0.4ms)[0m  [1m[32mINSERT INTO "reactions" ("reaction_target_type", "reaction_target_id", "reaction_tag_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["reaction_target_type", "Comment"], ["reaction_target_id", 8], ["reaction_tag_id", 1], ["user_id", 2], ["created_at", "2018-08-30 20:00:34.836410"], ["updated_at", "2018-08-30 20:00:34.836410"]]
+  ↳ app/controllers/reactions_controller.rb:24
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reactions_controller.rb:24
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 14ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-08-30 17:00:34 -0300
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:10
+  Rendering posts/index.html.haml within layouts/application
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (16.4ms)
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.haml:19
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/policies/post_policy.rb:13
+  Rendered users/_user_info.html.haml (2.4ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  ↳ app/views/posts/_show.html.haml:38
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 7], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:41
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 7]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (4.8ms)
+  Rendered comments/_post_comment.html.haml (3.7ms)
+  [1m[36mReactionTag Load (0.3ms)[0m  [1m[34mSELECT "reaction_tags".* FROM "reaction_tags"[0m
+  ↳ app/views/reactions/_react.html.haml:3
+  Rendered reactions/_react.html.haml (11.9ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (9.6ms)
+  Rendered posts/_show.html.haml (53.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/policies/post_policy.rb:13
+  [1m[36mCountry Load (0.1ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (2.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  ↳ app/views/posts/_show.html.haml:38
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 6], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:41
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  ↳ app/views/comments/_index.html.haml:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 8], ["reaction_target_type", "Comment"]]
+  ↳ app/views/comments/_index.html.haml:17
+  Rendered reactions/_react.html.haml (8.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 9], ["reaction_target_type", "Comment"]]
+  ↳ app/views/comments/_index.html.haml:17
+  Rendered reactions/_react.html.haml (3.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/comments/_index.html.haml:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 10], ["reaction_target_type", "Comment"]]
+  ↳ app/views/comments/_index.html.haml:17
+  Rendered reactions/_react.html.haml (15.4ms)
+  Rendered comments/_index.html.haml (37.0ms)
+  Rendered comments/_post_comment.html.haml (0.6ms)
+  Rendered reactions/_react.html.haml (4.6ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (8.6ms)
+  Rendered posts/_show.html.haml (60.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/policies/post_policy.rb:13
+  [1m[36mCACHE Country Load (0.0ms)[0m  [1m[34mSELECT  "countries".* FROM "countries" WHERE "countries"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/_user_info.html.haml:7
+  Rendered users/_user_info.html.haml (1.4ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  ↳ app/views/posts/_show.html.haml:38
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reactions" WHERE "reactions"."reaction_target_id" = $1 AND "reactions"."reaction_target_type" = $2[0m  [["reaction_target_id", 5], ["reaction_target_type", "Post"]]
+  ↳ app/views/posts/_show.html.haml:41
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 5]]
+  ↳ app/views/comments/_index.html.haml:1
+  Rendered comments/_index.html.haml (1.1ms)
+  Rendered comments/_post_comment.html.haml (0.8ms)
+  Rendered reactions/_react.html.haml (3.0ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/posts/_new.html.haml:21
+  Rendered posts/_new.html.haml (10.2ms)
+  Rendered posts/_show.html.haml (23.3ms)
+  Rendered posts/index.html.haml within layouts/application (163.7ms)
+  Rendered shared/_navbar.html.haml (7.4ms)
+Completed 200 OK in 319ms (Views: 310.3ms | ActiveRecord: 6.0ms)
+
+
