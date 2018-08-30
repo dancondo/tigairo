@@ -6,6 +6,7 @@
   position: absolute;
   top: 8px;
   background-color: $background;
+  z-index: 1;
 }
 .reactions-container-for-comments {
   background-color: transparent !important;
