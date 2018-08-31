@@ -1,0 +1,42 @@
+I"i(function() {
+  var Cropper, imagePreview;
+
+  $(".select2-tags").select2({
+    language: "ja",
+    placeholder: "留学先の国"
+  });
+
+  Cropper = (function() {
+    function Cropper(image) {
+      image.Jcrop();
+      ({
+        setSelect: [0, 0, 300, 300]
+      });
+    }
+
+    return Cropper;
+
+  })();
+
+  imagePreview = function(input) {
+    var filerd, image;
+    if (input.files && input.files[0]) {
+      filerd = new FileReader();
+      image = $('#imgpreview');
+      $('.old-photo-box').hide();
+      $('.new-photo-box').show();
+      filerd.onload = function(event) {
+        image.css('display', 'block');
+        return image.attr('src', event.target.result);
+      };
+      filerd.readAsDataURL(input.files[0]);
+      return new Cropper(image);
+    }
+  };
+
+  $('.file-input-edit').on("change", function() {
+    return imagePreview(this);
+  });
+
+}).call(this);
+:ET

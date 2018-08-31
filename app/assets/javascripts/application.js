@@ -16,4 +16,5 @@
 //= require jquery-ui
 //= require bootstrap
 //= require select2
+//= require jcrop
 //= require_tree .

@@ -7,10 +7,11 @@
   .user-profile.content-box
     .profile-header
       .profile-picture-box
-        - if @user.photo.present?
-          = image_tag @user.photo.url, class: 'avatar profile-avatar profile-picture'
-        - else
-          = image_tag 'default.png', class: 'avatar profile-avatar profile-picture'
+        %a#open-modal{"data-target" => "#edit-picture-modal", "data-toggle" => "modal"}
+          - if @user.photo.present?
+            = image_tag @user.photo.url(:thumb), class: 'avatar profile-picture'
+          - else
+            = image_tag 'default.png', class: 'avatar profile-picture'
       %h4= @user.nickname
     .profile-body
       .profile-block
@@ -43,7 +44,9 @@
             = "(#{@user.posts.count})"
             %i.fas.fa-angle-right
 
-// Modal
+// Modals
+
+// Edit
 
 -if policy(@user).edit?
   #form-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalCenterTitle", :role => "dialog", :tabindex => "-1"}
@@ -54,3 +57,15 @@
             %span{"aria-hidden" => "true"} ×
         .modal-body
           =render 'users/edit'
+
+// Photo Viewer
+
+#edit-picture-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalCenterTitle", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog.modal-photo{:role => "document"}
+    .modal-content
+      .modal-header
+        %h4= @user.nickname
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} ×
+      .modal-body
+        =render partial: 'shared/avatar_viewer', locals: { user: @user }

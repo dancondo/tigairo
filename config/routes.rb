@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :update] do
     resources :posts, only: :index
   end
+  get 'pages/edit_image', to: 'pages#edit_image', as: 'edit_image'
   root 'pages#home'
   resources :posts, only: [:index, :create, :update, :destroy] do
     post 'reactions/change', to: 'reactions#change', as: 'reaction'

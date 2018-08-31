@@ -1,0 +1,38 @@
+I"�(function() {
+  var Cropper, Submit,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+  $(".select2-tags").select2({
+    language: "ja",
+    placeholder: "留学先の国"
+  });
+
+  Submit = function(input) {
+    return input.closest('form').submit();
+  };
+
+  $('#user_photo').on("change", function() {
+    return Submit(this);
+  });
+
+  Cropper = (function() {
+    function Cropper(image) {
+      this.update = bind(this.update, this);
+      image.Jcrop({
+        aspectRatio: 1,
+        setSelect: [0, 0, 300, 300],
+        onSelect: this.update,
+        onChange: this.update
+      });
+    }
+
+    Cropper.prototype.update = function(coords) {};
+
+    return Cropper;
+
+  })();
+
+  new Cropper($('#cropbox'));
+
+}).call(this);
+:ET

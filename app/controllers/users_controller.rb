@@ -17,17 +17,23 @@ class UsersController < ApplicationController
     # end
 
     if @user.update(user_params)
-      redirect_to @user
+      if params[:user][:photo].present?
+        redirect_to edit_image_url(record: @user)
+      else
+        redirect_to @user
+      end
     else
       redirect_to @user
     end
   end
+
+  private
 
   def set_user
     @user = User.find(params[:id])
   end
 
   def user_params
-    params.require(:user).permit(:nickname, :photo, country_ids: [])
+    params.require(:user).permit(:nickname, :photo, :crop_x, :crop_y, :crop_w, :crop_h, country_ids: [])
   end
 end

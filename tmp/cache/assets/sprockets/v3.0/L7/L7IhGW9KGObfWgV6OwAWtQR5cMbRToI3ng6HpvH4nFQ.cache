@@ -1,0 +1,30 @@
+I"�(function() {
+  var Cropper, Submit;
+
+  $(".select2-tags").select2({
+    language: "ja",
+    placeholder: "留学先の国"
+  });
+
+  Submit = function(input) {
+    return input.closest('form').submit();
+  };
+
+  $('#user_photo').on("change", function() {
+    return Submit(this);
+  });
+
+  Cropper = (function() {
+    function Cropper(image) {
+      image.Jcrop({
+        aspectRatio: 1,
+        setSelect: [0, 0, 300, 300]
+      });
+    }
+
+    return Cropper;
+
+  })();
+
+}).call(this);
+:ET
