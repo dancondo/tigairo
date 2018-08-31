@@ -8,3 +8,10 @@ $(".select2-tags").select2({
   language: "ja",
   placeholder: "留学先の国"
 });
+
+#### Profile Picture Submit
+
+Submit = (input) ->
+  input.closest('form').submit()
+
+$('#user_photo').on "change", -> Submit(this)

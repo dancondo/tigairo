@@ -1,0 +1,14 @@
+I"�(function() {
+  $(".select2-tags").select2({
+    language: "ja",
+    placeholder: "留学先の国"
+  });
+
+  $('#user_photo').on("change", function() {
+    return {
+      submit: submit
+    };
+  });
+
+}).call(this);
+:ET
