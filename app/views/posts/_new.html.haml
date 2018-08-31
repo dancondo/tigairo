@@ -19,6 +19,7 @@
                 %p （なくてもOK）
         .post-block-inputs
           = f.association :category, label: false, prompt: 'カテゴリー'
+          = f.association :countries, label: false, prompt: '国を選ぶ'
           - if current_user.photo.present?
             = image_tag current_user.photo.url, class: 'avatar avatar-small profile-avatar'
           - else

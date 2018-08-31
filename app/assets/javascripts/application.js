@@ -15,4 +15,5 @@
 //= require rails-ujs
 //= require jquery-ui
 //= require bootstrap
+//= require select2
 //= require_tree .

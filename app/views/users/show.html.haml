@@ -16,10 +16,11 @@
       .profile-block
         %p 留学先の国：
         .profile-country-box
-          -if @user.country
-            %p= @user.country.name
-            .profile-country-img
-              = image_tag @user.country.photo_path, class: 'avatar avatar-xs'
+          %p
+            -@user.countries.each do |country|
+              = country.name
+              -unless country == @user.countries.last
+                ,
       .profile-block
         %p 留学期間　：
         %p 201８年４月～１０月
