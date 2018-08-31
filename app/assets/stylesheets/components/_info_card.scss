@@ -5,9 +5,6 @@
   border-radius: 16px;
   box-shadow: 0 3px 6px $shadow;
   height: 200px;
-  &:hover {
-    transform: scale(1.1);
-  }
   h3 {
     color: $blue-text;
     font-size: 16px;

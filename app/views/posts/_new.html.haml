@@ -19,6 +19,13 @@
                 %p （なくてもOK）
         .post-block-inputs
           = f.association :category, label: false, prompt: 'カテゴリー'
+          -if current_user.countries.present?
+            %select#post_country_id.form-control.select.required{:name => "post[country_id]"}
+              %option{:value => ""} 国を選ぶ
+              - current_user.countries.each do |country|
+                %option{:value => country.id}=country.name
+          -else
+            = f.association :country, label: false, prompt: '国を選ぶ'
           - if current_user.photo.present?
             = image_tag current_user.photo.url, class: 'avatar avatar-small profile-avatar'
           - else
