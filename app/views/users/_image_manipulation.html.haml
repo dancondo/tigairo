@@ -1,0 +1,11 @@
+= simple_form_for @user, input_html: { class: 'full-width-form' } do |f|
+  = f.input :photo, label: false do
+    .profile-picture-box
+      .avatar.profile-picture
+        - if @user.photo.present?
+          = image_tag @user.photo.url, class: 'avatar upload-avatar profile-picture'
+        - else
+          = image_tag 'default.png', class: 'avatar upload-avatar profile-picture'
+  = f.input :photo, label: false, input_html: { class: 'file-input' }
+  %i.fas.fa-upload
+  = f.submit :submit, class: 'bttn bttn-action form-button-right'

@@ -2,9 +2,9 @@
   .comment-box
     // User Photo
     - if comment.user.photo.present?
-      = image_tag comment.user.photo.url, class: 'avatar avatar-xs profile-avatar'
+      = image_tag comment.user.photo.url, class: 'avatar avatar-xs'
     - else
-      = image_tag 'default.png', class: 'avatar avatar-xs profile-avatar'
+      = image_tag 'default.png', class: 'avatar avatar-xs'
     .text-area
       // User
       %span= comment.user.nickname
