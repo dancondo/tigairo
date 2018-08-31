@@ -19,12 +19,16 @@ gem 'jquery-ui-rails'
 gem 'popper_js'
 gem 'simple_form'
 gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x
-gem 'carrierwave'
-gem 'mini_magick'
-gem 'fog-aws'
 gem "select2-rails"
 
-###
+# Image Uploader
+
+gem 'fog-aws'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'rails-assets-jcrop', source: 'https://rails-assets.org'
+
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.1'

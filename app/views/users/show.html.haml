@@ -9,7 +9,7 @@
       .profile-picture-box
         %a#open-modal{"data-target" => "#edit-picture-modal", "data-toggle" => "modal"}
           - if @user.photo.present?
-            = image_tag @user.photo.url, class: 'avatar profile-picture'
+            = image_tag @user.photo.url(:thumb), class: 'avatar profile-picture'
           - else
             = image_tag 'default.png', class: 'avatar profile-picture'
       %h4= @user.nickname

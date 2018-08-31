@@ -19,6 +19,8 @@
     background-color: $action;
     color: white;
     align-items: center;
+    min-height: 50px;
+    height: 50px;
   }
   h4 {
     font-size: 16px;
@@ -48,3 +50,22 @@
     }
   }
 }
+
+// Fake Modal
+
+.fakemodal {
+  text-align: center;
+  height: 100%;
+  .modal-body {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .fakemodal {
+    .modal-body {
+      min-height: calc(100vh - 50px);
+    }
+  }
+}
+

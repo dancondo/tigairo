@@ -1,15 +1,15 @@
 .photo-viewer-container {
   text-align: center;
-  padding-top: 40px;
 }
 .profile-photo-solo {
   width: 90vw;
   height: 90vw;
   max-width: 468px;
   max-height: 468px;
+  margin-top: 40px;
 }
 .photo-changes-links {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;

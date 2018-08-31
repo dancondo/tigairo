@@ -1,15 +1,14 @@
 .photo-viewer-container
   -if user.photo.present?
-    =image_tag user.photo.url, class: 'avatar profile-photo-solo'
+    =image_tag user.photo.url(:thumb), class: 'avatar profile-photo-solo'
   -else
     =image_tag 'default.png', class: 'avatar profile-photo-solo'
   -if current_user == user
     .photo-changes-links
-      =link_to "#" do
-        Edit
+      =link_to "Edit", edit_image_url(record: user)
       .profile-photo-edit
         =simple_form_for user do |f|
-          = f.input :photo, label: false, class: 'input-photo'
+          = f.input :photo, label: false
           Change
       =link_to "#" do
         Delete

@@ -15,3 +15,21 @@ Submit = (input) ->
   input.closest('form').submit()
 
 $('#user_photo').on "change", -> Submit(this)
+
+#### Image Cropper
+
+class Cropper
+  constructor: (image) ->
+    image.Jcrop
+      aspectRatio: 1
+      setSelect: [0, 0, 300, 300]
+      onSelect: @update
+      onChange: @update
+
+  update: (coords) =>
+    $('#user_crop_x').val(coords.x)
+    $('#user_crop_y').val(coords.y)
+    $('#user_crop_w').val(coords.w)
+    $('#user_crop_h').val(coords.h)
+
+new Cropper($('#cropbox'))
