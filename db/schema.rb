@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_27_200134) do
+ActiveRecord::Schema.define(version: 2018_08_30_232629) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,7 +46,9 @@ ActiveRecord::Schema.define(version: 2018_08_27_200134) do
     t.datetime "updated_at", null: false
     t.string "title"
     t.string "photo"
+    t.bigint "country_id"
     t.index ["category_id"], name: "index_posts_on_category_id"
+    t.index ["country_id"], name: "index_posts_on_country_id"
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
@@ -70,6 +72,15 @@ ActiveRecord::Schema.define(version: 2018_08_27_200134) do
     t.index ["user_id"], name: "index_reactions_on_user_id"
   end
 
+  create_table "user_countries", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "country_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_user_countries_on_country_id"
+    t.index ["user_id"], name: "index_user_countries_on_user_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -80,8 +91,6 @@ ActiveRecord::Schema.define(version: 2018_08_27_200134) do
     t.datetime "updated_at", null: false
     t.string "photo"
     t.string "nickname"
-    t.bigint "country_id"
-    t.index ["country_id"], name: "index_users_on_country_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
@@ -89,8 +98,10 @@ ActiveRecord::Schema.define(version: 2018_08_27_200134) do
   add_foreign_key "comments", "posts"
   add_foreign_key "comments", "users"
   add_foreign_key "posts", "categories"
+  add_foreign_key "posts", "countries"
   add_foreign_key "posts", "users"
   add_foreign_key "reactions", "reaction_tags"
   add_foreign_key "reactions", "users"
-  add_foreign_key "users", "countries"
+  add_foreign_key "user_countries", "countries"
+  add_foreign_key "user_countries", "users"
 end

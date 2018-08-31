@@ -4,7 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   mount_uploader :photo, PhotoUploader
-  belongs_to :country, optional: true
   has_many :posts
-  accepts_nested_attributes_for :country
+  has_many :user_countries, dependent: :destroy
+  has_many :countries, through: :user_countries
+  accepts_nested_attributes_for :countries
 end

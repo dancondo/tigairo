@@ -8,6 +8,14 @@ class UsersController < ApplicationController
 
   def update
     authorize @user
+
+    # @current_countries = UserCountry.where(user: @user)
+    # @current_countries.destroy_all
+    # user_params[:country_ids].each do |country_id|
+    #   next if country_id.empty?
+    #   MyTag.create(user: @user, country_id: country_id)
+    # end
+
     if @user.update(user_params)
       redirect_to @user
     else
@@ -20,6 +28,6 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:nickname, :photo, :country_id)
+    params.require(:user).permit(:nickname, :photo, country_ids: [])
   end
 end

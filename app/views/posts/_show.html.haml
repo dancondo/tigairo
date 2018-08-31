@@ -16,7 +16,7 @@
           .post-image-box
             = image_tag post.photo.url, class: 'post-img'
           .post-block-inputs
-            = render partial: 'users/user_info', locals: { user: post.user }
+            = render partial: 'users/user_info', locals: { user: post.user, post: post }
         %p.post-content
           = post.content
   -else
@@ -28,7 +28,7 @@
           = post.title
         .post-block-show.post-block-simple
           .post-floats
-            = render partial: 'users/user_info', locals: { user: post.user }
+            = render partial: 'users/user_info', locals: { user: post.user, post: post }
           %p.post-content
             = post.content
   .posts-extras-box
