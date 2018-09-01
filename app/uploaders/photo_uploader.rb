@@ -4,18 +4,19 @@ class PhotoUploader < CarrierWave::Uploader::Base
   storage :fog                    # <- and this
 
   version :large do
+    process :auto_orient
     resize_to_limit(600, 600)
   end
 
   version :thumb do
-    process :crop
     process :auto_orient
+    process :crop
     resize_to_fill(400, 400)
   end
 
   version :large_thumb do
-    process :crop
     process :auto_orient
+    process :crop
     resize_to_fill(600, 600)
   end
 
