@@ -66,6 +66,9 @@
     width: 100%;
   }
 }
+.fakemodal-box {
+  overflow: scroll
+}
 @media (max-width: 700px) {
   .fakemodal {
     .modal-body {
