@@ -16,11 +16,12 @@
 
 .modal-photo {
   .modal-header {
-    background-color: $action;
+    background-color: $highlight-background;
     color: white;
     align-items: center;
     min-height: 50px;
     height: 50px;
+    border: none;
   }
   h4 {
     font-size: 16px;
@@ -60,11 +61,25 @@
     display: flex;
     justify-content: center;
   }
+  .modal-header {
+    border-radius: 0;
+    width: 100%;
+  }
 }
 @media (max-width: 700px) {
   .fakemodal {
     .modal-body {
       min-height: calc(100vh - 50px);
+    }
+    .modal-header {
+      position: fixed;
+      top: 0;
+      z-index: 5;
+    }
+    .edit_user {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
   }
 }

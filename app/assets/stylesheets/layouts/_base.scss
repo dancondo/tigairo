@@ -4,6 +4,9 @@
 .top-64 {
   padding-top: 64px;
 }
+.no-radious {
+  border-radius: 0 !important;
+}
 @media (max-width: 450px) {
   .overlay {
       position: fixed; /* Sit on top of the page content */
