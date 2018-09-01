@@ -26,6 +26,7 @@ gem "select2-rails"
 gem 'fog-aws'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'rmagick'
 gem 'rails-assets-jcrop', source: 'https://rails-assets.org'
 
 
