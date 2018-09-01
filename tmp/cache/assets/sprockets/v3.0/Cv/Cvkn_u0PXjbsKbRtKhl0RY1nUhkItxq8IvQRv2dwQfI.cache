@@ -1,7 +1,0 @@
-I"[(function() {
-  $(".select2-tags").select2({
-    language: "ja"
-  });
-
-}).call(this);
-:ET

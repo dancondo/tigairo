@@ -1,8 +1,0 @@
-I"(function() {
-  $(".select2-tags").select2({
-    language: "ja",
-    placeholder: "留学先の国"
-  });
-
-}).call(this);
-:ET

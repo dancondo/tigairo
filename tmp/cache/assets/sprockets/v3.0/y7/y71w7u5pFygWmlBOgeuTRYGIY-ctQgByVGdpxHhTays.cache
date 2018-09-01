@@ -1,7 +1,0 @@
-I"W(function() {
-  $(".select2-tags").select2({
-    tags: true
-  });
-
-}).call(this);
-:ET
