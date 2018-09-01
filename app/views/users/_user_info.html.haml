@@ -1,5 +1,5 @@
 - if user.photo.present?
-  = image_tag user.photo.url, class: 'avatar avatar-small'
+  = image_tag user.photo.url(:thumb), class: 'avatar avatar-small'
 - else
   = image_tag 'default.png', class: 'avatar avatar-small'
 %p
