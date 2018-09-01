@@ -15,7 +15,7 @@
       %h4= @user.nickname
     .profile-body
       .profile-block
-        %p 留学先の国：
+        %p 滞在国 &nbsp;&nbsp; ：
         .profile-country-box
           %p
             -@user.countries.each do |country|
@@ -23,17 +23,10 @@
               -unless country == @user.countries.last
                 ,
       .profile-block
-        %p 留学期間　：
-        %p 201８年４月～１０月
-      .profile-block
-        %p 留学の目的：
-        %p.field-text ボランティアなど自分のやりたいことを色々やってみるため
-      .profile-block
-        %p 留学期間　：
-        %p 201８年４月～１０月
-      .profile-block
-        %p ひとこと　：
-        %p.field-text ブラジルで貧困層の人々に対するボランティアをしたくて来ました…が今はとりあえずお休みして、ウェブデザインの勉強をやってます！ 時々考えすぎてパ二くります。でも、ここに来られて幸せだなあと思ってます。
+        %p ひとこと：
+        %p.field-text
+          -if @user.description
+            = @user.description
     .profile-posts-block
       %span 過去の投稿
       .profile-posts
