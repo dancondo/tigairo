@@ -18,8 +18,9 @@
   -moz-border-radius: 50% !important;
   border-radius: 50% !important;
 }
-.jcrop-handle {
-
+.jcrop-dragbar {
+  min-width: 16px;
+  min-height: 16px;
 }
 /* Over */
 
