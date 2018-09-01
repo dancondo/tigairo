@@ -9,4 +9,4 @@
     = form_for @record do |f|
       - %w[x y w h].each do |attribute|
         =f.hidden_field "crop_#{attribute}"
-      =f.submit
+      =f.submit class: 'bttn bttn-action btn-block no-radious'
