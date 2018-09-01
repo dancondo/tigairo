@@ -1,10 +1,12 @@
-- if user.photo.present?
-  = image_tag user.photo.url(:thumb), class: 'avatar avatar-small'
-- else
-  = image_tag 'default.png', class: 'avatar avatar-small'
-%p
-  = user.nickname
+= link_to user do
+  - if user.photo.present?
+    = image_tag user.photo.url(:thumb), class: 'avatar avatar-small'
+  - else
+    = image_tag 'default.png', class: 'avatar avatar-small'
+  %p
+    = user.nickname
+
 - if post.country
   = image_tag post.country.photo_path, class: 'avatar avatar-small'
-  %p
-    = post.country.name
+%p
+  = post.country.name

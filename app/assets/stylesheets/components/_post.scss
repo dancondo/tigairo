@@ -9,6 +9,7 @@
 }
 .post-content {
   margin-bottom: 16px;
+  line-height: 24px;
 }
 .post-date {
   font-size: 8px;
@@ -40,7 +41,7 @@
 .post-floats {
   float: right;
   text-align: center;
-  margin: 0 16px;
+  margin: 0 0 0 24px;
 }
 .post-change-buttons {
   text-align: right;
@@ -72,8 +73,15 @@
   flex: 1;
 }
 
+.post-form-avatar {
+  margin-top: 16px;
+}
+
 // Buttons for more
 
 .trigger-buttons {
   position: relative;
+  a:first-child {
+    margin-right: 20px;
+  }
 }

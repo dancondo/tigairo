@@ -36,9 +36,14 @@
       .trigger-buttons
         %a.collapsable{ data: { target: "#comment-box#{post.id}" } }
           = "Comment #{post.comments.count}"
-        %a.reactions-toggler{ data: { target: "#reactions-box#{post.id}" } }
-          %i.far.fa-smile-beam
-          = post.reactions.count
+        -if user_signed_in? && post.reactions.find_by(user: current_user)
+          %a.reactions-toggler.reacted{ data: { target: "#reactions-box#{post.id}" } }
+            %i.far.fa-smile-beam
+            = post.reactions.count
+        -else
+          %a.reactions-toggler{ data: { target: "#reactions-box#{post.id}" } }
+            %i.far.fa-smile-beam
+            = post.reactions.count
 
       .hidden-content.comments-container{ id: "comment-box#{post.id}"}
         .read-comments-section

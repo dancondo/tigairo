@@ -1,5 +1,9 @@
 // Post Reactions
 
+.reacted {
+  color: $action !important;
+}
+
 .reactions-container {
   display: none;
   width: 100%;
@@ -60,7 +64,7 @@
     opacity: 1;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   .reaction {
     p {
       font-size: 8px;
