@@ -21,6 +21,8 @@ $('#user_photo').on "change", -> Submit(this)
 class Cropper
   constructor: (image) ->
     image.Jcrop
+      allowSelect: false
+      handleSize: 50
       aspectRatio: 1
       setSelect: [0, 0, 300, 300]
       onSelect: @update
@@ -33,3 +35,4 @@ class Cropper
     $('#user_crop_h').val(coords.h)
 
 new Cropper($('#cropbox'))
+$('.fakemodal-box').scrollLeft()
