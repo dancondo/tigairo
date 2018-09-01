@@ -11,6 +11,7 @@ categories.each do |category|
   next unless Category.where(name: category) == []
   Category.create!(name: category)
 end
+
 countries = %w[アイスランド　アイランド　アメリカ　アルゼンチン　イギリス　イタリア　インド　インドネシア
   　エジプト　エチオピア　オーストラリア　オーストリア　オランダ　ガーナ　カナダ　韓国　カンボジア　キューバ　
   スイス　スウェーデン　サウジアラビア　シリア　シンガポール　スペイン　スリランカ　タイ　中国　チリ　デンマーク　ドイツ　ナイジェリア　
