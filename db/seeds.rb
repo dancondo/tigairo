@@ -1,12 +1,13 @@
 ### Destruction
 
-# Post.destroy_all
+Post.destroy_all
+Category.destroy_all
 # User.destroy_all
 # Country.destroy_all
 
 ### Construction
 
-categories = %w[ごはん 友達との接し方 お店の人 ファッション お祝い 時間 街 仕事 恋愛 その他]
+categories = %w[食べ物・飲み物 人との接し方 恋愛 お祝い ファッション お店 家 街 時間 仕事 勉強 その他]
 categories.each do |category|
   next unless Category.where(name: category) == []
   Category.create!(name: category)

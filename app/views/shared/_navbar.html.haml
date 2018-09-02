@@ -1,7 +1,7 @@
-= link_to :root do
-  = image_tag 'logo.png', alt: 'Tigairo Logo', class: 'logo-navbar'
 .overlay
 %nav.sidenav
+  = link_to :root do
+    = image_tag 'logo.png', alt: 'Tigairo Logo', class: 'logo-navbar'
   %button.nav-burger#navbar-toggle{ data: { target: '.navbar-list' }}
     %i.fas.fa-bars
   %ul.navbar-list

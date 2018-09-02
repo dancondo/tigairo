@@ -7,9 +7,13 @@
   padding: 0;
 }
 .sidenav  {
-  background-color: transparent;
+  background-color: $background;
+  box-shadow: 3px 0 3px 1px $shadow;
   text-align: right;
-  width: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   right: 0;
   top: 0;
