@@ -28,6 +28,8 @@ ModalChanger = (trigger) ->
 
   $('.fakemodal-container').toggle()
   $('.photo-viewer-container').toggle()
+  $('.hidden-form-modal').toggle()
+  $('#view-picture-modal').toggleClass('fakemodal')
 
   #Find the header and Toggle Buttons
 
@@ -56,4 +58,8 @@ class Cropper
     $('#user_crop_h').val(coords.h)
 
 new Cropper($('#cropbox'))
-$('.fakemodal-box').scrollLeft()
+
+#### Force Open Modal
+
+$('#edit-picture-modal').modal('show')
+new Cropper($('#cropbox-open'))

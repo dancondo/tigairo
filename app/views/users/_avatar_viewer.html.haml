@@ -8,16 +8,8 @@
       %a.edit-button-trigger
         Edit
       .profile-photo-edit
-        =simple_form_for user do |f|
+        =simple_form_for user, remote: true do |f|
           = f.input :photo, label: false
           Change
       =link_to "#" do
         Delete
-
-.fakemodal-container
-  .fakemodal-box
-    = image_tag @user.photo.url(:large), id: 'cropbox'
-  = form_for @user do |f|
-    - %w[x y w h].each do |attribute|
-      =f.hidden_field "crop_#{attribute}"
-    =f.submit class: 'bttn bttn-action btn-block no-radious'

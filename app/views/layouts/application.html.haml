@@ -10,17 +10,14 @@
     = stylesheet_link_tag 'application', media: 'all'
     / = stylesheet_pack_tag 'application', media: 'all'
   %body
-    -unless current_page?(:edit_image)
-      = render 'shared/navbar'
-      = render 'shared/banner' if current_page?(:root)
-      - if current_page?(:root)
-        .container.top-32
-          =yield
-      - else
-        .container
-          = yield
-    -else
-      = yield
+    = render 'shared/navbar'
+    = render 'shared/banner' if current_page?(:root)
+    - if current_page?(:root)
+      .container.top-32
+        =yield
+    - else
+      .container.top-32
+        = yield
 
     = javascript_include_tag 'application'
     / = javascript_pack_tag 'application'

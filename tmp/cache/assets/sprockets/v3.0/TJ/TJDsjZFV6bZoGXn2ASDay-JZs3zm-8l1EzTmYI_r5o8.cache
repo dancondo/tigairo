@@ -1,0 +1,68 @@
+I"2(function() {
+  var Cropper, ModalChanger, Submit,
+    bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
+
+  $(".select2-tags").select2({
+    language: "ja",
+    placeholder: "留学先の国"
+  });
+
+  Submit = function(input) {
+    return input.closest('form').submit();
+  };
+
+  $('#user_photo').on("change", function() {
+    return Submit(this);
+  });
+
+  ModalChanger = function(trigger) {
+    var headerButtons, modal;
+    modal = $(trigger.closest('.modal-photo'));
+    $('.fakemodal-container').toggle();
+    $('.photo-viewer-container').toggle();
+    headerButtons = modal.find('.modal-header button');
+    return headerButtons.toggle();
+  };
+
+  $('.edit-button-trigger').click(function() {
+    return ModalChanger(this);
+  });
+
+  $('.previous-content').click(function() {
+    return ModalChanger(this);
+  });
+
+  $('#edit-picture-modal .modal-dialog').show();
+
+  console.log($('#edit-picture-modal'));
+
+  Cropper = (function() {
+    function Cropper(image) {
+      this.update = bind(this.update, this);
+      image.Jcrop({
+        allowSelect: false,
+        handleSize: 50,
+        aspectRatio: 1,
+        setSelect: [0, 0, 300, 300],
+        onSelect: this.update,
+        onChange: this.update
+      });
+    }
+
+    Cropper.prototype.update = function(coords) {
+      $('#user_crop_x').val(coords.x);
+      $('#user_crop_y').val(coords.y);
+      $('#user_crop_w').val(coords.w);
+      return $('#user_crop_h').val(coords.h);
+    };
+
+    return Cropper;
+
+  })();
+
+  new Cropper($('#cropbox'));
+
+  $('.fakemodal-box').scrollLeft();
+
+}).call(this);
+:ET

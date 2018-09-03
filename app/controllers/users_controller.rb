@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   skip_before_action :authenticate_user!, only: :show
+  skip_before_action :reset_session_modal, only: :show
   before_action :set_user, only: [:show, :update, :avatar_viewer, :edit_avatar]
 
   def show
@@ -17,16 +18,11 @@ class UsersController < ApplicationController
   def update
     authorize @user
 
-    # @current_countries = UserCountry.where(user: @user)
-    # @current_countries.destroy_all
-    # user_params[:country_ids].each do |country_id|
-    #   next if country_id.empty?
-    #   MyTag.create(user: @user, country_id: country_id)
-    # end
-
     if @user.update(user_params)
       if params[:user][:photo].present?
-        redirect_to edit_image_url(record: @user)
+        session[:modal] = true
+        redirect_to @user
+        # redirect_to edit_image_url(record: @user)
       else
         redirect_to @user
       end
