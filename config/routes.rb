@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     resources :posts, only: :index
   end
   get 'pages/edit_image', to: 'pages#edit_image', as: 'edit_image'
+  get 'users/:id/edit_avatar', to: 'users#edit_avatar', as: 'edit_avatar'
   root 'pages#home'
   resources :posts, only: [:index, :create, :update, :destroy] do
     post 'reactions/change', to: 'reactions#change', as: 'reaction'

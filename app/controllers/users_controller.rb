@@ -1,8 +1,16 @@
 class UsersController < ApplicationController
   skip_before_action :authenticate_user!, only: :show
-  before_action :set_user, only: [:show, :update]
+  before_action :set_user, only: [:show, :update, :avatar_viewer, :edit_avatar]
 
   def show
+    authorize @user
+  end
+
+  def avatar_viewer
+    authorize @user
+  end
+
+  def edit_avatar
     authorize @user
   end
 

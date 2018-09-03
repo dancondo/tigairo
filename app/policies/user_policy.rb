@@ -9,6 +9,10 @@ class UserPolicy < ApplicationPolicy
     true
   end
 
+  def edit_avatar?
+    record == user
+  end
+
   def create?
     true
   end

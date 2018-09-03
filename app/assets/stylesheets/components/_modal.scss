@@ -15,6 +15,7 @@
 // Modal Photo
 
 .modal-photo {
+  position: relative;
   .modal-header {
     background-color: $highlight-background;
     color: white;
@@ -31,6 +32,10 @@
   button {
   color: white;
   opacity: 1;
+  }
+  input{
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -88,3 +93,8 @@
   }
 }
 
+.previous-content {
+  display: none;
+  border: none;
+  background-color: inherit;
+}

@@ -16,6 +16,27 @@ Submit = (input) ->
 
 $('#user_photo').on "change", -> Submit(this)
 
+#### Modal Changer
+
+ModalChanger = (trigger) ->
+
+  # Find Modal
+
+  modal = $(trigger.closest('.modal-photo'))
+
+  # Toggle content
+
+  $('.fakemodal-container').toggle()
+  $('.photo-viewer-container').toggle()
+
+  #Find the header and Toggle Buttons
+
+  headerButtons = modal.find('.modal-header button')
+  headerButtons.toggle()
+
+$('.edit-button-trigger').click -> ModalChanger(this)
+$('.previous-content').click -> ModalChanger(this)
+
 #### Image Cropper
 
 class Cropper
