@@ -53,41 +53,9 @@
 
 // Photo Viewer
 
-#view-picture-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalCenterTitle", :role => "dialog", :tabindex => "-1"}
-  .modal-dialog.modal-photo{:role => "document"}
-    .modal-content
-      .modal-header
-        %h4= @user.nickname
-        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
-          %span{"aria-hidden" => "true"} ×
-        %button.previous-content.close
-          <
-      .modal-body
-        =render partial: 'users/avatar_viewer', locals: { user: @user }
-        .fakemodal-container
-          .fakemodal-box
-            = image_tag @user.photo.url(:large), id: 'cropbox'
-      = render partial: 'users/edit_avatar', locals: { user: @user }
-
-// Modal
-
 -if session[:modal]
-
-  #edit-picture-modal.modal.fakemodal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalCenterTitle", :role => "dialog", :tabindex => "-1"}
-    .modal-dialog.modal-photo{:role => "document"}
-      .modal-content
-        .modal-header
-          %h4= @user.nickname
-          %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
-            %span{"aria-hidden" => "true"} ×
-          %button.previous-content.close
-            <
-        .modal-body
-          .photo-viewer-container
-            .fakemodal-box
-              = image_tag @user.photo.url(:large), id: 'cropbox-open'
-        = form_for @user do |f|
-          - %w[x y w h].each do |attribute|
-            =f.hidden_field "crop_#{attribute}"
-          =f.submit class: 'bttn bttn-action btn-block no-radious'
-
+  #view-picture-modal.modal.fade.start-show-modal{"aria-hidden" => "true", "aria-labelledby" => "exampleModalCenterTitle", :role => "dialog", :tabindex => "-1"}
+    =render partial: 'avatar_viewer'
+-else
+  #view-picture-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalCenterTitle", :role => "dialog", :tabindex => "-1"}
+    =render partial: 'avatar_viewer'

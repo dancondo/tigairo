@@ -23,9 +23,13 @@ ModalChanger = (trigger) ->
   # Find Modal
 
   modal = $(trigger.closest('.modal-photo'))
+  ModalToggler(modal)
+
+ModalToggler = (modal) ->
 
   # Toggle content
 
+  modal.toggleClass('fakemodal')
   $('.fakemodal-container').toggle()
   $('.photo-viewer-container').toggle()
   $('.hidden-form-modal').toggle()
@@ -61,5 +65,11 @@ new Cropper($('#cropbox'))
 
 #### Force Open Modal
 
-$('#edit-picture-modal').modal('show')
-new Cropper($('#cropbox-open'))
+$(document).ready ->
+  if $('.start-show-modal').length > 0
+    modal = $('.start-show-modal')
+    modal.modal('show')
+    ModalToggler(modal)
+
+
+

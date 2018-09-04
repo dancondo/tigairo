@@ -1,15 +1,31 @@
-.photo-viewer-container
-  -if user.photo.present?
-    =image_tag user.photo.url(:large_thumb), class: 'avatar profile-photo-solo'
-  -else
-    =image_tag 'default.png', class: 'avatar profile-photo-solo'
-  -if current_user == user
-    .photo-changes-links
-      %a.edit-button-trigger
-        Edit
-      .profile-photo-edit
-        =simple_form_for user, remote: true do |f|
-          = f.input :photo, label: false
-          Change
-      =link_to "#" do
-        Delete
+.modal-dialog.modal-photo{:role => "document"}
+  .modal-content
+    .modal-header
+      %h4= @user.nickname
+      %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+        %span{"aria-hidden" => "true"} ×
+      %button.previous-content.close
+        <
+    .modal-body
+      .photo-viewer-container
+        -if @user.photo.present?
+          =image_tag @user.photo.url(:large_thumb), class: 'avatar profile-photo-solo'
+        -else
+          =image_tag 'default.png', class: 'avatar profile-photo-solo'
+        -if current_user == @user
+          .photo-changes-links
+            %a.edit-button-trigger
+              Edit
+            .profile-photo-edit
+              =simple_form_for @user, remote: true do |f|
+                = f.input :photo, label: false
+                Change
+            =link_to "#" do
+              Delete
+      .fakemodal-container
+        .fakemodal-box
+          = image_tag @user.photo.url(:large), id: 'cropbox'
+    = render partial: 'users/edit_avatar', locals: { user: @user }
+
+
+
