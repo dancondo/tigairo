@@ -1,0 +1,42 @@
+I"‰(function() {
+  var changeFormTarget;
+
+  changeFormTarget = function(trigger) {
+    var closeReply, container, defaultPath, form, formTargetId, prependForm, user;
+    closeReply = function(anchor) {
+      var form;
+      form = anchor.closest('form');
+      form.attr('action', defaultPath);
+      return anchor.closest('.comment-reply').remove();
+    };
+    prependForm = function(target) {
+      target.attr('action', "comments/" + formTargetId + "/comments");
+      return target.prepend("<div class='comment-reply'><div>Replying to <span>" + user + "</span></div><div class='close-reply'><a data-default='" + defaultPath + "'>x</a></div></div>");
+    };
+    if ($('.comment-reply').length > 0) {
+      console.log($('.comment-reply').children('a'));
+      defaultPath = $('.comment-reply').children('a').attr('data-default');
+    } else {
+      defaultPath = null;
+    }
+    console.log(defaultPath);
+    $('.comment-reply').remove();
+    container = trigger.closest('.comments-container');
+    form = container.children('form');
+    formTargetId = trigger.attr('data-id');
+    user = trigger.attr('data-user');
+    if (defaultPath === null) {
+      defaultPath = form.attr('action');
+    }
+    prependForm(form);
+    return $('.close-reply').click(function() {
+      return closeReply($(this));
+    });
+  };
+
+  $('.comment-toggler').click(function() {
+    return changeFormTarget($(this));
+  });
+
+}).call(this);
+:ET

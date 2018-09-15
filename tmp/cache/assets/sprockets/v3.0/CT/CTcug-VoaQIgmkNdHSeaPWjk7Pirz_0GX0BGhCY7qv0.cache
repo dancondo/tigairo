@@ -1,0 +1,13 @@
+I"Û(function() {
+  var changeFormTarget;
+
+  changeFormTarget = function(trigger) {
+    return console.log(trigger);
+  };
+
+  $('.comment-toggler').click(function() {
+    return changeFormTarget(this);
+  });
+
+}).call(this);
+:ET

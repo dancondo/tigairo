@@ -1,0 +1,28 @@
+.comment-box
+  // User Photo
+  .comment-body
+    - if comment.user.photo.present?
+      = image_tag comment.user.photo.url(:thumb), class: 'avatar avatar-xs'
+    - else
+      = image_tag 'default.png', class: 'avatar avatar-xs'
+    .text-area
+      // User
+      %span= comment.user.nickname
+      // Comment
+      %p= comment.content
+    // reaction
+  .trigger-buttons
+    %a.reactions-toggler{ data: { target: "#comment-reactions-box#{comment.id}" } }
+      %i.far.fa-smile-beam
+      = comment.reactions.count
+    %a.comment-toggler{ data: { id: "#{comment.id}", user: "#{comment.user.nickname}" }}
+      Reply
+    -if comment.comments.present?
+      %a.collapsable{ data: { target: "#comment-comment-box#{comment.id}" } }
+        Comments (#{Comment.count_all(comment.comments)})
+      .hidden-content{ id: "comment-comment-box#{comment.id}"}
+        .row
+          .col-8.offset-4
+            = render partial: 'comments/index_comment_comments', locals: { comments: comment.comments.order('created_at') }
+    .reactions-container.reactions-container-for-comments{ id: "comment-reactions-box#{comment.id}" }
+      = render partial: 'reactions/react', locals: { target: 'comment', comment: comment, reaction: @reaction }

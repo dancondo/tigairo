@@ -19,10 +19,12 @@ Collapser = (trigger) ->
   collapsableContent = $($(trigger).data("target"))
   collapsableContent.slideToggle('slow')
 
-  container = $(trigger.closest('.post-container'))
-  container.toggleClass('focus-container')
+  if $(trigger).hasClass('post-collapse')
 
-  contentBox = container.children('.content-box')
-  contentBox.toggleClass('plain')
+    container = $(trigger.closest('.post-container'))
+    container.toggleClass('focus-container')
+
+    contentBox = container.children('.content-box')
+    contentBox.toggleClass('plain')
 
 $('.collapsable').click -> Collapser(this)

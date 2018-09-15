@@ -1,7 +1,6 @@
 class ReactionsController < ApplicationController
   before_action :set_reaction_target
 
-
   def change
     if @reaction = Reaction.find_by(reaction_target: @reaction_target, user: current_user)
       authorize @reaction
