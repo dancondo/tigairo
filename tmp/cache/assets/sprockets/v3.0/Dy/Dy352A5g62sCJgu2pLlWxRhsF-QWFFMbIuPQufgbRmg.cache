@@ -1,0 +1,20 @@
+I"œ(function() {
+  var changeFormTarget;
+
+  changeFormTarget = function(trigger) {
+    var container, form, formTargetId, textarea;
+    container = trigger.closest('.comments-container');
+    form = container.children('form');
+    formTargetId = trigger.attr('data-id');
+    form.attr('action', "comments/" + formTargetId + "/comments");
+    textarea = form.children('textarea');
+    textarea.insertBefore('<label class="form-control-label text required" for="comment_content">Content <abbr title="required">*</abbr></label>');
+    return console.log(textarea);
+  };
+
+  $('.comment-toggler').click(function() {
+    return changeFormTarget($(this));
+  });
+
+}).call(this);
+:ET

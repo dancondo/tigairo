@@ -1,0 +1,26 @@
+I"b(function() {
+  var changeFormTarget;
+
+  changeFormTarget = function(trigger) {
+    var closeReplyByX, container, form, formTargetId, user;
+    closeReplyByX = function(trigger) {
+      return trigger.closest('.comment-reply').remove();
+    };
+    $('.comment-reply').remove();
+    container = trigger.closest('.comments-container');
+    form = container.children('form');
+    formTargetId = trigger.attr('data-id');
+    user = trigger.attr('data-user');
+    form.attr('action', "comments/" + formTargetId + "/comments");
+    form.prepend("<div class='comment-reply'><div>Replying to <span>" + user + "</span></div><div class='close-reply'><a>x</a></div></div>");
+    return $('.close-reply').click(function() {
+      return closeReplyByX($(this));
+    });
+  };
+
+  $('.comment-toggler').click(function() {
+    return changeFormTarget($(this));
+  });
+
+}).call(this);
+:ET

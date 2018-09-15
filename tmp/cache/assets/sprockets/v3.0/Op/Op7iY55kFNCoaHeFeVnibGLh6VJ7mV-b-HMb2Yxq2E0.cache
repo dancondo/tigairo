@@ -1,0 +1,17 @@
+I"„(function() {
+  var changeFormTarget;
+
+  changeFormTarget = function(trigger) {
+    var container, formTargetId;
+    container = trigger.closest('.comments-container');
+    console.log(container);
+    formTargetId = trigger.attr('data-id');
+    return console.log(formTargetId);
+  };
+
+  $('.comment-toggler').click(function() {
+    return changeFormTarget($(this));
+  });
+
+}).call(this);
+:ET

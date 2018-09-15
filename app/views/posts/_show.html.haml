@@ -34,8 +34,8 @@
   .posts-extras-box
     .post-extras
       .trigger-buttons
-        %a.collapsable{ data: { target: "#comment-box#{post.id}" } }
-          = "Comment #{post.comments.count}"
+        %a.collapsable.post-collapse{ data: { target: "#comment-box#{post.id}" } }
+          = "Comment #{Comment.count_all(post.comments)}"
         -if user_signed_in? && post.reactions.find_by(user: current_user)
           %a.reactions-toggler.reacted{ data: { target: "#reactions-box#{post.id}" } }
             %i.far.fa-smile-beam
@@ -47,8 +47,8 @@
 
       .hidden-content.comments-container{ id: "comment-box#{post.id}"}
         .read-comments-section
-          = render partial: 'comments/index', locals: { comments: post.comments }
-        = render partial: 'comments/post_comment', locals: { post: post }
+          = render partial: 'comments/index', locals: { comments: post.comments.order('created_at') }
+        = render partial: 'comments/comment', locals: { post: post }
       .reactions-container{ id: "reactions-box#{post.id}" }
         = render partial: 'reactions/react', locals: { target: 'post', post: post, reaction: @reaction }
 

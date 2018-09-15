@@ -1,0 +1,15 @@
+I" (function() {
+  var changeFormTarget;
+
+  changeFormTarget = function(trigger) {
+    var formTargetId;
+    formTargetId = $(trigger).attr('id');
+    return console.log(formTargetId);
+  };
+
+  $('.comment-toggler').click(function() {
+    return changeFormTarget(this);
+  });
+
+}).call(this);
+:ET

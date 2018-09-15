@@ -1,0 +1,19 @@
+I"l(function() {
+  var changeFormTarget;
+
+  changeFormTarget = function(trigger) {
+    var container, form, formTargetId, user;
+    container = trigger.closest('.comments-container');
+    form = container.children('form');
+    formTargetId = trigger.attr('data-id');
+    user = trigger.attr('data-user');
+    form.attr('action', "comments/" + formTargetId + "/comments");
+    return form.prepend("<div class='comment-reply'><div>Replying to <span>" + user + "</span></div><div class='close-reply'>x</div></div>");
+  };
+
+  $('.comment-toggler').click(function() {
+    return changeFormTarget($(this));
+  });
+
+}).call(this);
+:ET

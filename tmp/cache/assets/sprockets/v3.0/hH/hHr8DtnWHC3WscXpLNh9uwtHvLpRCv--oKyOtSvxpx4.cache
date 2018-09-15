@@ -1,0 +1,37 @@
+I"(function() {
+  var changeFormTarget;
+
+  changeFormTarget = function(trigger) {
+    PREVIOUSPATH;
+    var closeReply, container, form, formTargetId, previousTargetId, savePreviousPath, user;
+    savePreviousPath = function(pathHolder) {
+      var PREVIOUSPATH;
+      return PREVIOUSPATH = pathHolder.attr('action');
+    };
+    closeReply = function(trigger) {
+      var form;
+      form = trigger.closest('form');
+      form.attr('action', previousPath);
+      return trigger.closest('.comment-reply').remove();
+    };
+    $('.comment-reply').remove();
+    container = trigger.closest('.comments-container');
+    form = container.children('form');
+    formTargetId = trigger.attr('data-id');
+    previousTargetId = trigger.attr('target-id');
+    user = trigger.attr('data-user');
+    savePreviousPath(form);
+    console.log(PREVIOUSPATH);
+    form.attr('action', "comments/" + formTargetId + "/comments");
+    form.prepend("<div class='comment-reply'><div>Replying to <span>" + user + "</span></div><div class='close-reply'><a data-id='" + previousTargetId + "'>x</a></div></div>");
+    return $('.close-reply').click(function() {
+      return closeReply($(this));
+    });
+  };
+
+  $('.comment-toggler').click(function() {
+    return changeFormTarget($(this));
+  });
+
+}).call(this);
+:ET
